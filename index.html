@@ -3,204 +3,239 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            color: #333;
-        }
-        
-        header {
-            background: #333;
-            color: #fff;
-            text-align: center;
-            padding: 2rem 0;
-        }
-        
-        .container {
-            width: 90%;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 1rem;
-        }
-        
-        section {
-            margin-bottom: 3rem;
-        }
-        
-        h1, h2, h3 {
-            margin-bottom: 1rem;
-        }
-        
-        .projects {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 1.5rem;
-        }
-        
-        .project {
-            border: 1px solid #ddd;
-            padding: 1rem;
-            border-radius: 5px;
-            transition: transform 0.3s ease;
-        }
-        
-        .project:hover {
-            transform: translateY(-5px);
-        }
-        
-        .project img {
-            width: 100%;
-            height: auto;
-            border-radius: 5px;
-        }
-        
-        .skills {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1rem;
-        }
-        
-        .skill {
-            background: #f4f4f4;
-            padding: 0.5rem 1rem;
-            border-radius: 20px;
-            margin-bottom: 0.5rem;
-        }
-        
-        .social-links {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1rem;
-            margin-top: 1rem;
-        }
-        
-        .social-links a {
-            display: inline-block;
-            padding: 0.5rem 1rem;
-            background: #f4f4f4;
-            border-radius: 5px;
-            text-decoration: none;
-            color: #333;
-            transition: background 0.3s;
-        }
-        
-        .social-links a:hover {
-            background: #ddd;
-        }
-        
-        footer {
-            background: #333;
-            color: #fff;
-            text-align: center;
-            padding: 1rem 0;
-            margin-top: 2rem;
-        }
-        
-        @media (max-width: 768px) {
-            .container {
-                width: 95%;
-                padding: 0.5rem;
-            }
-            
-            .projects {
-                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-                gap: 1rem;
-            }
-        }
-        
-        @media (max-width: 480px) {
-            header {
-                padding: 1rem 0;
-            }
-            
-            h1 {
-                font-size: 1.8rem;
-            }
-            
-            h2 {
-                font-size: 1.5rem;
-            }
-            
-            .project {
-                padding: 0.75rem;
-            }
-            
-            .skills {
-                gap: 0.5rem;
-            }
-        }
-    </style>
+    <title>Nathaniel Keene Merka | Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <img src="Pictures/avatarsmall.JPG" alt="Avatar" style="border-radius: 50%; width: 150px; height: 150px;">
-            <h1>Nathaniel Keene M. Merka</h1>
-            <p>Student Developer</p>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container navbar-container">
+            <a href="#" class="logo">
+                <img src="Pictures/avatarsmall.JPG" alt="NKM">
+                <span>Nathaniel Keene M. Merka</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
         </div>
-    </header>
+    </nav>
 
-    <main class="container">
+    <!-- Hero/Landing Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Nathaniel Keene M. Merka</h1>
+            <p class="hero-subtitle">Student Developer & Problem Solver</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-outline">Get In Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <!-- About Section -->
         <section id="about">
-            <h2>About Me</h2>
-            <p style="text-align: justify;">Hello! I'm a passionate and driven student developer currently pursuing a Bachelor of Science in Computer Science at the University of Mindanao, Davao City. I specialize in building responsive, user-friendly websites and turning complex problems into elegant solutions.</p>
-            <p style="text-align: justify;">While I'm still early in my journey, I make up for it with a strong work ethic, fast learning, and a deep commitment to mastering my craft. I've already built real-world projects using Java, Python, PHP, HTML, CSS, JavaScript, and MySQL and I'm just getting started.</p>    
-            <p style="text-align: justify;">I'm actively seeking opportunities where I can contribute, grow, and stand out by delivering quality work and constantly leveling up.</p>
-        </section>
-
-        <section id="projects">
-            <h2>My Projects</h2>
-            <div class="projects">
-                <div class="project">
-                    <img src="https://vitapetsanimalclinic.great-site.net/client/img/logomainpage.png" alt="Project 1" style="width: 200px; height: 150px; margin-bottom: 1rem; display: block; margin-left: auto; margin-right: auto; margin-top: -20px;">
-
-                    <h3>Vitapets Animal Clinic</h3>
-                    <p>An animal clinic website built using HTML, CSS, JavaScript, MySQL, and PHP.</p>
-                    <a href="https://vitapetsanimalclinic.great-site.net">View Project</a>
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-container">
+                    <div class="about-img animate-fade-in">
+                        <img src="Pictures/avatarsmall.JPG" alt="Nathaniel Keene Merka">
+                    </div>
+                    <div class="about-text animate-fade-in-up" style="text-align: justify;">
+                        <p>Hello! I'm a passionate and driven student developer currently pursuing a Bachelor of Science in Computer Science at the University of Mindanao, Davao City. I specialize in building responsive, user-friendly websites and turning complex problems into elegant solutions.</p>
+                        <p>While I'm still early in my journey, I make up for it with a strong work ethic, fast learning, and a deep commitment to mastering my craft. I've already built real-world projects using Java, Python, PHP, HTML, CSS, JavaScript, and MySQL and I'm just getting started.</p>    
+                        <p>I'm actively seeking opportunities where I can contribute, grow, and stand out by delivering quality work and constantly leveling up.</p>
+                    </div>
                 </div>
-                <div class="project">       
-                    <img src="Pictures/pedidos.png" alt="Project 2" style="width: 150px; height: 150px; margin-bottom: 1rem; display: block; margin-left: auto; margin-right: auto; margin-top: -20px;">
-                    <h3>El Pedidos Mexicanos</h3>
-                    <p>A food ordering system selling mexican dishes built using JavaFX, CSS, and MySQL.</p>
-                    <a href="#">View Project</a>
-                </div>  
             </div>
         </section>
 
+        <!-- Projects Section -->
+        <section id="projects">
+            <div class="container">
+                <h2 class="section-title">My Projects</h2>
+                <div class="projects">
+                    <div class="project animate-fade-in-up">
+                        <div class="project-img">
+                            <img src="https://vitapetsanimalclinic.great-site.net/client/img/logomainpage.png" alt="Vitapets Animal Clinic">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Vitapets Animal Clinic</h3>
+                            <p class="project-description">An animal clinic website built using HTML, CSS, JavaScript, MySQL, and PHP.</p>
+                            <a href="https://vitapetsanimalclinic.great-site.net" class="project-link">View Project</a>
+                        </div>
+                    </div>
+                    <div class="project animate-fade-in-up" style="animation-delay: 0.2s;">
+                        <div class="project-img">
+                            <img src="Pictures/pedidos.png" alt="El Pedidos Mexicanos">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">El Pedidos Mexicanos</h3>
+                            <p class="project-description">A food ordering system selling mexican dishes built using JavaFX, CSS, and MySQL.</p>
+                            <a href="#" class="project-link">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
         <section id="skills">
-            <h2>Skills</h2>
-            <div class="skills">
-                <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" width="20" height="20"> Java</div>
-                <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" width="20" height="20"> Python</div>
-                <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" width="20" height="20"> HTML</div>
-                <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" width="20" height="20"> CSS</div>
-                <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" width="20" height="20"> JavaScript</div>
-                <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-plain.svg" alt="PHP" width="20" height="20"> PHP</div>
-                <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" width="20" height="20"> MySQL</div>
-                <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" width="20" height="20"> Git</div>
+            <div class="container">
+                <h2 class="section-title">Skills</h2>
+                <div class="skills">
+                    <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java"> Java</div>
+                    <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"> Python</div>
+                    <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5"> HTML</div>
+                    <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3"> CSS</div>
+                    <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript"> JavaScript</div>
+                    <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-plain.svg" alt="PHP"> PHP</div>
+                    <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL"> MySQL</div>
+                    <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git"> Git</div>
+                </div>
             </div>
         </section>
 
+        <!-- Contact Section -->
         <section id="contact">
-            <h2>Contact Me</h2>
-            <p><strong>Email:</strong> nkmerka.work@gmail.com</p>
-            <p><strong>Phone:</strong> 09604223582 / 09154946028</p>
-            <div class="social-links">
-                <a href="https://github.com/Siege365"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" width="20" height="20"> GitHub</a>
-                <a href="https://www.linkedin.com/in/nathaniel-keene-merka-b6b63336a/"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" width="20" height="20"> LinkedIn</a>
-                <a href="https://www.facebook.com/nathanielkeene.merka/"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/facebook/facebook-original.svg" alt="Facebook" width="20" height="20"> Facebook</a>
+            <div class="container">
+                <h2 class="section-title">Contact Me</h2>
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Email</h4>
+                                <p>nkmerka.work@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Phone</h4>
+                                <p>09604223582 / 09154946028</p>
+                            </div>
+                        </div>
+                        <div class="social-links">
+                            <a href="https://github.com/Siege365"><i class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/nathaniel-keene-merka-b6b63336a/"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://www.facebook.com/nathanielkeene.merka/"><i class="fab fa-facebook"></i></a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
 
     <footer>
-        <div class="container">
-            <p>&copy; 2025 Nathaniel Keene Merka. All rights reserved.</p>
+        <div class="container footer-container">
+            <div class="footer-logo">Nathaniel Keene M. Merka</div>
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Nathaniel Keene Merka. All rights reserved.</p>
+            </div>
         </div>
     </footer>
+
+    <!-- JavaScript for Mobile Menu Toggle -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+            const navLinks = document.querySelector('.nav-links');
+            
+            mobileMenuBtn.addEventListener('click', function() {
+                navLinks.classList.toggle('active');
+                const icon = mobileMenuBtn.querySelector('i');
+                if (navLinks.classList.contains('active')) {
+                    icon.classList.remove('fa-bars');
+                    icon.classList.add('fa-times');
+                } else {
+                    icon.classList.remove('fa-times');
+                    icon.classList.add('fa-bars');
+                }
+            });
+
+            // Close menu when clicking on a link
+            document.querySelectorAll('.nav-links a').forEach(link => {
+                link.addEventListener('click', function() {
+                    navLinks.classList.remove('active');
+                    const icon = mobileMenuBtn.querySelector('i');
+                    icon.classList.remove('fa-times');
+                    icon.classList.add('fa-bars');
+                });
+            });            // Add smooth scrolling to all links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    const href = this.getAttribute('href');
+                    // Handle cases where href is just "#" (top of page)
+                    if (href === "#") {
+                        window.scrollTo({
+                            top: 0,
+                            behavior: 'smooth'
+                        });
+                    } else {
+                        const target = document.querySelector(href);
+                        if (target) {
+                            window.scrollTo({
+                                top: target.offsetTop - 60,
+                                behavior: 'smooth'
+                            });
+                        }
+                    }
+                });
+            });
+
+            // Change navbar background on scroll
+            window.addEventListener('scroll', function() {
+                const navbar = document.querySelector('.navbar');
+                if (window.scrollY > 50) {
+                    navbar.style.background = 'rgba(255, 255, 255, 0.98)';
+                    navbar.style.boxShadow = '0 5px 15px rgba(0, 0, 0, 0.1)';
+                } else {
+                    navbar.style.background = 'rgba(255, 255, 255, 0.95)';
+                    navbar.style.boxShadow = '0 0 0 transparent';
+                }
+            });
+
+            // Reveal animations on scroll
+            const revealElements = document.querySelectorAll('.animate-fade-in, .animate-fade-in-up');
+            
+            function revealOnScroll() {
+                revealElements.forEach(element => {
+                    const elementTop = element.getBoundingClientRect().top;
+                    const windowHeight = window.innerHeight;
+                    
+                    if (elementTop < windowHeight - 100) {
+                        element.style.opacity = 1;
+                        element.style.transform = 'translateY(0)';
+                    }
+                });
+            }
+            
+            window.addEventListener('scroll', revealOnScroll);
+            revealOnScroll(); // Initial check on page load
+        });
+    </script>
 </body>
 </html>
