@@ -18,6 +18,7 @@
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 70px;
+    height: -webkit-fill-available;
 }
 
 body {
@@ -28,6 +29,8 @@ body {
     color: var(--dark);
     background-color: var(--light);
     overflow-x: hidden;
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
 }
 
 /* Navigation */
@@ -119,18 +122,36 @@ body {
     transition: var(--transition);
 }
 
+.close-menu-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--dark);
+    z-index: 1003;
+    transition: var(--transition);
+    display: none;
+}
+
 /* Hero Section / Landing Page */
 .hero {
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url('https://images.unsplash.com/photo-1517134191118-9d595e4c8c2b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') center/cover;
+    background-image: url('Pictures/hero-bg.jpg');
+    background-position: center center;
+    background-size: cover;
     background-attachment: fixed;
+    background-repeat: no-repeat;
     position: relative;
     color: var(--light);
     text-align: center;
     padding: 0 1rem;
+    will-change: transform; /* Optimize for animations */
 }
 
 .hero::before {
@@ -495,6 +516,41 @@ footer {
     animation: fadeInUp 1s ease-out forwards;
 }
 
+/* Loading state */
+.loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+}
+
+.loading.loaded {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.loading-spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid rgba(67, 97, 238, 0.2);
+    border-top-color: var(--primary);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
 /* Responsive Styles */
 @media (max-width: 992px) {
     .about-container {
@@ -552,6 +608,10 @@ footer {
         display: block;
     }
     
+    .close-menu-btn {
+        display: block;
+    }
+    
     .hero-title {
         font-size: 2.5rem;
     }
@@ -566,6 +626,16 @@ footer {
 }
 
 @media (max-width: 480px) {
+    .hero {
+        background-attachment: scroll !important; /* Force scroll on mobile */
+        background-position: center;
+        background-image: url('Pictures/hero-bg.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh; /* Ensure full height on mobile */
+        min-height: -webkit-fill-available; /* iOS height fix */
+    }
+    
     .section-title {
         font-size: 2rem;
     }
@@ -576,7 +646,7 @@ footer {
     
     .hero-subtitle {
         font-size: 1rem;
-    }    .btn {
+    }.btn {
         padding: 0.7rem 1.5rem;
         font-size: 0.9rem;
         margin-bottom: 0.5rem;
@@ -616,5 +686,19 @@ footer {
     
     .skills {
         justify-content: center;
+    }
+}
+
+/* Mobile Specific Background Fixes */
+@supports (-webkit-touch-callout: none) {
+    /* CSS specific to iOS devices */
+    .hero {
+        background-attachment: scroll;
+    }
+}
+
+@media (max-width: 768px) {
+    body.menu-open {
+        overflow: hidden;
     }
 }

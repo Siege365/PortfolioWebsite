@@ -4,18 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Nathaniel Keene Merka | Portfolio</title>
+    <link rel="preload" href="Pictures/hero-bg.jpg" as="image">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <meta name="theme-color" content="#4361ee">
 </head>
 <body>
+    <!-- Loading Screen -->
+    <div class="loading">
+        <div class="loading-spinner"></div>
+    </div>
+    
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container navbar-container">
             <a href="#" class="logo">
                 <img src="Pictures/avatarsmall.JPG" alt="NKM">
                 <span>Nathaniel Keene M. Merka</span>            </a>            <ul class="nav-links">
+                <button class="close-menu-btn">
+                    <i class="fas fa-times"></i>
+                </button>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
@@ -156,22 +165,51 @@
     </footer>    <!-- JavaScript for Mobile Menu Toggle -->
     <script>
         document.addEventListener('DOMContentLoaded', function() {
+            // Loading screen
+            const loadingScreen = document.querySelector('.loading');
+            
+            // Create a promise that resolves when the hero background loads
+            const heroImagePromise = new Promise(resolve => {
+                const img = new Image();
+                img.onload = resolve;
+                img.src = 'Pictures/hero-bg.jpg';
+            });
+            
+            // Remove loading screen when critical assets are loaded
+            Promise.all([
+                heroImagePromise,
+                document.fonts.ready // Wait for fonts to load
+            ]).then(() => {
+                setTimeout(() => {
+                    loadingScreen.classList.add('loaded');
+                }, 300); // Short delay for smoother transition
+            });
+            
+            // Fallback if loading takes too long
+            setTimeout(() => {
+                loadingScreen.classList.add('loaded');
+            }, 5000);
+            
+            // Mobile menu functionality
             const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
             const navLinks = document.querySelector('.nav-links');
             const body = document.body;
-            
-            mobileMenuBtn.addEventListener('click', function() {
+              mobileMenuBtn.addEventListener('click', function() {
                 navLinks.classList.toggle('active');
-                body.style.overflow = navLinks.classList.contains('active') ? 'hidden' : '';
-                const icon = mobileMenuBtn.querySelector('i');
                 if (navLinks.classList.contains('active')) {
+                    body.classList.add('menu-open');
+                    body.style.overflow = 'hidden';
+                    const icon = mobileMenuBtn.querySelector('i');
                     icon.classList.remove('fa-bars');
                     icon.classList.add('fa-times');
                 } else {
+                    body.classList.remove('menu-open');
+                    body.style.overflow = '';
+                    const icon = mobileMenuBtn.querySelector('i');
                     icon.classList.remove('fa-times');
                     icon.classList.add('fa-bars');
                 }
-            });            // Close button functionality
+            });// Close button functionality
             const closeMenuBtn = document.querySelector('.close-menu-btn');
             if (closeMenuBtn) {
                 closeMenuBtn.addEventListener('click', function() {
@@ -182,11 +220,11 @@
                     icon.classList.add('fa-bars');
                 });
             }
-            
-            // Close menu when clicking on a link
+              // Close menu when clicking on a link
             document.querySelectorAll('.nav-links a').forEach(link => {
                 link.addEventListener('click', function() {
                     navLinks.classList.remove('active');
+                    body.classList.remove('menu-open');
                     body.style.overflow = '';
                     const icon = mobileMenuBtn.querySelector('i');
                     icon.classList.remove('fa-times');
