@@ -2,11 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Nathaniel Keene Merka | Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <meta name="theme-color" content="#4361ee">
 </head>
 <body>
     <!-- Navigation -->
@@ -15,8 +16,7 @@
             <a href="#" class="logo">
                 <img src="Pictures/avatarsmall.JPG" alt="NKM">
                 <span>Nathaniel Keene M. Merka</span>
-            </a>
-            <ul class="nav-links">
+            </a>            <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
@@ -154,16 +154,16 @@
                 <p>&copy; 2025 Nathaniel Keene Merka. All rights reserved.</p>
             </div>
         </div>
-    </footer>
-
-    <!-- JavaScript for Mobile Menu Toggle -->
+    </footer>    <!-- JavaScript for Mobile Menu Toggle -->
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
             const navLinks = document.querySelector('.nav-links');
+            const body = document.body;
             
             mobileMenuBtn.addEventListener('click', function() {
                 navLinks.classList.toggle('active');
+                body.style.overflow = navLinks.classList.contains('active') ? 'hidden' : '';
                 const icon = mobileMenuBtn.querySelector('i');
                 if (navLinks.classList.contains('active')) {
                     icon.classList.remove('fa-bars');
@@ -171,18 +171,18 @@
                 } else {
                     icon.classList.remove('fa-times');
                     icon.classList.add('fa-bars');
-                }
-            });
+                }            });            
 
             // Close menu when clicking on a link
             document.querySelectorAll('.nav-links a').forEach(link => {
                 link.addEventListener('click', function() {
                     navLinks.classList.remove('active');
+                    body.style.overflow = '';
                     const icon = mobileMenuBtn.querySelector('i');
                     icon.classList.remove('fa-times');
                     icon.classList.add('fa-bars');
                 });
-            });            // Add smooth scrolling to all links
+            });// Add smooth scrolling to all links
             document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 anchor.addEventListener('click', function(e) {
                     e.preventDefault();
