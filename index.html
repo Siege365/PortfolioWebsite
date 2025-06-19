@@ -15,8 +15,7 @@
         <div class="container navbar-container">
             <a href="#" class="logo">
                 <img src="Pictures/avatarsmall.JPG" alt="NKM">
-                <span>Nathaniel Keene M. Merka</span>
-            </a>            <ul class="nav-links">
+                <span>Nathaniel Keene M. Merka</span>            </a>            <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
@@ -171,8 +170,19 @@
                 } else {
                     icon.classList.remove('fa-times');
                     icon.classList.add('fa-bars');
-                }            });            
-
+                }
+            });            // Close button functionality
+            const closeMenuBtn = document.querySelector('.close-menu-btn');
+            if (closeMenuBtn) {
+                closeMenuBtn.addEventListener('click', function() {
+                    navLinks.classList.remove('active');
+                    body.style.overflow = '';
+                    const icon = mobileMenuBtn.querySelector('i');
+                    icon.classList.remove('fa-times');
+                    icon.classList.add('fa-bars');
+                });
+            }
+            
             // Close menu when clicking on a link
             document.querySelectorAll('.nav-links a').forEach(link => {
                 link.addEventListener('click', function() {
