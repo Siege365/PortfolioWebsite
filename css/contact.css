@@ -1,0 +1,651 @@
+/* ==========================================
+   CONTACT SECTION STYLES
+   ========================================== */
+
+/* ==================== SECTION LAYOUT ==================== */
+.contact {
+    position: relative;
+    min-height: 100vh;
+    padding: var(--spacing-2xl) var(--spacing-lg);
+    background: var(--bg-dark);
+    overflow: hidden;
+}
+
+/* Decorative Background */
+.contact-decor {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.contact-decor .decor-shape {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(100px);
+    opacity: 0.12;
+}
+
+.contact-decor .shape-1 {
+    width: 500px;
+    height: 500px;
+    background: var(--secondary);
+    top: -10%;
+    left: -10%;
+}
+
+.contact-decor .shape-2 {
+    width: 400px;
+    height: 400px;
+    background: var(--accent);
+    bottom: -5%;
+    right: -5%;
+}
+
+.contact-decor .shape-3 {
+    width: 300px;
+    height: 300px;
+    background: var(--secondary);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* ==================== CONTAINER ==================== */
+.contact-container {
+    position: relative;
+    z-index: 10;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* ==================== HEADER ==================== */
+.contact-header {
+    text-align: center;
+    margin-bottom: var(--spacing-2xl);
+}
+
+.contact-title {
+    font-family: var(--font-heading);
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 800;
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: var(--spacing-sm);
+}
+
+.contact-subtitle {
+    font-size: 1.2rem;
+    color: var(--text-muted);
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+/* ==================== CONTACT CONTENT ==================== */
+.contact-content {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: var(--spacing-xl);
+    align-items: start;
+}
+
+/* ==================== CONTACT INFO (Left Side) ==================== */
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.info-card {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-md);
+    padding: var(--spacing-md);
+    background: var(--glass-bg);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid var(--glass-border);
+    border-radius: 16px;
+    transition: all 0.3s ease;
+}
+
+.info-card:hover {
+    transform: translateX(10px);
+    border-color: rgba(99, 102, 241, 0.3);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.info-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background: var(--gradient-primary);
+    border-radius: 12px;
+    flex-shrink: 0;
+}
+
+.info-icon svg {
+    width: 24px;
+    height: 24px;
+    stroke: white;
+}
+
+.info-content h4 {
+    font-family: var(--font-heading);
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    margin-bottom: 0.25rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.info-content a,
+.info-content p {
+    font-size: 1rem;
+    color: var(--text-primary);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.info-content a:hover {
+    color: var(--secondary);
+}
+
+/* ==================== SOCIAL LINKS ==================== */
+.contact-socials {
+    margin-top: var(--spacing-md);
+    padding: var(--spacing-lg);
+    background: var(--glass-bg);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid var(--glass-border);
+    border-radius: 16px;
+}
+
+.contact-socials h4 {
+    font-family: var(--font-heading);
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: var(--spacing-md);
+}
+
+.social-links {
+    display: flex;
+    gap: var(--spacing-sm);
+}
+
+.social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--glass-border);
+    border-radius: 50%;
+    color: var(--text-secondary);
+    transition: all 0.3s ease;
+}
+
+.social-links a svg {
+    width: 24px;
+    height: 24px;
+}
+
+.social-links a:hover {
+    transform: scale(1.15) translateY(-5px);
+    color: var(--text-primary);
+    box-shadow: 0 0 20px rgba(99, 102, 241, 0.5);
+}
+
+.social-link-github:hover {
+    background: #333;
+    border-color: #333;
+    box-shadow: 0 0 30px rgba(51, 51, 51, 0.6), 0 10px 30px rgba(51, 51, 51, 0.4);
+}
+
+.social-link-linkedin:hover {
+    background: #0077B5;
+    border-color: #0077B5;
+    box-shadow: 0 0 30px rgba(0, 119, 181, 0.6), 0 10px 30px rgba(0, 119, 181, 0.4);
+}
+
+.social-link-email:hover {
+    background: var(--secondary);
+    border-color: var(--secondary);
+    box-shadow: 0 0 30px rgba(99, 102, 241, 0.6), 0 10px 30px rgba(99, 102, 241, 0.4);
+}
+
+/* ==================== CONTACT FORM ==================== */
+.contact-form-wrapper {
+    background: var(--glass-bg);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid var(--glass-border);
+    border-radius: 24px;
+    padding: var(--spacing-xl);
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+}
+
+/* ==================== INPUT GROUP (Floating Labels) ==================== */
+.input-group {
+    position: relative;
+}
+
+.input-group input,
+.input-group textarea {
+    width: 100%;
+    padding: 1.25rem 1rem 0.75rem;
+    background: rgba(255, 255, 255, 0.05);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    color: var(--text-primary);
+    font-family: var(--font-body);
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    resize: vertical;
+}
+
+.input-group textarea {
+    min-height: 140px;
+}
+
+.input-group label {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    font-size: 1rem;
+    color: var(--text-muted);
+    pointer-events: none;
+    transition: all 0.3s ease;
+    background: transparent;
+    padding: 0 0.25rem;
+}
+
+/* Floating label effect */
+.input-group input:focus + label,
+.input-group input:not(:placeholder-shown) + label,
+.input-group textarea:focus + label,
+.input-group textarea:not(:placeholder-shown) + label {
+    top: -0.5rem;
+    left: 0.75rem;
+    font-size: 0.8rem;
+    color: var(--secondary);
+    background: var(--bg-dark);
+    padding: 0 0.5rem;
+}
+
+/* Focus state */
+.input-group input:focus,
+.input-group textarea:focus {
+    outline: none;
+    border-color: var(--secondary);
+    box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.15);
+    background: rgba(99, 102, 241, 0.05);
+}
+
+/* Input highlight bar */
+.input-highlight {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: var(--gradient-primary);
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+    border-radius: 0 0 12px 12px;
+}
+
+.input-group input:focus ~ .input-highlight,
+.input-group textarea:focus ~ .input-highlight {
+    width: calc(100% - 4px);
+}
+
+/* Validation states */
+.input-group.error input,
+.input-group.error textarea {
+    border-color: #ef4444;
+}
+
+.input-group.error label {
+    color: #ef4444;
+}
+
+.input-group.success input,
+.input-group.success textarea {
+    border-color: var(--accent);
+}
+
+/* ==================== SUBMIT BUTTON ==================== */
+.submit-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    width: 100%;
+    padding: 1.25rem 2rem;
+    background: var(--gradient-primary);
+    border: none;
+    border-radius: 12px;
+    color: white;
+    font-family: var(--font-body);
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.submit-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.2),
+        transparent
+    );
+    transition: left 0.5s ease;
+}
+
+.submit-button:hover::before {
+    left: 100%;
+}
+
+.submit-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 40px rgba(99, 102, 241, 0.4);
+}
+
+.submit-button:active {
+    transform: translateY(-1px);
+}
+
+.button-icon svg {
+    width: 20px;
+    height: 20px;
+    transition: transform 0.3s ease;
+}
+
+.submit-button:hover .button-icon svg {
+    transform: translateX(5px) translateY(-5px);
+}
+
+/* Loading state */
+.button-loader {
+    display: none;
+}
+
+.button-loader svg {
+    width: 24px;
+    height: 24px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.submit-button.loading .button-text,
+.submit-button.loading .button-icon {
+    display: none;
+}
+
+.submit-button.loading .button-loader {
+    display: block;
+}
+
+.submit-button.loading {
+    pointer-events: none;
+    opacity: 0.8;
+}
+
+.submit-button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+}
+
+/* ==================== TOAST NOTIFICATIONS ==================== */
+#toast-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.toast {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 1rem 1.5rem;
+    border-radius: 12px;
+    color: white;
+    font-weight: 500;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+    animation: toastSlideIn 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    max-width: 350px;
+}
+
+.toast.success {
+    background: linear-gradient(135deg, #10b981, #059669);
+}
+
+.toast.error {
+    background: linear-gradient(135deg, #ef4444, #dc2626);
+}
+
+.toast.info {
+    background: linear-gradient(135deg, #3b82f6, #2563eb);
+}
+
+.toast-icon {
+    flex-shrink: 0;
+}
+
+.toast-icon svg {
+    width: 24px;
+    height: 24px;
+}
+
+.toast-message {
+    flex: 1;
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+.toast-close {
+    background: none;
+    border: none;
+    color: white;
+    opacity: 0.7;
+    cursor: pointer;
+    padding: 4px;
+    transition: opacity 0.2s;
+}
+
+.toast-close:hover {
+    opacity: 1;
+}
+
+.toast-close svg {
+    width: 18px;
+    height: 18px;
+}
+
+@keyframes toastSlideIn {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.toast.hide {
+    animation: toastSlideOut 0.3s ease forwards;
+}
+
+@keyframes toastSlideOut {
+    from {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+}
+
+/* ==================== SCROLL REVEAL ==================== */
+.contact-header.reveal,
+.contact-info.reveal,
+.contact-form-wrapper.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.contact-header.revealed,
+.contact-info.revealed,
+.contact-form-wrapper.revealed {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+/* Fallback: Show immediately if JS doesn't load */
+.contact-header:not(.reveal),
+.contact-info:not(.reveal),
+.contact-form-wrapper:not(.reveal) {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.contact-info.revealed {
+    transition-delay: 0.2s;
+}
+
+.contact-form-wrapper.revealed {
+    transition-delay: 0.4s;
+}
+
+/* ==================== RESPONSIVE DESIGN ==================== */
+@media (max-width: 900px) {
+    .contact-content {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+    }
+    
+    .contact-info {
+        order: 2;
+    }
+    
+    .contact-form-wrapper {
+        order: 1;
+    }
+    
+    .social-links {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .contact {
+        padding: var(--spacing-xl) var(--spacing-md);
+    }
+    
+    .contact-title {
+        font-size: 1.75rem;
+    }
+    
+    .contact-form-wrapper {
+        padding: var(--spacing-lg);
+    }
+    
+    .info-card {
+        padding: var(--spacing-sm);
+    }
+    
+    .info-icon {
+        width: 44px;
+        height: 44px;
+    }
+    
+    .social-link {
+        width: 48px;
+        height: 48px;
+    }
+    
+    #toast-container {
+        left: 10px;
+        right: 10px;
+    }
+    
+    .toast {
+        max-width: none;
+    }
+}
+
+/* ==================== ACCESSIBILITY ==================== */
+@media (prefers-reduced-motion: reduce) {
+    .toast,
+    .info-card,
+    .social-link,
+    .submit-button,
+    .input-group input,
+    .input-group textarea,
+    .input-group label {
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+    }
+    
+    .contact-header.reveal,
+    .contact-info.reveal,
+    .contact-form-wrapper.reveal {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+/* Focus Styles */
+.input-group input:focus-visible,
+.input-group textarea:focus-visible {
+    outline: 2px solid var(--secondary);
+    outline-offset: 2px;
+}
+
+.submit-button:focus-visible {
+    outline: 2px solid white;
+    outline-offset: 4px;
+}
+
+.social-link:focus-visible {
+    outline: 2px solid var(--secondary);
+    outline-offset: 4px;
+}

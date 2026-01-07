@@ -2,292 +2,1080 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Nathaniel Keene Merka | Portfolio</title>
-    <link rel="preload" href="Pictures/hero-bg.jpg" as="image">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <meta name="theme-color" content="#4361ee">
-    <!-- Favicons -->
-    <link rel="icon" href="Pictures/avatarsmall.JPG" type="image/jpeg">
-    <link rel="apple-touch-icon" href="Pictures/avatarsmall.JPG">
-    <link rel="shortcut icon" href="Pictures/avatarsmall.JPG">
-</head>
-<body>
-    <!-- Loading Screen -->
-    <div class="loading">
-        <div class="loading-spinner"></div>
-    </div>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nathaniel Keene M. Merka - Aspiring Software Developer crafting elegant solutions with clean code and modern design. Specializing in Python, JavaScript, PHP, and modern web frameworks.">
+    <meta name="keywords" content="software developer, web developer, full-stack, portfolio, Python, JavaScript, Django, PHP, Java">
+    <meta name="author" content="Nathaniel Keene M. Merka">
+    <meta name="theme-color" content="#0a0a0f">
     
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container navbar-container">
-            <a href="#" class="logo">
-                <img src="Pictures/avatarsmall.JPG" alt="NKM">
-                <span>Nathaniel Keene M. Merka</span>           
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Nathaniel Keene M. Merka | Software Developer Portfolio">
+    <meta property="og:description" content="Aspiring Software Developer crafting elegant solutions with clean code and modern design.">
+    <meta property="og:url" content="https://nathanielmerka.dev">
+    <meta property="og:site_name" content="Nathaniel Keene M. Merka Portfolio">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Nathaniel Keene M. Merka | Software Developer">
+    <meta name="twitter:description" content="Aspiring Software Developer crafting elegant solutions with clean code and modern design.">
+    
+    <title>Nathaniel Keene M. Merka | Software Developer</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="icon" type="image/JPG" href="Pictures/avatarsmall.JPG">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- Skip to Main Content (Accessibility) -->
+    <a href="#hero" class="skip-link">Skip to main content</a>
+    
+    <!-- Page Loader -->
+    <div id="loader" class="loader">
+        <div class="loader-content">
+            <div class="loader-spinner"></div>
+            <span class="loader-text">Loading</span>
+        </div>
+    </div>
+
+    <!-- Fixed Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="navbar-container">
+            <a href="#hero" class="navbar-logo">
+                <span class="logo-text">NKM</span>
+                <span class="logo-dot"></span>
             </a>
-            <ul class="nav-links">
-                <button class="close-menu-btn"></button>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
+            
+            <ul class="navbar-menu" id="navbar-menu">
+                <li><a href="#hero" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#certificates" class="nav-link">Certificates</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
-            <button class="mobile-menu-btn">
-                <i class="fas fa-bars"></i>
-            </button>
+            
+            <div class="navbar-actions">
+                <button class="navbar-toggle" id="navbar-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </div>
         </div>
     </nav>
 
-    <!-- Hero/Landing Section -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h1 class="hero-title">Nathaniel Keene M. Merka</h1>
-            <p class="hero-subtitle">Student Developer & Problem Solver</p>
-            <div class="hero-buttons">
-                <a href="#projects" class="btn btn-primary">View My Work</a>
-                <a href="#contact" class="btn btn-outline">Get In Touch</a>
+    <!-- Particle Canvas Background -->
+    <canvas id="particles-canvas"></canvas>
+    
+    <!-- Floating Theme Toggle -->
+    <button class="floating-theme-toggle" id="theme-toggle" aria-label="Toggle dark/light mode">
+        <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"/>
+            <line x1="12" y1="1" x2="12" y2="3"/>
+            <line x1="12" y1="21" x2="12" y2="23"/>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+            <line x1="1" y1="12" x2="3" y2="12"/>
+            <line x1="21" y1="12" x2="23" y2="12"/>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+        </svg>
+        <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+        </svg>
+    </button>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- ==================== HERO SECTION ==================== -->
+    <section id="hero" class="hero">
+        <!-- Decorative Background -->
+        <div class="hero-decor">
+            <div class="decor-shape shape-1"></div>
+            <div class="decor-shape shape-2"></div>
+            <div class="decor-shape shape-3"></div>
+        </div>
+        <!-- Floating Social Links - Top Right -->
+        <div class="social-links-floating">
+            <a href="https://github.com/Siege365" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile" class="social-link">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                </svg>
+                <span class="social-tooltip">GitHub</span>
+            </a>
+            <a href="https://www.linkedin.com/in/nathaniel-keene-merka-b6b63336a/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile" class="social-link">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                </svg>
+                <span class="social-tooltip">LinkedIn</span>
+            </a>
+            <a href="#contact" aria-label="Send Email" class="social-link">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                    <path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/>
+                </svg>
+                <span class="social-tooltip">Email</span>
+            </a>
+        </div>
+
+        <!-- Hero Content Container -->
+        <div class="hero-container">
+            <!-- Hero Content -->
+            <div class="hero-content">
+                <!-- Avatar -->
+                <div class="hero-avatar-wrapper">
+                    <div class="hero-avatar">
+                        <img src="Pictures/avatarsmall.JPG" alt="Nathaniel Keene M. Merka" loading="eager">
+                    </div>
+                    <div class="avatar-ring"></div>
+                    <div class="avatar-glow"></div>
+                </div>
+
+                <!-- Name with Character Animation -->
+                <h1 class="hero-name" data-text="Nathaniel Keene M. Merka"><span class="name-char">N</span><span class="name-char">a</span><span class="name-char">t</span><span class="name-char">h</span><span class="name-char">a</span><span class="name-char">n</span><span class="name-char">i</span><span class="name-char">e</span><span class="name-char">l</span><span class="name-char">&nbsp;</span><span class="name-char">K</span><span class="name-char">e</span><span class="name-char">e</span><span class="name-char">n</span><span class="name-char">e</span><span class="name-char">&nbsp;</span><span class="name-char">M</span><span class="name-char">.</span><span class="name-char">&nbsp;</span><span class="name-char">M</span><span class="name-char">e</span><span class="name-char">r</span><span class="name-char">k</span><span class="name-char">a</span></h1>
+
+                <!-- Title Badge -->
+                <div class="hero-title-badge">
+                    <span class="badge-dot"></span>
+                    <span class="badge-text">Aspiring Software Developer</span>
+                </div>
+
+                <!-- Tagline -->
+                <p class="hero-tagline">
+                    <span class="tagline-word">Turning</span>
+                    <span class="tagline-word">caffeine</span>
+                    <span class="tagline-word">into</span>
+                    <span class="tagline-word">code,</span>
+                    <span class="tagline-word">and</span>
+                    <span class="tagline-word">ideas</span>
+                    <span class="tagline-word">into</span>
+                    <span class="tagline-word highlight">reality.</span>
+                </p>
+
+                <!-- Description -->
+                <p class="hero-description">
+                    Aspiring Software Developer crafting classic solutions with clean code and cooked design💀. Currently building my future, one commit at a time.
+                </p>
+
+                <!-- CTA Button -->
+                <a href="#projects" class="cta-button">
+                    <span class="cta-text">View My Works</span>
+                    <span class="cta-icon">🚀</span>
+                    <div class="cta-shine"></div>
+                </a>
+
+                <!-- Bottom Social Links -->
+                <div class="social-links-bottom">
+                    <a href="https://github.com/Siege365" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="social-icon-btn">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/nathaniel-keene-merka-b6b63336a/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="social-icon-btn">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                        </svg>
+                    </a>
+                    <a href="#contact" aria-label="Email" class="social-icon-btn">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator">
+            <span class="scroll-text">Scroll Down</span>
+            <div class="scroll-arrow">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 5v14M5 12l7 7 7-7"/>
+                </svg>
+            </div>
+        </div>
+
+        <!-- Decorative Elements -->
+        <div class="hero-decor">
+            <div class="decor-circle decor-1"></div>
+            <div class="decor-circle decor-2"></div>
+            <div class="decor-circle decor-3"></div>
+        </div>
+    </section>
+
+    <!-- ==================== ABOUT SECTION ==================== -->
+    <section id="about" class="about">
+        <!-- Decorative Background -->
+        <div class="about-decor">
+            <div class="decor-shape shape-1"></div>
+            <div class="decor-shape shape-2"></div>
+        </div>
+
+        <div class="about-container">
+            <!-- Section Header -->
+            <header class="about-header reveal">
+                <h2 class="about-title">About Me</h2>
+                <p class="about-subtitle">Get to know the developer behind the code</p>
+            </header>
+
+            <!-- About Content -->
+            <div class="about-content">
+                <!-- Profile Photo -->
+                <div class="about-photo-wrapper reveal">
+                    <div class="about-photo-border"></div>
+                    <div class="about-photo">
+                        <img src="Pictures/avatarsmall.JPG" alt="Nathaniel Keene M. Merka">
+                    </div>
+                    <div class="about-photo-glow"></div>
+                </div>
+
+                <!-- About Text -->
+                <div class="about-text">
+                    <p class="about-greeting reveal">
+                        Hi there! I'm <span class="highlight">Nathaniel Keene M. Merka</span> 👋
+                    </p>
+                    
+                    <p class="about-description reveal">
+                        I'm a <span class="emphasis">3rd year Computer Science student</span> 
+                        with a love for building cool, user-focused digital experiences. 
+                        My journey in software development started with curiosity of how applications and websites work 
+                        and then has evolved into a deep commitment to crafting clean, efficient, and impactful solutions.
+                    </p>
+                    
+                    <p class="about-description reveal">
+                        When I start building a project, I often rely on templates or frameworks to speed things up, 
+                        especially since <span class="emphasis">frontend development</span> isn’t my strongest skill. Having that starting point helps me
+                        get into my groove, and once I do, ideas begin to flow and the vision of the app becomes clearer as I build.
+                    </p>
+
+                     <p class="about-description reveal">
+                        I’m naturally drawn to <span class="emphasis">backend development</span> because I enjoy logical thinking, problem-solving, 
+                        and working with how things function behind the scenes. Even so, I strongly believe in continuous 
+                        learning and pushing myself beyond my comfort zone. With every project, I aim to improve my skills, 
+                        explore new ideas, and grow as a developer one step at a time.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Statistics Cards -->
+            <div class="about-stats">
+                <div class="stat-card">
+                    <span class="stat-icon">🎓</span>
+                    <span class="stat-number">3rd</span>
+                    <span class="stat-label">Year Student</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-icon">💻</span>
+                    <span class="stat-number">2+</span>
+                    <span class="stat-label">Years Experience</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-icon">📦</span>
+                    <span class="stat-number">5+</span>
+                    <span class="stat-label">Projects Completed</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-icon">🛠️</span>
+                    <span class="stat-number">5+</span>
+                    <span class="stat-label">Technologies</span>
+                </div>
             </div>
         </div>
     </section>
 
-    <main>
-        <!-- About Section -->
-        <section id="about">
-            <div class="container">
-                <h2 class="section-title">About Me</h2>
-                <div class="about-container">
-                    <div class="about-img animate-fade-in">
-                        <img src="Pictures/avatarsmall.JPG" alt="Nathaniel Keene Merka">
-                    </div>
-                    <div class="about-text animate-fade-in-up" style="text-align: justify;">
-                        <p>Hello! I'm a passionate and driven student developer currently pursuing a Bachelor of Science in Computer Science at the University of Mindanao, Davao City. I specialize in building responsive, user-friendly websites and turning complex problems into elegant solutions.</p>
-                        <p>While I'm still early in my journey, I make up for it with a strong work ethic, fast learning, and a deep commitment to mastering my craft. I've already built real-world projects using Java, Python, PHP, HTML, CSS, JavaScript, and MySQL and I'm just getting started.</p>    
-                        <p>I'm actively seeking opportunities where I can contribute, grow, and stand out by delivering quality work and constantly leveling up.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <!-- ==================== PROJECTS SECTION ==================== -->
+    <section id="projects" class="projects">
+        <!-- Decorative Background -->
+        <div class="projects-decor">
+            <div class="decor-shape shape-1"></div>
+            <div class="decor-shape shape-2"></div>
+            <div class="decor-shape shape-3"></div>
+        </div>
 
-        <!-- Projects Section -->
-        <section id="projects">
-            <div class="container">
-                <h2 class="section-title">My Projects</h2>
-                <div class="projects">
-                    <div class="project animate-fade-in-up">
-                        <div class="project-img">
-                            <img src="https://vitapetsanimalclinic.great-site.net/client/img/logomainpage.png" alt="Vitapets Animal Clinic">
-                        </div>
-                        <div class="project-content">
-                            <h3 class="project-title">Vitapets Animal Clinic</h3>
-                            <p class="project-description">An animal clinic website built using HTML, CSS, JavaScript, MySQL, and PHP.</p>
-                            <a href="https://vitapetsanimalclinic.great-site.net" class="project-link">View Project</a>
+        <div class="projects-container">
+            <!-- Section Header -->
+            <header class="projects-header reveal">
+                <h2 class="projects-title">Featured Projects</h2>
+                <p class="projects-subtitle">A showcase of my work from full-stack apps to creative experiments</p>
+                <div class="projects-caution">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/>
+                        <line x1="12" y1="9" x2="12" y2="13"/>
+                        <line x1="12" y1="17" x2="12.01" y2="17"/>
+                    </svg>
+                    <span>Some deployed projects may experience bugs or downtime due to free-tier hosting limitations. :<</span>
+                </div>
+            </header>
+
+            <!-- Projects Grid -->
+            <div class="projects-grid">
+                <!-- Project 1: Vitapets Animal Clinic -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <div class="project-icon">
+                            <img src="Pictures/logobgremove.png"  loading="lazy" width="250" height="250">
                         </div>
                     </div>
-                    <div class="project animate-fade-in-up" style="animation-delay: 0.2s;">
-                        <div class="project-img">
-                            <img src="Pictures/pedidos.png" alt="El Pedidos Mexicanos">
-                        </div>
-                        <div class="project-content">
-                            <h3 class="project-title">El Pedidos Mexicanos</h3>
-                            <p class="project-description">A food ordering system selling mexican dishes built using JavaFX, CSS, and MySQL.</p>
-                            <a href="#" class="project-link">View Project</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Skills Section -->
-        <section id="skills">
-            <div class="container">
-                <h2 class="section-title">Skills</h2>
-                <div class="skills">
-                    <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java"> Java</div>
-                    <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"> Python</div>
-                    <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5"> HTML</div>
-                    <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3"> CSS</div>
-                    <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript"> JavaScript</div>
-                    <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-plain.svg" alt="PHP"> PHP</div>
-                    <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL"> MySQL</div>
-                    <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git"> Git</div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact">
-            <div class="container">
-                <h2 class="section-title">Contact Me</h2>
-                <div class="contact-container">
-                    <div class="contact-info">
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-envelope"></i>
+                    <div class="project-content">
+                        <h3 class="project-title">Vitapets Animal Clinic</h3>
+                        <p class="project-description">A full-stack veterinary clinic management system designed to handle real-world clinic workflows such as client records, appointments, and data-driven operations.</p>
+                        <a href="#" class="see-more-link">See More →</a>
+                        <div class="project-tags">
+                            <div class="tech-pill">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">
+                                <span>HTML</span>
                             </div>
-                            <div class="contact-text">
-                                <h4>Email</h4>
-                                <p>nkmerka.work@gmail.com</p>
+                            <div class="tech-pill">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS">
+                                <span>CSS</span>
+                            </div>
+                            <div class="tech-pill">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="tech-pill">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP">
+                                <span>PHP</span>
+                            </div>
+                            <div class="tech-pill">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL">
+                                <span>MySQL</span>
                             </div>
                         </div>
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-phone"></i>
-                            </div>
-                            <div class="contact-text">
-                                <h4>Phone</h4>
-                                <p>09604223582 / 09154946028</p>
-                            </div>
-                        </div>
-                        <div class="social-links">
-                            <a href="https://github.com/Siege365"><i class="fab fa-github"></i></a>
-                            <a href="https://www.linkedin.com/in/nathaniel-keene-merka-b6b63336a/"><i class="fab fa-linkedin"></i></a>
-                            <a href="https://www.facebook.com/nathanielkeene.merka/"><i class="fab fa-facebook"></i></a>
+                        <div class="project-actions">
+                            <a href="https://github.com/Siege365/VitapetsAnimalClinic" class="project-button primary">
+                                <span>View Project</span>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                                </svg>
+                            </a>
+                            <a href="https://vitapetsanimalclinic.great-site.net"class="project-button secondary">
+                                <span>Live Demo</span>
+                            </a>
                         </div>
                     </div>
-                </div>
-            </div>
-        </section>
-    </main>
+                </article>
 
-    <footer>
-        <div class="container footer-container">
-            <div class="footer-logo">Nathaniel Keene M. Merka</div>
-            <div class="footer-links">
-                <a href="#home">Home</a>
-                <a href="#about">About</a>
-                <a href="#projects">Projects</a>
-                <a href="#skills">Skills</a>
-                <a href="#contact">Contact</a>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Nathaniel Keene Merka. All rights reserved.</p>
+                <!-- Project 2: El Pedidos Mexicanos -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <div class="project-icon">
+                            <img src="Pictures/pedidos.png"  loading="lazy" width="250" height="250">
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">El Pedidos Mexicanos</h3>
+                        <p class="project-description">A desktop-based food ordering system developed using JavaFX and MySQL, focused on clean UI design and efficient order management for a restaurant-style workflow.</p>
+                        <a href="#" class="see-more-link">See More →</a>
+                        <div class="project-tags">
+                            <div class="tech-pill">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java">
+                                <span>Java</span>
+                            </div>
+                             <div class="tech-pill">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS">
+                                <span>CSS</span>
+                            </div>
+                            <div class="tech-pill">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL">
+                                <span>MySQL</span>
+                            </div>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://github.com/Siege365/FoodTruckCompile" class="project-button primary">
+                                <span>View Project</span>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="project-button secondary">
+                                <span>Live Demo</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 3: ShopPerl -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <div class="project-icon">
+                            <img src="Pictures/shopping-bag.svg"  loading="lazy" width="200" height="200">
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">ShopPerl</h3>
+                        <p class="project-description">A modern e-commerce platform built with Perl and Mojolicious, proving that a battle-tested language can still power clean, scalable web applications.</p>
+                        <a href="#" class="see-more-link">See More →</a>
+                        <div class="project-tags">
+                            <div class="tech-pill">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/perl/perl-original.svg" alt="Perl">
+                                <span>Perl</span>
+                            </div>
+                            <div class="tech-pill">
+                                <img src="https://avatars.githubusercontent.com/u/2388868?s=200&v=4" alt="Mojolicious">
+                                <span>Mojolicious</span>
+                            </div>
+                            <div class="tech-pill">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">
+                                <span>HTML</span>
+                            </div>
+                            <div class="tech-pill">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS">
+                                <span>CSS</span>
+                            </div>
+                            <div class="tech-pill">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="tech-pill">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL">
+                                <span>MySQL</span>
+                            </div>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://github.com/Siege365/E-Commerce-Order-Processing-System-Perl" class="project-button primary">
+                                <span>View Project</span>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                                </svg>
+                            </a>
+                            <a href="https://ecommerce-perl-nkm.onrender.com" class="project-button secondary">
+                                <span>Live Demo</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 4: ShopPy -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <!-- Python Logo SVG -->
+                        <svg class="project-logo" viewBox="0 0 256 255" width="300" height="300" preserveAspectRatio="xMidYMid meet" fill="none">
+                            <defs>
+                                <linearGradient id="pythonBlue" x1="12.959%" x2="79.639%" y1="12.039%" y2="78.201%">
+                                    <stop offset="15%" stop-color="#4C51BF"/>
+                                    <stop offset="80%" stop-color="#EEF2FF"/>
+                                    <stop offset="90%" stop-color="#FFFFFF" stop-opacity="0.95"/>
+                                </linearGradient>
+                                <linearGradient id="pythonYellow" x1="19.128%" x2="90.742%" y1="20.579%" y2="88.429%">
+                                    <stop offset="15%" stop-color="#6B46C1"/>
+                                    <stop offset="80%" stop-color="#E6DBFF"/>
+                                    <stop offset="90%" stop-color="#FFFFFF" stop-opacity="0.9"/>
+                                </linearGradient>
+                            </defs>
+                            <path fill="url(#pythonBlue)" d="M126.916.072c-64.832 0-60.784 28.115-60.784 28.115l.072 29.128h61.868v8.745H41.631S.145 61.355.145 126.77c0 65.417 36.21 63.097 36.21 63.097h21.61v-30.356s-1.165-36.21 35.632-36.21h61.362s34.475.557 34.475-33.319V33.97S194.67.072 126.916.072zM92.802 19.66a11.12 11.12 0 0111.13 11.13 11.12 11.12 0 01-11.13 11.13 11.12 11.12 0 01-11.13-11.13 11.12 11.12 0 0111.13-11.13z"/>
+                            <path fill="url(#pythonYellow)" d="M128.757 254.126c64.832 0 60.784-28.115 60.784-28.115l-.072-29.127H127.6v-8.745h86.441s41.486 4.705 41.486-60.712c0-65.416-36.21-63.096-36.21-63.096h-21.61v30.355s1.165 36.21-35.632 36.21h-61.362s-34.475-.557-34.475 33.32v56.013s-5.235 33.897 62.518 33.897zm34.114-19.586a11.12 11.12 0 01-11.13-11.13 11.12 11.12 0 0111.13-11.131 11.12 11.12 0 0111.13 11.13 11.12 11.12 0 01-11.13 11.13z"/>
+                        </svg>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">ShopPy</h3>
+                        <p class="project-description">A production-ready e-commerce platform built with Python and Django, leveraging Django's ORM, authentication, and admin system for a maintainable online store.</p>
+                        <a href="#" class="see-more-link">See More →</a>
+                        <div class="project-tags">
+                            <div class="tech-pill">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+                                <span>Python</span>
+                            </div>
+                            <div class="tech-pill">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" alt="Django">
+                                <span>Django</span>
+                            </div>
+                            <div class="tech-pill">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">
+                                <span>HTML</span>
+                            </div>
+                            <div class="tech-pill">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS">
+                                <span>CSS</span>
+                            </div>
+                            <div class="tech-pill">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="tech-pill">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL">
+                                <span>MySQL</span>
+                            </div>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://github.com/Siege365/E-Commerce-Order-Processing-System-Python" class="project-button primary">
+                                <span>View Project</span>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                                </svg>
+                            </a>
+                            <a href="https://ecommerce-shoppy-nkm.onrender.com" class="project-button secondary">
+                                <span>Live Demo</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                <!-- Project 5: Breast Cancer Diagnosis Predictor -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <div class="project-icon">
+                            <img src="https://1000logos.net/wp-content/uploads/2022/04/Breast-Cancer-Logo.png"  loading="lazy" width="300" height="300">
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Breast Cancer Diagnosis Predictor</h3>
+                        <p class="project-description">A machine learning web application that predicts breast cancer diagnosis based on cell nucleus measurements. Utilizes a Neural Network classifier trained on labeled data to achieve high diagnostic accuracy.</p>
+                       <a href="" class="see-more-link">See More →</a>
+                        <div class="project-tags">
+                            <div class="tech-pill">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+                                <span>Python</span>
+                            </div>
+                            <div class="tech-pill">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/streamlit/streamlit-original.svg" alt="Streamlit">
+                                <span>Streamlit</span>
+                            </div>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://github.com/Siege365/MachineLearning" class="project-button primary">
+                                <span>View Project</span>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                                </svg>
+                            </a>
+                            <a href="https://breast-cancer-classifyy.streamlit.app" class="project-button secondary">
+                                <span>Live Demo</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 6: Abstrack Fitness Gym Management System -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <div class="project-icon">
+                            <img src="Pictures/abstractlogotransparent.png"  loading="lazy" width="120" height="120">
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Abstrack Fitness Gym Management System</h3>
+                        <p class="project-description">A large-scale client web application consisting of five integrated subsystems: Member Management, 
+                        Scheduling Management, Payment and Billing, Reporting and Analytics, and Inventory Management.
+                        Built using the Laravel framework with Laragon as the local development environment. The project is currently in the development phase.
+                        </p>
+                        <a href="#" class="see-more-link">See More →</a>
+                        <div class="project-tags">
+                            <div class="tech-pill">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg" alt="Laravel">
+                                <span>Laravel</span>
+                            </div>
+                            <div class="tech-pill">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP">
+                                <span>PHP</span>
+                            </div>
+                            <div class="tech-pill">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL">
+                                <span>MySQL</span>
+                            </div>
+                            <div class="tech-pill">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="tech-pill">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap">
+                                <span>Bootstrap</span>
+                            </div>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://www.figma.com/proto/05Cp6mYLrYNdwT8W4VCu4I/AbsTrack-Fitness-Gym?page-id=813%3A202&node-id=823-14133&p=f&viewport=-4253%2C-5931%2C0.37&t=qBnRblly0CzC0ba9-1&scaling=min-zoom&content-scaling=fixed" class="project-button primary">
+                                <span>View Project</span>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                                </svg>
+                            </a>
+                            <span class="project-button secondary disabled" title="Project in development">
+                                <span>In Development</span>
+                            </span>
+                        </div>
+                    </div>
+                </article>
             </div>
         </div>
-    </footer>    <!-- JavaScript for Mobile Menu Toggle -->
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            // Loading screen
-            const loadingScreen = document.querySelector('.loading');
-            
-            // Create a promise that resolves when the hero background loads
-            const heroImagePromise = new Promise(resolve => {
-                const img = new Image();
-                img.onload = resolve;
-                img.src = 'Pictures/hero-bg.jpg';
-            });
-            
-            // Remove loading screen when critical assets are loaded
-            Promise.all([
-                heroImagePromise,
-                document.fonts.ready // Wait for fonts to load
-            ]).then(() => {
-                setTimeout(() => {
-                    loadingScreen.classList.add('loaded');
-                }, 300); // Short delay for smoother transition
-            });
-            
-            // Fallback if loading takes too long
-            setTimeout(() => {
-                loadingScreen.classList.add('loaded');
-            }, 5000);
-            
-            // Mobile menu functionality
-            const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
-            const navLinks = document.querySelector('.nav-links');
-            const body = document.body;
-              mobileMenuBtn.addEventListener('click', function() {
-                navLinks.classList.toggle('active');
-                if (navLinks.classList.contains('active')) {
-                    body.classList.add('menu-open');
-                    body.style.overflow = 'hidden';
-                    const icon = mobileMenuBtn.querySelector('i');
-                    icon.classList.remove('fa-bars');
-                    icon.classList.add('fa-times');
-                } else {
-                    body.classList.remove('menu-open');
-                    body.style.overflow = '';
-                    const icon = mobileMenuBtn.querySelector('i');
-                    icon.classList.remove('fa-times');
-                    icon.classList.add('fa-bars');
-                }
-            });// Close button functionality
-            const closeMenuBtn = document.querySelector('.close-menu-btn');
-            if (closeMenuBtn) {
-                closeMenuBtn.addEventListener('click', function() {
-                    navLinks.classList.remove('active');
-                    body.style.overflow = '';
-                    const icon = mobileMenuBtn.querySelector('i');
-                    icon.classList.remove('fa-times');
-                    icon.classList.add('fa-bars');
-                });
-            }
-              // Close menu when clicking on a link
-            document.querySelectorAll('.nav-links a').forEach(link => {
-                link.addEventListener('click', function() {
-                    navLinks.classList.remove('active');
-                    body.classList.remove('menu-open');
-                    body.style.overflow = '';
-                    const icon = mobileMenuBtn.querySelector('i');
-                    icon.classList.remove('fa-times');
-                    icon.classList.add('fa-bars');
-                });
-            });// Add smooth scrolling to all links
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    
-                    const href = this.getAttribute('href');
-                    // Handle cases where href is just "#" (top of page)
-                    if (href === "#") {
-                        window.scrollTo({
-                            top: 0,
-                            behavior: 'smooth'
-                        });
-                    } else {
-                        const target = document.querySelector(href);
-                        if (target) {
-                            window.scrollTo({
-                                top: target.offsetTop - 60,
-                                behavior: 'smooth'
-                            });
-                        }
-                    }
-                });
-            });
+    </section>
 
-            // Change navbar background on scroll
-            window.addEventListener('scroll', function() {
-                const navbar = document.querySelector('.navbar');
-                if (window.scrollY > 50) {
-                    navbar.style.background = 'rgba(255, 255, 255, 0.98)';
-                    navbar.style.boxShadow = '0 5px 15px rgba(0, 0, 0, 0.1)';
-                } else {
-                    navbar.style.background = 'rgba(255, 255, 255, 0.95)';
-                    navbar.style.boxShadow = '0 0 0 transparent';
-                }
-            });
+    <!-- ==================== SKILLS SECTION ==================== -->
+    <section id="skills" class="skills">
+        <!-- Decorative Background -->
+        <div class="skills-decor">
+            <div class="decor-shape shape-1"></div>
+            <div class="decor-shape shape-2"></div>
+        </div>
 
-            // Reveal animations on scroll
-            const revealElements = document.querySelectorAll('.animate-fade-in, .animate-fade-in-up');
-            
-            function revealOnScroll() {
-                revealElements.forEach(element => {
-                    const elementTop = element.getBoundingClientRect().top;
-                    const windowHeight = window.innerHeight;
+        <div class="skills-container">
+            <!-- Section Header -->
+            <header class="skills-header reveal">
+                <h2 class="skills-title">Technical Skills</h2>
+                <p class="skills-subtitle">My technical arsenal for building modern web applications</p>
+            </header>
+
+            <!-- Skills Categories -->
+            <div class="skills-categories">
+                <!-- Programming Languages -->
+                <article class="skill-category reveal">
+                    <div class="category-header">
+                        <span class="category-icon">💻</span>
+                        <h3 class="category-title">Programming Languages</h3>
+                    </div>
+                    <div class="skills-grid">
+                        <div class="skill-item javascript">
+                            <img class="skill-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+                            <span class="skill-name">JavaScript</span>
+                        </div>
+                        <div class="skill-item python">
+                            <img class="skill-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+                            <span class="skill-name">Python</span>
+                        </div>
+                        <div class="skill-item php">
+                            <img class="skill-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP">
+                            <span class="skill-name">PHP</span>
+                        </div>
+                        <div class="skill-item java">
+                            <img class="skill-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java">
+                            <span class="skill-name">Java</span>
+                        </div>
+                        <div class="skill-item perl">
+                            <img class="skill-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/perl/perl-original.svg" alt="Perl">
+                            <span class="skill-name">Perl</span>
+                        </div>
+                        <div class="skill-item sql">
+                            <img class="skill-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azuresqldatabase/azuresqldatabase-original.svg" alt="SQL">
+                            <span class="skill-name">SQL</span>
+                        </div>
+                        <div class="skill-item html">
+                            <img class="skill-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
+                            <span class="skill-name">HTML5</span>
+                        </div>
+                        <div class="skill-item css">
+                            <img class="skill-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
+                            <span class="skill-name">CSS3</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Frameworks & Libraries -->
+                <article class="skill-category reveal">
+                    <div class="category-header">
+                        <span class="category-icon">📚</span>
+                        <h3 class="category-title">Frameworks & Libraries</h3>
+                    </div>
+                    <div class="skills-grid">
+                        <div class="skill-item laravel">
+                            <img class="skill-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg" alt="Laravel">
+                            <span class="skill-name">Laravel</span>
+                        </div>
+                        <div class="skill-item django">
+                            <img class="skill-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" alt="Django">
+                            <span class="skill-name">Django</span>
+                        </div>
+                        <div class="skill-item streamlit">
+                            <img class="skill-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/streamlit/streamlit-original.svg" alt="Streamlit">
+                            <span class="skill-name">Streamlit</span>
+                        </div>
+                        <div class="skill-item javafx">
+                            <img class="skill-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="JavaFX">
+                            <span class="skill-name">JavaFX</span>
+                        </div>
+                        <div class="skill-item mojolicious">
+                            <img class="skill-logo" src="https://avatars.githubusercontent.com/u/2388868?s=200&v=4" alt="Mojolicious">
+                            <span class="skill-name">Mojolicious</span>
+                        </div>
+                        <div class="skill-item bootstrap">
+                            <img class="skill-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap">
+                            <span class="skill-name">Bootstrap</span>
+                        </div>
+                       
+                    </div>
+                </article>
+
+                <!-- Databases -->
+                <article class="skill-category reveal">
+                    <div class="category-header">
+                        <span class="category-icon">🗄️</span>
+                        <h3 class="category-title">Databases</h3>
+                    </div>
+                    <div class="skills-grid">
+                        <div class="skill-item mysql">
+                            <img class="skill-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL">
+                            <span class="skill-name">MySQL</span>
+                        </div>
+                        <div class="skill-item sqlite">
+                            <img class="skill-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" alt="SQLite">
+                            <span class="skill-name">SQLite</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Tools & Deployment -->
+                <article class="skill-category reveal">
+                    <div class="category-header">
+                        <span class="category-icon">🛠️</span>
+                        <h3 class="category-title">Tools & Deployment</h3>
+                    </div>
+                    <div class="skills-grid">
+                        <div class="skill-item git">
+                            <img class="skill-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
+                            <span class="skill-name">Git</span>
+                        </div>
+                        <div class="skill-item github">
+                            <img class="skill-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">
+                            <span class="skill-name">GitHub</span>
+                        </div>
+                        <div class="skill-item laragon">
+                            <img class="skill-logo" src="https://cdn.worldvectorlogo.com/logos/laragon.svg" alt="Laragon">
+                            <span class="skill-name">Laragon</span>
+                        </div>
+                        <div class="skill-item vscode">
+                            <img class="skill-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code">
+                            <span class="skill-name">VS Code</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CERTIFICATES SECTION ==================== -->
+    <section id="certificates" class="certificates">
+        <!-- Decorative Background -->
+        <div class="certificates-decor">
+            <div class="decor-shape shape-1"></div>
+            <div class="decor-shape shape-2"></div>
+        </div>
+
+        <div class="certificates-container">
+            <!-- Section Header -->
+            <header class="certificates-header reveal">
+                <h2 class="certificates-title">Certificates & Achievements</h2>
+                <p class="certificates-subtitle">Professional certifications and completed courses</p>
+            </header>
+
+            <!-- Certificates Grid -->
+            <div class="certificates-grid">
+                <!-- Certificate 1 -->
+                <article class="certificate-card reveal">
+                    <div class="certificate-icon" data-image="Pictures/certDB.PNG" data-name="Database Fundamentals" data-issuer="Certiport" data-date="2025">
+                        <img src="Pictures/certDB.PNG" alt="Database Fundamentals certificate" loading="lazy">
+                    </div>
+                    <div class="certificate-content">   
+                        <h3 class="certificate-name">Database Fundamentals</h3>
+                        <p class="certificate-issuer">Certiport</p>
+                        <span class="certificate-date">2025</span>
+                    </div>
+                    <a href="#" class="certificate-link" aria-label="View certificate">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/>
+                            <polyline points="15 3 21 3 21 9"/>
+                            <line x1="10" y1="14" x2="21" y2="3"/>
+                        </svg>
+                    </a>
+                </article>
+
+                <!-- Certificate 2 -->
+                <article class="certificate-card reveal">
+                    <div class="certificate-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 15l-2 5l2-1l2 1l-2-5z" fill="currentColor"/>
+                            <circle cx="12" cy="8" r="6"/>
+                            <path d="M9 8l2 2l4-4"/>
+                        </svg>
+                    </div>
+                    <div class="certificate-content">
+                        <h3 class="certificate-name">To be added</h3>
+                        <p class="certificate-issuer">-</p>
+                        <span class="certificate-date">-</span>
+                    </div>
+                </article>
+
+                <!-- Certificate 3 -->
+                <article class="certificate-card reveal">
+                    <div class="certificate-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 15l-2 5l2-1l2 1l-2-5z" fill="currentColor"/>
+                            <circle cx="12" cy="8" r="6"/>
+                            <path d="M9 8l2 2l4-4"/>
+                        </svg>
+                    </div>
+                    <div class="certificate-content">
+                        <h3 class="certificate-name">To be added</h3>
+                        <p class="certificate-issuer">-</p>
+                        <span class="certificate-date">-</span>
+                    </div>
+                </article>
+
+                <!-- Certificate 4 -->
+                <article class="certificate-card reveal">
+                    <div class="certificate-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 15l-2 5l2-1l2 1l-2-5z" fill="currentColor"/>
+                            <circle cx="12" cy="8" r="6"/>
+                            <path d="M9 8l2 2l4-4"/>
+                        </svg>
+                    </div>
+                    <div class="certificate-content">
+                        <h3 class="certificate-name">To be added</h3>
+                        <p class="certificate-issuer">-</p>
+                        <span class="certificate-date">-</span>
+                    </div>
+                </article>
+
+                <!-- Certificate 5 -->
+                <article class="certificate-card reveal">
+                    <div class="certificate-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 15l-2 5l2-1l2 1l-2-5z" fill="currentColor"/>
+                            <circle cx="12" cy="8" r="6"/>
+                            <path d="M9 8l2 2l4-4"/>
+                        </svg>
+                    </div>
+                    <div class="certificate-content">
+                        <h3 class="certificate-name">To be added</h3>
+                        <p class="certificate-issuer">-</p>
+                        <span class="certificate-date">-</span>
+                    </div>
+                </article>
+
+                <!-- Certificate 6 -->
+                <article class="certificate-card reveal">
+                    <div class="certificate-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 15l-2 5l2-1l2 1l-2-5z" fill="currentColor"/>
+                            <circle cx="12" cy="8" r="6"/>
+                            <path d="M9 8l2 2l4-4"/>
+                        </svg>
+                    </div>
+                    <div class="certificate-content">
+                        <h3 class="certificate-name">To be added</h3>
+                        <p class="certificate-issuer">-</p>
+                        <span class="certificate-date">-</span>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificate Modal -->
+    <div id="certificate-modal" class="certificate-modal">
+        <div class="certificate-modal-content">
+            <button class="certificate-modal-close" aria-label="Close modal">&times;</button>
+            <img id="certificate-image" src="" alt="Certificate">
+            <div id="certificate-info" class="certificate-info">
+                <h3 id="certificate-modal-name"></h3>
+                <p id="certificate-modal-issuer"></p>
+                <span id="certificate-modal-date"></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== CONTACT SECTION ==================== -->
+    <section id="contact" class="contact">
+        <!-- Decorative Background -->
+        <div class="contact-decor">
+            <div class="decor-shape shape-1"></div>
+            <div class="decor-shape shape-2"></div>
+            <div class="decor-shape shape-3"></div>
+        </div>
+
+        <div class="contact-container">
+            <!-- Section Header -->
+            <header class="contact-header reveal">
+                <h2 class="contact-title">Let's Build Something Together</h2>
+                <p class="contact-subtitle">Have a project in mind? Let's talk.</p>
+            </header>
+
+            <!-- Contact Content -->
+            <div class="contact-content">
+                <!-- Contact Info (Left Side) -->
+                <div class="contact-info reveal">
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                        </div>
+                        <div class="info-content">
+                            <h4>Email</h4>
+                            <a href="mailto:nkmerka.work@gmail.com">nkmerka.work@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                        </div>
+                        <div class="info-content">
+                            <h4>Location</h4>
+                            <p>Davao, Philippines</p>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"/>
+                                <polyline points="12 6 12 12 16 14"/>
+                            </svg>
+                        </div>
+                        <div class="info-content">
+                            <h4>Availability</h4>
+                            <p>Open for opportunities</p>
+                        </div>
+                    </div>
+
+                    <!-- Social Links -->
+                    <div class="contact-socials">
+                        <h4>Connect With Me</h4>
+                        <div class="social-links">
+                            <a href="https://github.com/Siege365" target="_blank" rel="noopener noreferrer" class="social-link-github" aria-label="GitHub">
+                                <svg viewBox="0 0 24 24" fill="currentColor">   
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                            </a>
+                            <a href="https://www.linkedin.com/in/nathaniel-keene-merka-b6b63336a/" target="_blank" rel="noopener noreferrer" class="social-link-linkedin" aria-label="LinkedIn">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                                </svg>
+                            </a>
+                            <a href="#contact" class="social-link-email" aria-label="Email">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form (Right Side) -->
+                <div class="contact-form-wrapper reveal">
+                    <form id="contact-form" class="contact-form" novalidate>
+                        <div class="input-group">
+                            <input type="text" id="name" name="name" required placeholder=" ">
+                            <label for="name">Your Name</label>
+                            <span class="input-highlight"></span>
+                        </div>
+
+                        <div class="input-group">
+                            <input type="email" id="email" name="email" required placeholder=" ">
+                            <label for="email">Your Email</label>
+                            <span class="input-highlight"></span>
+                        </div>
+
+                        <div class="input-group">
+                            <textarea id="message" name="message" rows="5" required placeholder=" "></textarea>
+                            <label for="message">Your Message</label>
+                            <span class="input-highlight"></span>
+                        </div>
+
+                        <button type="submit" class="submit-button">
+                            <span class="button-text">Send Message</span>
+                            <span class="button-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="22" y1="2" x2="11" y2="13"/>
+                                    <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+                                </svg>
+                            </span>
+                            <span class="button-loader">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10" stroke-dasharray="31.4" stroke-dashoffset="0"/>
+                                </svg>
+                            </span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Toast Notification Container -->
+        <div id="toast-container"></div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#hero" class="footer-logo">
+                        <span class="logo-text">NKM</span>
+                        <span class="logo-dot"></span>
+                    </a>
+                    <p class="footer-tagline">Crafting digital experiences with passion and precision.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-nav">
+                        <h4>Navigation</h4>
+                        <ul>
+                            <li><a href="#hero">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="#skills">Skills</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
                     
-                    if (elementTop < windowHeight - 100) {
-                        element.style.opacity = 1;
-                        element.style.transform = 'translateY(0)';
-                    }
-                });
-            }
+                    <div class="footer-social">
+                        <h4>Connect</h4>
+                        <div class="footer-social-links">
+                            <a href="https://github.com/Siege365" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                            </a>
+                            <a href="https://www.linkedin.com/in/nathaniel-keene-merka-b6b63336a/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                                </svg>
+                            </a>
+                            <a href="mailto:nkmerka.work@gmail.com" aria-label="Email">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
             
-            window.addEventListener('scroll', revealOnScroll);
-            revealOnScroll(); // Initial check on page load
-        });
-    </script>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Nathaniel Keene M. Merka. All rights reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 15l-6-6-6 6"/>
+        </svg>  
+    </button>
+
+    <!-- EmailJS SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    
+    <!-- Scripts - Load in order: section scripts first, then main -->
+    <script src="js/hero.js"></script>
+    <script src="js/about.js"></script>
+    <script src="js/projects.js"></script>
+    <script src="js/skills.js"></script>
+    <script src="js/certificates.js"></script>
+    <script src="js/contact.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

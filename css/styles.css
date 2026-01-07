@@ -1,0 +1,17 @@
+/* ==========================================
+   MAIN STYLES - Import All CSS Modules
+   ========================================== */
+
+/* Base styles (variables, reset, utilities) */
+@import url('base.css');
+
+/* Global UI (navbar, footer, loader) */
+@import url('navbar.css');
+
+/* Section-specific styles */
+@import url('hero.css');
+@import url('about.css');
+@import url('projects.css');
+@import url('skills.css');
+@import url('certificates.css');
+@import url('contact.css');
