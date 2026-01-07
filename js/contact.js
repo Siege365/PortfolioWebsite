@@ -7,6 +7,7 @@
 const EMAILJS_PUBLIC_KEY = 'lUuZQ4Dgc_GsQ0X8V'; // Get from EmailJS dashboard
 const EMAILJS_SERVICE_ID = 'service_5kwapde'; // e.g., 'service_gmail'
 const EMAILJS_TEMPLATE_ID = 'template_y84no49'; // e.g., 'template_contact'
+const EMAILJS_AUTO_REPLY_TEMPLATE_ID = 'template_gfi2z63'; // e.g., 'template_auto_reply'
 
 // Initialize EmailJS
 function initEmailJS() {
@@ -213,7 +214,7 @@ function initContactForm() {
             if (result.method === 'mailto') {
                 showToast('Opening your email client...', 'success');
             } else {
-                showToast('Message sent successfully! I\'ll get back to you soon.', 'success');
+                showToast('Message sent! Check your email for a confirmation from me.', 'success');
             }
             
             // Reset form
@@ -237,8 +238,8 @@ function initContactForm() {
 }
 
 // Send email using EmailJS
-function sendEmailWithEmailJS(name, email, message) {
-    return new Promise((resolve, reject) => {
+async function sendEmailWithEmailJS(name, email, message) {
+    return new Promise(async (resolve, reject) => {
         // Check if EmailJS is loaded and configured
         if (typeof emailjs === 'undefined') {
             reject(new Error('EmailJS not loaded'));
@@ -256,21 +257,35 @@ function sendEmailWithEmailJS(name, email, message) {
             return;
         }
         
-        // Send via EmailJS
-        emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, {
-            name: name,
-            message: message,
-            title: 'Portfolio Contact Form',
-            reply_to: email
-        })
-        .then((response) => {
-            console.log('Email sent successfully:', response);
+        // Send via EmailJS - Send main email first, then try auto-reply
+        try {
+            await emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, {
+                name: name,
+                message: message,
+                title: 'Portfolio Contact Form',
+                reply_to: email
+            });
+            
+            console.log('Main email sent successfully');
+            
+            try {
+                await emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_AUTO_REPLY_TEMPLATE_ID, {
+                    name: name,
+                    title: message,
+                    email: email,
+                    reply_to: email
+                });
+                console.log('Auto-reply sent successfully');
+            } catch (autoReplyError) {
+                console.warn('Auto-reply failed (template may not be configured):', autoReplyError);
+                // Continue anyway - main email was sent
+            }
+            
             resolve({ success: true, method: 'emailjs' });
-        })
-        .catch((error) => {
+        } catch (error) {
             console.error('EmailJS error:', error);
             reject(error);
-        });
+        }
     });
 }
 
