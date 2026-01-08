@@ -514,8 +514,14 @@ body.light-mode #particles-canvas {
 @media (max-width: 768px) {
     .navbar-toggle {
         display: flex;
+        position: relative;
+        left: 12px; 
+        transition: left 0.2s ease, transform 0.3s ease;
     }
     
+    .navbar-toggle[aria-expanded="true"] {
+        left: -6px;
+    }
     .navbar-menu {
         position: fixed;
         top: 0;
