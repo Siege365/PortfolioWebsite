@@ -1,32 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Nathaniel Keene M. Merka - Aspiring Software Developer crafting elegant solutions with clean code and modern design. Specializing in Python, JavaScript, PHP, and modern web frameworks.">
-    <meta name="keywords" content="software developer, web developer, full-stack, portfolio, Python, JavaScript, Django, PHP, Java">
+    <meta name="description"
+        content="Nathaniel Keene M. Merka - Aspiring Software Developer crafting elegant solutions with clean code and modern design. Specializing in Python, JavaScript, PHP, and modern web frameworks.">
+    <meta name="keywords"
+        content="software developer, web developer, full-stack, portfolio, Python, JavaScript, Django, PHP, Java">
     <meta name="author" content="Nathaniel Keene M. Merka">
     <meta name="theme-color" content="#0a0a0f">
-    
+
     <!-- Open Graph / Social Media -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="Nathaniel Keene M. Merka | Software Developer Portfolio">
-    <meta property="og:description" content="Aspiring Software Developer crafting elegant solutions with clean code and modern design.">
+    <meta property="og:description"
+        content="Aspiring Software Developer crafting elegant solutions with clean code and modern design.">
     <meta property="og:url" content="https://nathanielmerka.dev">
     <meta property="og:site_name" content="Nathaniel Keene M. Merka Portfolio">
-    
+
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Nathaniel Keene M. Merka | Software Developer">
-    <meta name="twitter:description" content="Aspiring Software Developer crafting elegant solutions with clean code and modern design.">
-    
+    <meta name="twitter:description"
+        content="Aspiring Software Developer crafting elegant solutions with clean code and modern design.">
+
     <title>Nathaniel Keene M. Merka | Software Developer</title>
-    
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
     <!-- Styles -->
     <link rel="icon" type="image/JPG" href="Pictures/avatarsmall.JPG">
     <link rel="stylesheet" href="css/styles.css">
@@ -35,7 +42,7 @@
 <body>
     <!-- Skip to Main Content (Accessibility) -->
     <a href="#hero" class="skip-link">Skip to main content</a>
-    
+
     <!-- Page Loader -->
     <div id="loader" class="loader">
         <div class="loader-content">
@@ -51,7 +58,7 @@
                 <span class="logo-text">NKM</span>
                 <span class="logo-dot"></span>
             </a>
-            
+
             <ul class="navbar-menu" id="navbar-menu">
                 <li><a href="#hero" class="nav-link active">Home</a></li>
                 <li><a href="#about" class="nav-link">About</a></li>
@@ -60,9 +67,10 @@
                 <li><a href="#certificates" class="nav-link">Certificates</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
-            
+
             <div class="navbar-actions">
-                <button class="navbar-toggle" id="navbar-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <button class="navbar-toggle" id="navbar-toggle" aria-label="Toggle navigation menu"
+                    aria-expanded="false">
                     <span class="hamburger-line"></span>
                     <span class="hamburger-line"></span>
                     <span class="hamburger-line"></span>
@@ -73,22 +81,22 @@
 
     <!-- Particle Canvas Background -->
     <canvas id="particles-canvas"></canvas>
-    
+
     <!-- Floating Theme Toggle -->
     <button class="floating-theme-toggle" id="theme-toggle" aria-label="Toggle dark/light mode">
         <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <circle cx="12" cy="12" r="5"/>
-            <line x1="12" y1="1" x2="12" y2="3"/>
-            <line x1="12" y1="21" x2="12" y2="23"/>
-            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
-            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
-            <line x1="1" y1="12" x2="3" y2="12"/>
-            <line x1="21" y1="12" x2="23" y2="12"/>
-            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
-            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+            <circle cx="12" cy="12" r="5" />
+            <line x1="12" y1="1" x2="12" y2="3" />
+            <line x1="12" y1="21" x2="12" y2="23" />
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+            <line x1="1" y1="12" x2="3" y2="12" />
+            <line x1="21" y1="12" x2="23" y2="12" />
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
         </svg>
         <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
         </svg>
     </button>
 
@@ -106,21 +114,26 @@
         </div>
         <!-- Floating Social Links - Top Right -->
         <div class="social-links-floating">
-            <a href="https://github.com/Siege365" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile" class="social-link">
+            <a href="https://github.com/Siege365" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile"
+                class="social-link">
                 <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
-                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                    <path
+                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
                 </svg>
                 <span class="social-tooltip">GitHub</span>
             </a>
-            <a href="https://www.linkedin.com/in/nathaniel-keene-merka-b6b63336a/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile" class="social-link">
+            <a href="https://www.linkedin.com/in/nathaniel-keene-merka-b6b63336a/" target="_blank"
+                rel="noopener noreferrer" aria-label="LinkedIn Profile" class="social-link">
                 <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
-                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                    <path
+                        d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
                 </svg>
                 <span class="social-tooltip">LinkedIn</span>
             </a>
             <a href="#contact" aria-label="Send Email" class="social-link">
                 <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
-                    <path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/>
+                    <path
+                        d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z" />
                 </svg>
                 <span class="social-tooltip">Email</span>
             </a>
@@ -140,7 +153,17 @@
                 </div>
 
                 <!-- Name with Character Animation -->
-                <h1 class="hero-name" data-text="Nathaniel Keene M. Merka"><span class="name-char">N</span><span class="name-char">a</span><span class="name-char">t</span><span class="name-char">h</span><span class="name-char">a</span><span class="name-char">n</span><span class="name-char">i</span><span class="name-char">e</span><span class="name-char">l</span><span class="name-char">&nbsp;</span><span class="name-char">K</span><span class="name-char">e</span><span class="name-char">e</span><span class="name-char">n</span><span class="name-char">e</span><span class="name-char">&nbsp;</span><span class="name-char">M</span><span class="name-char">.</span><span class="name-char">&nbsp;</span><span class="name-char">M</span><span class="name-char">e</span><span class="name-char">r</span><span class="name-char">k</span><span class="name-char">a</span></h1>
+                <h1 class="hero-name" data-text="Nathaniel Keene M. Merka"><span class="name-char">N</span><span
+                        class="name-char">a</span><span class="name-char">t</span><span class="name-char">h</span><span
+                        class="name-char">a</span><span class="name-char">n</span><span class="name-char">i</span><span
+                        class="name-char">e</span><span class="name-char">l</span><span
+                        class="name-char">&nbsp;</span><span class="name-char">K</span><span
+                        class="name-char">e</span><span class="name-char">e</span><span class="name-char">n</span><span
+                        class="name-char">e</span><span class="name-char">&nbsp;</span><span
+                        class="name-char">M</span><span class="name-char">.</span><span
+                        class="name-char">&nbsp;</span><span class="name-char">M</span><span
+                        class="name-char">e</span><span class="name-char">r</span><span class="name-char">k</span><span
+                        class="name-char">a</span></h1>
 
                 <!-- Title Badge -->
                 <div class="hero-title-badge">
@@ -162,7 +185,8 @@
 
                 <!-- Description -->
                 <p class="hero-description">
-                    Aspiring Software Developer crafting classic solutions with clean code and cooked design💀. Currently building my future, one commit at a time.
+                    Aspiring Software Developer crafting classic solutions with clean code and cooked design💀.
+                    Currently building my future, one commit at a time.
                 </p>
 
                 <!-- CTA Button -->
@@ -174,19 +198,24 @@
 
                 <!-- Bottom Social Links -->
                 <div class="social-links-bottom">
-                    <a href="https://github.com/Siege365" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="social-icon-btn">
+                    <a href="https://github.com/Siege365" target="_blank" rel="noopener noreferrer" aria-label="GitHub"
+                        class="social-icon-btn">
                         <svg viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            <path
+                                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
                         </svg>
                     </a>
-                    <a href="https://www.linkedin.com/in/nathaniel-keene-merka-b6b63336a/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="social-icon-btn">
+                    <a href="https://www.linkedin.com/in/nathaniel-keene-merka-b6b63336a/" target="_blank"
+                        rel="noopener noreferrer" aria-label="LinkedIn" class="social-icon-btn">
                         <svg viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            <path
+                                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
                         </svg>
                     </a>
                     <a href="#contact" aria-label="Email" class="social-icon-btn">
                         <svg viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/>
+                            <path
+                                d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z" />
                         </svg>
                     </a>
                 </div>
@@ -198,7 +227,7 @@
             <span class="scroll-text">Scroll Down</span>
             <div class="scroll-arrow">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M12 5v14M5 12l7 7 7-7"/>
+                    <path d="M12 5v14M5 12l7 7 7-7" />
                 </svg>
             </div>
         </div>
@@ -242,25 +271,32 @@
                     <p class="about-greeting reveal">
                         Hi there! I'm <span class="highlight">Nathaniel Keene M. Merka</span> 👋
                     </p>
-                    
+
                     <p class="about-description reveal">
-                        I'm a <span class="emphasis">3rd year Computer Science student</span> 
-                        with a love for building cool, user-focused digital experiences. 
-                        My journey in software development started with curiosity of how applications and websites work 
-                        and then has evolved into a deep commitment to crafting clean, efficient, and impactful solutions.
-                    </p>
-                    
-                    <p class="about-description reveal">
-                        When I start building a project, I often rely on templates or frameworks to speed things up, 
-                        especially since <span class="emphasis">frontend development</span> isn’t my strongest skill. Having that starting point helps me
-                        get into my groove, and once I do, ideas begin to flow and the vision of the app becomes clearer as I build.
+                        I'm a <span class="emphasis">3rd year Computer Science student</span>
+                        with a love for building cool, user-focused digital experiences.
+                        My journey in software development started with curiosity of how applications and websites work
+                        and then has evolved into a deep commitment to crafting clean, efficient, and impactful
+                        solutions.
                     </p>
 
-                     <p class="about-description reveal">
-                        I’m naturally drawn to <span class="emphasis">backend development</span> because I enjoy logical thinking, problem-solving, 
-                        and working with how things function behind the scenes. I also openly admit that I make use of AI as part of my learning and 
-                        development process. It helps me work through bugs, understand complex problems, and explore solutions more efficiently. 
-                        Even so, I strongly believe in continuous learning and pushing myself beyond my comfort zone, aiming to grow as a developer 
+                    <p class="about-description reveal">
+                        When I start building a project, I often rely on templates or frameworks to speed things up,
+                        especially since <span class="emphasis">frontend development</span> isn’t my strongest skill.
+                        Having that starting point helps me
+                        get into my groove, and once I do, ideas begin to flow and the vision of the app becomes clearer
+                        as I build.
+                    </p>
+
+                    <p class="about-description reveal">
+                        I’m naturally drawn to <span class="emphasis">backend development</span> because I enjoy logical
+                        thinking, problem-solving,
+                        and working with how things function behind the scenes. I also openly admit that I make use of
+                        AI as part of my learning and
+                        development process. It helps me work through bugs, understand complex problems, and explore
+                        solutions more efficiently.
+                        Even so, I strongly believe in continuous learning and pushing myself beyond my comfort zone,
+                        aiming to grow as a developer
                         one step at a time with every project.
                     </p>
                 </div>
@@ -308,46 +344,54 @@
                 <p class="projects-subtitle">A showcase of my work from full-stack apps to creative experiments</p>
                 <div class="projects-caution">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/>
-                        <line x1="12" y1="9" x2="12" y2="13"/>
-                        <line x1="12" y1="17" x2="12.01" y2="17"/>
+                        <path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z" />
+                        <line x1="12" y1="9" x2="12" y2="13" />
+                        <line x1="12" y1="17" x2="12.01" y2="17" />
                     </svg>
-                    <span>Some deployed projects may experience bugs or downtime due to free-tier hosting limitations. :<</span>
+                    <span>Some deployed projects may experience bugs or downtime due to free-tier hosting limitations. :
+                        << /span>
                 </div>
             </header>
 
-            <!-- Projects Grid -->  
+            <!-- Projects Grid -->
             <div class="projects-grid">
                 <!-- Project 1: Vitapets Animal Clinic -->
                 <article class="project-card">
                     <div class="project-image">
                         <div class="project-icon">
-                            <img src="Pictures/logobgremove.png"  loading="lazy" width="250" height="250">
+                            <img src="Pictures/logobgremove.png" loading="lazy" width="250" height="250">
                         </div>
                     </div>
                     <div class="project-content">
                         <h3 class="project-title">Vitapets Animal Clinic</h3>
-                        <p class="project-description">A full-stack veterinary clinic management system designed to handle real-world clinic workflows such as client records, appointments, and data-driven operations.</p>
+                        <p class="project-description">A full-stack veterinary clinic management system designed to
+                            handle real-world clinic workflows such as client records, appointments, and data-driven
+                            operations.</p>
                         <a href="#" class="see-more-link">See More →</a>
                         <div class="project-tags">
                             <div class="tech-pill">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                                    alt="HTML">
                                 <span>HTML</span>
                             </div>
                             <div class="tech-pill">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                                    alt="CSS">
                                 <span>CSS</span>
                             </div>
                             <div class="tech-pill">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                                    alt="JavaScript">
                                 <span>JavaScript</span>
                             </div>
                             <div class="tech-pill">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"
+                                    alt="PHP">
                                 <span>PHP</span>
                             </div>
                             <div class="tech-pill">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+                                    alt="MySQL">
                                 <span>MySQL</span>
                             </div>
                         </div>
@@ -355,10 +399,10 @@
                             <a href="https://github.com/Siege365/VitapetsAnimalClinic" class="project-button primary">
                                 <span>View Project</span>
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                                    <path d="M5 12h14M12 5l7 7-7 7" />
                                 </svg>
                             </a>
-                            <a href="https://vitapetsanimalclinic.great-site.net"class="project-button secondary">
+                            <a href="https://vitapetsanimalclinic.great-site.net" class="project-button secondary">
                                 <span>Live Demo</span>
                             </a>
                         </div>
@@ -369,24 +413,29 @@
                 <article class="project-card">
                     <div class="project-image">
                         <div class="project-icon">
-                            <img src="Pictures/pedidos.png"  loading="lazy" width="250" height="250">
+                            <img src="Pictures/pedidos.png" loading="lazy" width="250" height="250">
                         </div>
                     </div>
                     <div class="project-content">
                         <h3 class="project-title">El Pedidos Mexicanos</h3>
-                        <p class="project-description">A desktop-based food ordering system developed using JavaFX and MySQL, focused on clean UI design and efficient order management for a restaurant-style workflow.</p>
+                        <p class="project-description">A desktop-based food ordering system developed using JavaFX and
+                            MySQL, focused on clean UI design and efficient order management for a restaurant-style
+                            workflow.</p>
                         <a href="#" class="see-more-link">See More →</a>
                         <div class="project-tags">
                             <div class="tech-pill">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
+                                    alt="Java">
                                 <span>Java</span>
                             </div>
-                             <div class="tech-pill">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS">
+                            <div class="tech-pill">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                                    alt="CSS">
                                 <span>CSS</span>
                             </div>
                             <div class="tech-pill">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+                                    alt="MySQL">
                                 <span>MySQL</span>
                             </div>
                         </div>
@@ -394,7 +443,7 @@
                             <a href="https://github.com/Siege365/FoodTruckCompile" class="project-button primary">
                                 <span>View Project</span>
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                                    <path d="M5 12h14M12 5l7 7-7 7" />
                                 </svg>
                             </a>
                             <span class="project-button secondary disabled" title="Not deployed yet">
@@ -408,16 +457,18 @@
                 <article class="project-card">
                     <div class="project-image">
                         <div class="project-icon">
-                            <img src="Pictures/shopping-bag.svg"  loading="lazy" width="200" height="200">
+                            <img src="Pictures/shopping-bag.svg" loading="lazy" width="200" height="200">
                         </div>
                     </div>
                     <div class="project-content">
                         <h3 class="project-title">ShopPerl</h3>
-                        <p class="project-description">A modern e-commerce platform built with Perl and Mojolicious, proving that a battle-tested language can still power clean, scalable web applications.</p>
+                        <p class="project-description">A modern e-commerce platform built with Perl and Mojolicious,
+                            proving that a battle-tested language can still power clean, scalable web applications.</p>
                         <a href="#" class="see-more-link">See More →</a>
                         <div class="project-tags">
                             <div class="tech-pill">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/perl/perl-original.svg" alt="Perl">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/perl/perl-original.svg"
+                                    alt="Perl">
                                 <span>Perl</span>
                             </div>
                             <div class="tech-pill">
@@ -425,27 +476,32 @@
                                 <span>Mojolicious</span>
                             </div>
                             <div class="tech-pill">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                                    alt="HTML">
                                 <span>HTML</span>
                             </div>
                             <div class="tech-pill">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                                    alt="CSS">
                                 <span>CSS</span>
                             </div>
                             <div class="tech-pill">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                                    alt="JavaScript">
                                 <span>JavaScript</span>
                             </div>
                             <div class="tech-pill">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+                                    alt="MySQL">
                                 <span>MySQL</span>
                             </div>
                         </div>
                         <div class="project-actions">
-                            <a href="https://github.com/Siege365/E-Commerce-Order-Processing-System-Perl" class="project-button primary">
+                            <a href="https://github.com/Siege365/E-Commerce-Order-Processing-System-Perl"
+                                class="project-button primary">
                                 <span>View Project</span>
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                                    <path d="M5 12h14M12 5l7 7-7 7" />
                                 </svg>
                             </a>
                             <span class="project-button secondary disabled" title="Not deployed yet">
@@ -459,58 +515,70 @@
                 <article class="project-card">
                     <div class="project-image">
                         <!-- Python Logo SVG -->
-                        <svg class="project-logo" viewBox="0 0 256 255" width="300" height="300" preserveAspectRatio="xMidYMid meet" fill="none">
+                        <svg class="project-logo" viewBox="0 0 256 255" width="300" height="300"
+                            preserveAspectRatio="xMidYMid meet" fill="none">
                             <defs>
                                 <linearGradient id="pythonBlue" x1="12.959%" x2="79.639%" y1="12.039%" y2="78.201%">
-                                    <stop offset="15%" stop-color="#4C51BF"/>
-                                    <stop offset="80%" stop-color="#EEF2FF"/>
-                                    <stop offset="90%" stop-color="#FFFFFF" stop-opacity="0.95"/>
+                                    <stop offset="15%" stop-color="#4C51BF" />
+                                    <stop offset="80%" stop-color="#EEF2FF" />
+                                    <stop offset="90%" stop-color="#FFFFFF" stop-opacity="0.95" />
                                 </linearGradient>
                                 <linearGradient id="pythonYellow" x1="19.128%" x2="90.742%" y1="20.579%" y2="88.429%">
-                                    <stop offset="15%" stop-color="#6B46C1"/>
-                                    <stop offset="80%" stop-color="#E6DBFF"/>
-                                    <stop offset="90%" stop-color="#FFFFFF" stop-opacity="0.9"/>
+                                    <stop offset="15%" stop-color="#6B46C1" />
+                                    <stop offset="80%" stop-color="#E6DBFF" />
+                                    <stop offset="90%" stop-color="#FFFFFF" stop-opacity="0.9" />
                                 </linearGradient>
                             </defs>
-                            <path fill="url(#pythonBlue)" d="M126.916.072c-64.832 0-60.784 28.115-60.784 28.115l.072 29.128h61.868v8.745H41.631S.145 61.355.145 126.77c0 65.417 36.21 63.097 36.21 63.097h21.61v-30.356s-1.165-36.21 35.632-36.21h61.362s34.475.557 34.475-33.319V33.97S194.67.072 126.916.072zM92.802 19.66a11.12 11.12 0 0111.13 11.13 11.12 11.12 0 01-11.13 11.13 11.12 11.12 0 01-11.13-11.13 11.12 11.12 0 0111.13-11.13z"/>
-                            <path fill="url(#pythonYellow)" d="M128.757 254.126c64.832 0 60.784-28.115 60.784-28.115l-.072-29.127H127.6v-8.745h86.441s41.486 4.705 41.486-60.712c0-65.416-36.21-63.096-36.21-63.096h-21.61v30.355s1.165 36.21-35.632 36.21h-61.362s-34.475-.557-34.475 33.32v56.013s-5.235 33.897 62.518 33.897zm34.114-19.586a11.12 11.12 0 01-11.13-11.13 11.12 11.12 0 0111.13-11.131 11.12 11.12 0 0111.13 11.13 11.12 11.12 0 01-11.13 11.13z"/>
+                            <path fill="url(#pythonBlue)"
+                                d="M126.916.072c-64.832 0-60.784 28.115-60.784 28.115l.072 29.128h61.868v8.745H41.631S.145 61.355.145 126.77c0 65.417 36.21 63.097 36.21 63.097h21.61v-30.356s-1.165-36.21 35.632-36.21h61.362s34.475.557 34.475-33.319V33.97S194.67.072 126.916.072zM92.802 19.66a11.12 11.12 0 0111.13 11.13 11.12 11.12 0 01-11.13 11.13 11.12 11.12 0 01-11.13-11.13 11.12 11.12 0 0111.13-11.13z" />
+                            <path fill="url(#pythonYellow)"
+                                d="M128.757 254.126c64.832 0 60.784-28.115 60.784-28.115l-.072-29.127H127.6v-8.745h86.441s41.486 4.705 41.486-60.712c0-65.416-36.21-63.096-36.21-63.096h-21.61v30.355s1.165 36.21-35.632 36.21h-61.362s-34.475-.557-34.475 33.32v56.013s-5.235 33.897 62.518 33.897zm34.114-19.586a11.12 11.12 0 01-11.13-11.13 11.12 11.12 0 0111.13-11.131 11.12 11.12 0 0111.13 11.13 11.12 11.12 0 01-11.13 11.13z" />
                         </svg>
                     </div>
                     <div class="project-content">
                         <h3 class="project-title">ShopPy</h3>
-                        <p class="project-description">A production-ready e-commerce platform built with Python and Django, leveraging Django's ORM, authentication, and admin system for a maintainable online store.</p>
+                        <p class="project-description">A production-ready e-commerce platform built with Python and
+                            Django, leveraging Django's ORM, authentication, and admin system for a maintainable online
+                            store.</p>
                         <a href="#" class="see-more-link">See More →</a>
                         <div class="project-tags">
                             <div class="tech-pill">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                                    alt="Python">
                                 <span>Python</span>
                             </div>
                             <div class="tech-pill">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" alt="Django">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg"
+                                    alt="Django">
                                 <span>Django</span>
                             </div>
                             <div class="tech-pill">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                                    alt="HTML">
                                 <span>HTML</span>
                             </div>
                             <div class="tech-pill">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                                    alt="CSS">
                                 <span>CSS</span>
                             </div>
                             <div class="tech-pill">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                                    alt="JavaScript">
                                 <span>JavaScript</span>
                             </div>
                             <div class="tech-pill">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+                                    alt="MySQL">
                                 <span>MySQL</span>
                             </div>
                         </div>
                         <div class="project-actions">
-                            <a href="https://github.com/Siege365/E-Commerce-Order-Processing-System-Python" class="project-button primary">
+                            <a href="https://github.com/Siege365/E-Commerce-Order-Processing-System-Python"
+                                class="project-button primary">
                                 <span>View Project</span>
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                                    <path d="M5 12h14M12 5l7 7-7 7" />
                                 </svg>
                             </a>
                             <span class="project-button secondary disabled" title="Not deployed yet">
@@ -523,20 +591,25 @@
                 <article class="project-card">
                     <div class="project-image">
                         <div class="project-icon">
-                            <img src="https://1000logos.net/wp-content/uploads/2022/04/Breast-Cancer-Logo.png"  loading="lazy" width="300" height="300">
+                            <img src="https://1000logos.net/wp-content/uploads/2022/04/Breast-Cancer-Logo.png"
+                                loading="lazy" width="300" height="300">
                         </div>
                     </div>
                     <div class="project-content">
                         <h3 class="project-title">Breast Cancer Diagnosis Predictor</h3>
-                        <p class="project-description">A machine learning web application that predicts breast cancer diagnosis based on cell nucleus measurements. Utilizes a Neural Network classifier trained on labeled data to achieve high diagnostic accuracy.</p>
-                       <a href="" class="see-more-link">See More →</a>
+                        <p class="project-description">A machine learning web application that predicts breast cancer
+                            diagnosis based on cell nucleus measurements. Utilizes a Neural Network classifier trained
+                            on labeled data to achieve high diagnostic accuracy.</p>
+                        <a href="" class="see-more-link">See More →</a>
                         <div class="project-tags">
                             <div class="tech-pill">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                                    alt="Python">
                                 <span>Python</span>
                             </div>
                             <div class="tech-pill">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/streamlit/streamlit-original.svg" alt="Streamlit">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/streamlit/streamlit-original.svg"
+                                    alt="Streamlit">
                                 <span>Streamlit</span>
                             </div>
                         </div>
@@ -544,7 +617,7 @@
                             <a href="https://github.com/Siege365/MachineLearning" class="project-button primary">
                                 <span>View Project</span>
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                                    <path d="M5 12h14M12 5l7 7-7 7" />
                                 </svg>
                             </a>
                             <a href="https://breast-cancer-classifyy.streamlit.app" class="project-button secondary">
@@ -558,43 +631,51 @@
                 <article class="project-card">
                     <div class="project-image">
                         <div class="project-icon">
-                            <img src="Pictures/abstractlogotransparent.png"  loading="lazy" width="120" height="120">
+                            <img src="Pictures/abstractlogotransparent.png" loading="lazy" width="120" height="120">
                         </div>
                     </div>
                     <div class="project-content">
                         <h3 class="project-title">Abstrack Fitness Gym Management System</h3>
-                        <p class="project-description">A large-scale client web application consisting of five integrated subsystems: Member Management, 
-                        Scheduling Management, Payment and Billing, Reporting and Analytics, and Inventory Management.
-                        Built using the Laravel framework with Laragon as the local development environment.
+                        <p class="project-description">A large-scale client web application consisting of five
+                            integrated subsystems: Member Management,
+                            Scheduling Management, Payment and Billing, Reporting and Analytics, and Inventory
+                            Management.
+                            Built using the Laravel framework with Laragon as the local development environment.
                         </p>
                         <a href="#" class="see-more-link">See More →</a>
                         <div class="project-tags">
                             <div class="tech-pill">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg" alt="Laravel">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg"
+                                    alt="Laravel">
                                 <span>Laravel</span>
                             </div>
                             <div class="tech-pill">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"
+                                    alt="PHP">
                                 <span>PHP</span>
                             </div>
                             <div class="tech-pill">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+                                    alt="MySQL">
                                 <span>MySQL</span>
                             </div>
                             <div class="tech-pill">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                                    alt="JavaScript">
                                 <span>JavaScript</span>
                             </div>
                             <div class="tech-pill">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
+                                    alt="Bootstrap">
                                 <span>Bootstrap</span>
                             </div>
                         </div>
                         <div class="project-actions">
-                            <a href="https://www.figma.com/proto/05Cp6mYLrYNdwT8W4VCu4I/AbsTrack-Fitness-Gym?page-id=813%3A202&node-id=823-14133&p=f&viewport=-4253%2C-5931%2C0.37&t=qBnRblly0CzC0ba9-1&scaling=min-zoom&content-scaling=fixed" class="project-button primary">
+                            <a href="https://www.figma.com/proto/05Cp6mYLrYNdwT8W4VCu4I/AbsTrack-Fitness-Gym?page-id=813%3A202&node-id=823-14133&p=f&viewport=-4253%2C-5931%2C0.37&t=qBnRblly0CzC0ba9-1&scaling=min-zoom&content-scaling=fixed"
+                                class="project-button primary">
                                 <span>View Project</span>
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                                    <path d="M5 12h14M12 5l7 7-7 7" />
                                 </svg>
                             </a>
                             <span class="project-button secondary disabled" title="Not deployed yet">
@@ -613,30 +694,38 @@
                     </div>
                     <div class="project-content">
                         <h3 class="project-title">Electric Vehicle Charging Station Queuing Simulation</h3>
-                        <p class="project-description">A high-performance discrete-event simulation platform (EVQSim) that models and visualizes Electric Vehicle charging station queue behaviors, combining a Python SimPy backend with a real-time 2D/3D Digital Twin frontend and a rich Streamlit analytics dashboard.</p>
+                        <p class="project-description">A high-performance discrete-event simulation platform (EVQSim)
+                            that models and visualizes Electric Vehicle charging station queue behaviors, combining a
+                            Python SimPy backend with a real-time 2D/3D Digital Twin frontend and a rich Streamlit
+                            analytics dashboard.</p>
                         <a href="#" class="see-more-link">See More &rarr;</a>
                         <div class="project-tags">
                             <div class="tech-pill">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                                    alt="Python">
                                 <span>Python</span>
                             </div>
                             <div class="tech-pill">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/streamlit/streamlit-original.svg" alt="Streamlit">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/streamlit/streamlit-original.svg"
+                                    alt="Streamlit">
                                 <span>Streamlit</span>
                             </div>
                             <div class="tech-pill">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                                    alt="JavaScript">
                                 <span>JavaScript</span>
                             </div>
                         </div>
                         <div class="project-actions">
-                            <a href="https://github.com/Siege365/EV-Charging-Station-Queuing-Simulation" class="project-button primary">
+                            <a href="https://github.com/Siege365/EV-Charging-Station-Queuing-Simulation"
+                                class="project-button primary">
                                 <span>View Project</span>
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                                    <path d="M5 12h14M12 5l7 7-7 7" />
                                 </svg>
                             </a>
-                            <a href="https://evqsim.streamlit.app" target="_blank" rel="noopener noreferrer" class="project-button secondary">
+                            <a href="https://evqsim.streamlit.app" target="_blank" rel="noopener noreferrer"
+                                class="project-button secondary">
                                 <span>Live Demo</span>
                             </a>
                         </div>
@@ -647,32 +736,41 @@
                 <article class="project-card">
                     <div class="project-image">
                         <div class="project-icon">
-                            <img src="Pictures/LeJeepneyFinal.svg" loading="lazy" width="200" height="200" alt="LeJeepney Logo">
+                            <img src="Pictures/LeJeepneyFinal.svg" loading="lazy" width="200" height="200"
+                                alt="LeJeepney Logo">
                         </div>
                     </div>
                     <div class="project-content">
                         <h3 class="project-title">LeJeepney</h3>
-                        <p class="project-description">A jeepney navigation system for Davao City, Philippines — featuring a Flutter mobile app for commuters (route search, fare calculation, landmarks, multi-language support) and a Laravel web admin panel for managing routes, landmarks, support tickets, and fare settings via a REST API.</p>
+                        <p class="project-description">A jeepney navigation system for Davao City, Philippines —
+                            featuring a Flutter mobile app for commuters (route search, fare calculation, landmarks,
+                            multi-language support) and a Laravel web admin panel for managing routes, landmarks,
+                            support tickets, and fare settings via a REST API.</p>
                         <a href="#" class="see-more-link">See More &rarr;</a>
                         <div class="project-tags">
                             <div class="tech-pill">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" alt="Flutter">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg"
+                                    alt="Flutter">
                                 <span>Flutter</span>
                             </div>
                             <div class="tech-pill">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg" alt="Dart">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg"
+                                    alt="Dart">
                                 <span>Dart</span>
                             </div>
                             <div class="tech-pill">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg" alt="Laravel">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg"
+                                    alt="Laravel">
                                 <span>Laravel</span>
                             </div>
                             <div class="tech-pill">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"
+                                    alt="PHP">
                                 <span>PHP</span>
                             </div>
                             <div class="tech-pill">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+                                    alt="MySQL">
                                 <span>MySQL</span>
                             </div>
                         </div>
@@ -680,7 +778,7 @@
                             <a href="https://github.com/Siege365/LeJeepneyMobile" class="project-button primary">
                                 <span>View Project</span>
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                                    <path d="M5 12h14M12 5l7 7-7 7" />
                                 </svg>
                             </a>
                             <span class="project-button secondary disabled" title="Not deployed yet">
@@ -718,39 +816,56 @@
                     </div>
                     <div class="skills-grid">
                         <div class="skill-item python">
-                            <img class="skill-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+                            <img class="skill-logo"
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                                alt="Python">
                             <span class="skill-name">Python</span>
                         </div>
                         <div class="skill-item java">
-                            <img class="skill-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java">
+                            <img class="skill-logo"
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
+                                alt="Java">
                             <span class="skill-name">Java</span>
                         </div>
                         <div class="skill-item html">
-                            <img class="skill-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
+                            <img class="skill-logo"
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                                alt="HTML5">
                             <span class="skill-name">HTML5</span>
                         </div>
                         <div class="skill-item css">
-                            <img class="skill-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
+                            <img class="skill-logo"
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                                alt="CSS3">
                             <span class="skill-name">CSS3</span>
                         </div>
                         <div class="skill-item javascript">
-                            <img class="skill-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+                            <img class="skill-logo"
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                                alt="JavaScript">
                             <span class="skill-name">JavaScript</span>
                         </div>
                         <div class="skill-item sql">
-                            <img class="skill-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azuresqldatabase/azuresqldatabase-original.svg" alt="SQL">
+                            <img class="skill-logo"
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azuresqldatabase/azuresqldatabase-original.svg"
+                                alt="SQL">
                             <span class="skill-name">SQL</span>
                         </div>
                         <div class="skill-item php">
-                            <img class="skill-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP">
+                            <img class="skill-logo"
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP">
                             <span class="skill-name">PHP</span>
                         </div>
                         <div class="skill-item perl">
-                            <img class="skill-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/perl/perl-original.svg" alt="Perl">
+                            <img class="skill-logo"
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/perl/perl-original.svg"
+                                alt="Perl">
                             <span class="skill-name">Perl</span>
                         </div>
                         <div class="skill-item dart">
-                            <img class="skill-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg" alt="Dart">
+                            <img class="skill-logo"
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg"
+                                alt="Dart">
                             <span class="skill-name">Dart</span>
                         </div>
                     </div>
@@ -764,31 +879,44 @@
                     </div>
                     <div class="skills-grid">
                         <div class="skill-item django">
-                            <img class="skill-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" alt="Django">
+                            <img class="skill-logo"
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg"
+                                alt="Django">
                             <span class="skill-name">Django</span>
                         </div>
                         <div class="skill-item laravel">
-                            <img class="skill-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg" alt="Laravel">
+                            <img class="skill-logo"
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg"
+                                alt="Laravel">
                             <span class="skill-name">Laravel</span>
                         </div>
                         <div class="skill-item flutter">
-                            <img class="skill-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" alt="Flutter">
+                            <img class="skill-logo"
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg"
+                                alt="Flutter">
                             <span class="skill-name">Flutter</span>
                         </div>
                         <div class="skill-item streamlit">
-                            <img class="skill-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/streamlit/streamlit-original.svg" alt="Streamlit">
+                            <img class="skill-logo"
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/streamlit/streamlit-original.svg"
+                                alt="Streamlit">
                             <span class="skill-name">Streamlit</span>
                         </div>
                         <div class="skill-item javafx">
-                            <img class="skill-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="JavaFX">
+                            <img class="skill-logo"
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
+                                alt="JavaFX">
                             <span class="skill-name">JavaFX</span>
                         </div>
                         <div class="skill-item bootstrap">
-                            <img class="skill-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap">
+                            <img class="skill-logo"
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
+                                alt="Bootstrap">
                             <span class="skill-name">Bootstrap</span>
                         </div>
                         <div class="skill-item mojolicious">
-                            <img class="skill-logo" src="https://avatars.githubusercontent.com/u/2388868?s=200&v=4" alt="Mojolicious">
+                            <img class="skill-logo" src="https://avatars.githubusercontent.com/u/2388868?s=200&v=4"
+                                alt="Mojolicious">
                             <span class="skill-name">Mojolicious</span>
                         </div>
                     </div>
@@ -802,11 +930,15 @@
                     </div>
                     <div class="skills-grid">
                         <div class="skill-item mysql">
-                            <img class="skill-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL">
+                            <img class="skill-logo"
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+                                alt="MySQL">
                             <span class="skill-name">MySQL</span>
                         </div>
                         <div class="skill-item sqlite">
-                            <img class="skill-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" alt="SQLite">
+                            <img class="skill-logo"
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg"
+                                alt="SQLite">
                             <span class="skill-name">SQLite</span>
                         </div>
                     </div>
@@ -820,27 +952,37 @@
                     </div>
                     <div class="skills-grid">
                         <div class="skill-item git">
-                            <img class="skill-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
+                            <img class="skill-logo"
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
                             <span class="skill-name">Git</span>
                         </div>
                         <div class="skill-item github">
-                            <img class="skill-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">
+                            <img class="skill-logo"
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                                alt="GitHub">
                             <span class="skill-name">GitHub</span>
                         </div>
                         <div class="skill-item vscode">
-                            <img class="skill-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code">
+                            <img class="skill-logo"
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
+                                alt="VS Code">
                             <span class="skill-name">VS Code</span>
                         </div>
                         <div class="skill-item laragon">
-                            <img class="skill-logo" src="https://cdn.worldvectorlogo.com/logos/laragon.svg" alt="Laragon">
+                            <img class="skill-logo" src="https://cdn.worldvectorlogo.com/logos/laragon.svg"
+                                alt="Laragon">
                             <span class="skill-name">Laragon</span>
                         </div>
                         <div class="skill-item copilot">
-                            <img class="skill-logo" src="https://images.seeklogo.com/logo-png/42/2/github-copilot-logo-png_seeklogo-428029.png" alt="GitHub Copilot">
+                            <img class="skill-logo"
+                                src="https://images.seeklogo.com/logo-png/42/2/github-copilot-logo-png_seeklogo-428029.png"
+                                alt="GitHub Copilot">
                             <span class="skill-name">GitHub Copilot</span>
                         </div>
                         <div class="skill-item claude">
-                            <img class="skill-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Claude_AI_symbol.svg/3840px-Claude_AI_symbol.svg.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail" alt="Claude">
+                            <img class="skill-logo"
+                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Claude_AI_symbol.svg/3840px-Claude_AI_symbol.svg.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail"
+                                alt="Claude">
                             <span class="skill-name">Claude</span>
                         </div>
                     </div>
@@ -868,26 +1010,31 @@
             <div class="certificates-grid">
                 <!-- Certificate 1: Database Fundamentals -->
                 <article class="certificate-card reveal">
-                    <div class="certificate-icon" data-image="Pictures/certDB.PNG" data-name="Database Fundamentals" data-issuer="Certiport" data-date="May 16, 2025">
+                    <div class="certificate-icon" data-image="Pictures/certDB.PNG" data-name="Database Fundamentals"
+                        data-issuer="Certiport" data-date="May 2025">
                         <img src="Pictures/certDB.PNG" alt="Database Fundamentals certificate" loading="lazy">
                     </div>
                     <div class="certificate-content">
                         <h3 class="certificate-name">Database Fundamentals</h3>
-                        <p class="certificate-issuer">Certiport</p>
+                        <p class="certificate-issuer">Certiport &mdash; IT Specialist</p>
                         <span class="certificate-date">May 2025</span>
                     </div>
-                    <a href="#" class="certificate-link certificate-icon" role="button" tabindex="0" aria-label="View certificate" title="View certificate" data-image="Pictures/certDB.PNG" data-name="Database Fundamentals" data-issuer="Certiport" data-date="May 16, 2025">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false">
-                            <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/>
-                            <polyline points="15 3 21 3 21 9"/>
-                            <line x1="10" y1="14" x2="21" y2="3"/>
+                    <a href="#" class="certificate-link certificate-icon" role="button" tabindex="0"
+                        aria-label="View certificate" title="View certificate" data-image="Pictures/certDB.PNG"
+                        data-name="Database Fundamentals" data-issuer="Certiport" data-date="May 2025">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"
+                            focusable="false">
+                            <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6" />
+                            <polyline points="15 3 21 3 21 9" />
+                            <line x1="10" y1="14" x2="21" y2="3" />
                         </svg>
                     </a>
                 </article>
 
                 <!-- Certificate 2: Network Security -->
                 <article class="certificate-card reveal">
-                    <div class="certificate-icon" data-image="Pictures/NetworkSecurity.png" data-name="Network Security" data-issuer="Certiport &mdash; IT Specialist" data-date="2025">
+                    <div class="certificate-icon" data-image="Pictures/NetworkSecurity.png" data-name="Network Security"
+                        data-issuer="Certiport &mdash; IT Specialist" data-date="March 2026">
                         <img src="Pictures/NetworkSecurity.png" alt="Network Security certificate" loading="lazy">
                     </div>
                     <div class="certificate-content">
@@ -895,18 +1042,45 @@
                         <p class="certificate-issuer">Certiport &mdash; IT Specialist</p>
                         <span class="certificate-date">March 2026</span>
                     </div>
-                    <a href="#" class="certificate-link certificate-icon" role="button" tabindex="0" aria-label="View certificate" title="View certificate" data-image="Pictures/NetworkSecurity.png" data-name="Network Security" data-issuer="Certiport — IT Specialist" data-date="2025">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false">
-                            <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/>
-                            <polyline points="15 3 21 3 21 9"/>
-                            <line x1="10" y1="14" x2="21" y2="3"/>
+                    <a href="#" class="certificate-link certificate-icon" role="button" tabindex="0"
+                        aria-label="View certificate" title="View certificate" data-image="Pictures/NetworkSecurity.png"
+                        data-name="Network Security" data-issuer="Certiport — IT Specialist" data-date="March 2026">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"
+                            focusable="false">
+                            <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6" />
+                            <polyline points="15 3 21 3 21 9" />
+                            <line x1="10" y1="14" x2="21" y2="3" />
+                        </svg>
+                    </a>
+                </article>
+                <!-- Certificate 3: Cybersecurity -->
+                <article class="certificate-card reveal">
+                    <div class="certificate-icon" data-image="Pictures/cybersecurity.png" data-name="Cybersecurity"
+                        data-issuer="Certiport &mdash; IT Specialist" data-date="May 2026">
+                        <img src="Pictures/cybersecurity.png" alt="Cybersecurity certificate" loading="lazy">
+                    </div>
+                    <div class="certificate-content">
+                        <h3 class="certificate-name">Cybersecurity</h3>
+                        <p class="certificate-issuer">Certiport &mdash; IT Specialist</p>
+                        <span class="certificate-date">May 2026</span>
+                    </div>
+                    <a href="#" class="certificate-link certificate-icon" role="button" tabindex="0"
+                        aria-label="View certificate" title="View certificate" data-image="Pictures/cybersecurity.png"
+                        data-name="Cybersecurity" data-issuer="Certiport — IT Specialist" data-date="May 2026">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"
+                            focusable="false">
+                            <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6" />
+                            <polyline points="15 3 21 3 21 9" />
+                            <line x1="10" y1="14" x2="21" y2="3" />
                         </svg>
                     </a>
                 </article>
 
-                <!-- Certificate 3: Foundations of Cybersecurity -->
+                <!-- Certificate 4: Foundations of Cybersecurity -->
                 <article class="certificate-card reveal">
-                    <div class="certificate-icon" data-image="Pictures/Google1.png" data-name="Foundations of Cybersecurity" data-issuer="Google &mdash; Coursera" data-date="March 2026">
+                    <div class="certificate-icon" data-image="Pictures/Google1.png"
+                        data-name="Foundations of Cybersecurity" data-issuer="Google &mdash; Coursera"
+                        data-date="March 2026">
                         <img src="Pictures/Google1.png" alt="Foundations of Cybersecurity certificate" loading="lazy">
                     </div>
                     <div class="certificate-content">
@@ -914,87 +1088,122 @@
                         <p class="certificate-issuer">Google &mdash; Coursera</p>
                         <span class="certificate-date">March 2026</span>
                     </div>
-                    <a href="#" class="certificate-link certificate-icon" role="button" tabindex="0" aria-label="View certificate" title="View certificate" data-image="Pictures/Google1.png" data-name="Foundations of Cybersecurity" data-issuer="Google — Coursera" data-date="March 2026">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false">
-                            <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/>
-                            <polyline points="15 3 21 3 21 9"/>
-                            <line x1="10" y1="14" x2="21" y2="3"/>
+                    <a href="#" class="certificate-link certificate-icon" role="button" tabindex="0"
+                        aria-label="View certificate" title="View certificate" data-image="Pictures/Google1.png"
+                        data-name="Foundations of Cybersecurity" data-issuer="Google — Coursera" data-date="March 2026">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"
+                            focusable="false">
+                            <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6" />
+                            <polyline points="15 3 21 3 21 9" />
+                            <line x1="10" y1="14" x2="21" y2="3" />
                         </svg>
                     </a>
                 </article>
 
-                <!-- Certificate 4: Play It Safe: Manage Security Risks -->
+                <!-- Certificate 5: Play It Safe: Manage Security Risks -->
                 <article class="certificate-card reveal">
-                    <div class="certificate-icon" data-image="Pictures/Google2.png" data-name="Play It Safe: Manage Security Risks" data-issuer="Google &mdash; Coursera" data-date="March 2026">
-                        <img src="Pictures/Google2.png" alt="Play It Safe: Manage Security Risks certificate" loading="lazy">
+                    <div class="certificate-icon" data-image="Pictures/Google2.png"
+                        data-name="Play It Safe: Manage Security Risks" data-issuer="Google &mdash; Coursera"
+                        data-date="March 2026">
+                        <img src="Pictures/Google2.png" alt="Play It Safe: Manage Security Risks certificate"
+                            loading="lazy">
                     </div>
                     <div class="certificate-content">
                         <h3 class="certificate-name">Play It Safe: Manage Security Risks</h3>
                         <p class="certificate-issuer">Google &mdash; Coursera</p>
                         <span class="certificate-date">March 2026</span>
                     </div>
-                    <a href="#" class="certificate-link certificate-icon" role="button" tabindex="0" aria-label="View certificate" title="View certificate" data-image="Pictures/Google2.png" data-name="Play It Safe: Manage Security Risks" data-issuer="Google — Coursera" data-date="March 2026">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false">
-                            <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/>
-                            <polyline points="15 3 21 3 21 9"/>
-                            <line x1="10" y1="14" x2="21" y2="3"/>
+                    <a href="#" class="certificate-link certificate-icon" role="button" tabindex="0"
+                        aria-label="View certificate" title="View certificate" data-image="Pictures/Google2.png"
+                        data-name="Play It Safe: Manage Security Risks" data-issuer="Google — Coursera"
+                        data-date="March 2026">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"
+                            focusable="false">
+                            <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6" />
+                            <polyline points="15 3 21 3 21 9" />
+                            <line x1="10" y1="14" x2="21" y2="3" />
                         </svg>
                     </a>
                 </article>
 
-                <!-- Certificate 5: Connect and Protect -->
+                <!-- Certificate 6: Connect and Protect -->
                 <article class="certificate-card reveal">
-                    <div class="certificate-icon" data-image="Pictures/Google3.png" data-name="Connect and Protect: Networks and Network Security" data-issuer="Google &mdash; Coursera" data-date="April 2026">
-                        <img src="Pictures/Google3.png" alt="Connect and Protect: Networks and Network Security certificate" loading="lazy">
+                    <div class="certificate-icon" data-image="Pictures/Google3.png"
+                        data-name="Connect and Protect: Networks and Network Security"
+                        data-issuer="Google &mdash; Coursera" data-date="April 2026">
+                        <img src="Pictures/Google3.png"
+                            alt="Connect and Protect: Networks and Network Security certificate" loading="lazy">
                     </div>
                     <div class="certificate-content">
                         <h3 class="certificate-name">Connect and Protect: Networks and Network Security</h3>
                         <p class="certificate-issuer">Google &mdash; Coursera</p>
                         <span class="certificate-date">April 2026</span>
                     </div>
-                    <a href="#" class="certificate-link certificate-icon" role="button" tabindex="0" aria-label="View certificate" title="View certificate" data-image="Pictures/Google3.png" data-name="Connect and Protect: Networks and Network Security" data-issuer="Google — Coursera" data-date="April 2026">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false">
-                            <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/>
-                            <polyline points="15 3 21 3 21 9"/>
-                            <line x1="10" y1="14" x2="21" y2="3"/>
+                    <a href="#" class="certificate-link certificate-icon" role="button" tabindex="0"
+                        aria-label="View certificate" title="View certificate" data-image="Pictures/Google3.png"
+                        data-name="Connect and Protect: Networks and Network Security" data-issuer="Google — Coursera"
+                        data-date="April 2026">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"
+                            focusable="false">
+                            <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6" />
+                            <polyline points="15 3 21 3 21 9" />
+                            <line x1="10" y1="14" x2="21" y2="3" />
                         </svg>
                     </a>
                 </article>
 
-                <!-- Certificate 6: Lean Six Sigma White Belt -->
+                <!-- Certificate 7: Lean Six Sigma White Belt -->
                 <article class="certificate-card reveal">
-                    <div class="certificate-icon" data-image="Pictures/Certificate_White_Belt.jpg" data-name="Lean Six Sigma White Belt" data-issuer="Prof. Dr. Marcelo Machado Fernandes (MF Operational Excellence)" data-date="January 12, 2026">
-                        <img src="Pictures/Certificate_White_Belt.jpg" alt="Lean Six Sigma White Belt certificate" loading="lazy">
+                    <div class="certificate-icon" data-image="Pictures/Certificate_White_Belt.jpg"
+                        data-name="Lean Six Sigma White Belt"
+                        data-issuer="Prof. Dr. Marcelo Machado Fernandes (MF Operational Excellence)"
+                        data-date="January 12, 2026">
+                        <img src="Pictures/Certificate_White_Belt.jpg" alt="Lean Six Sigma White Belt certificate"
+                            loading="lazy">
                     </div>
                     <div class="certificate-content">
                         <h3 class="certificate-name">Lean Six Sigma White Belt</h3>
                         <p class="certificate-issuer">Prof. Dr. Marcelo Machado Fernandes</p>
                         <span class="certificate-date">January 2026</span>
                     </div>
-                    <a href="#" class="certificate-link certificate-icon" role="button" tabindex="0" aria-label="View certificate" title="View certificate" data-image="Pictures/Certificate_White_Belt.jpg" data-name="Lean Six Sigma White Belt" data-issuer="Prof. Dr. Marcelo Machado Fernandes (MF Operational Excellence)" data-date="January 12, 2026">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false">
-                            <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/>
-                            <polyline points="15 3 21 3 21 9"/>
-                            <line x1="10" y1="14" x2="21" y2="3"/>
+                    <a href="#" class="certificate-link certificate-icon" role="button" tabindex="0"
+                        aria-label="View certificate" title="View certificate"
+                        data-image="Pictures/Certificate_White_Belt.jpg" data-name="Lean Six Sigma White Belt"
+                        data-issuer="Prof. Dr. Marcelo Machado Fernandes (MF Operational Excellence)"
+                        data-date="January 12, 2026">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"
+                            focusable="false">
+                            <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6" />
+                            <polyline points="15 3 21 3 21 9" />
+                            <line x1="10" y1="14" x2="21" y2="3" />
                         </svg>
                     </a>
                 </article>
 
-                <!-- Certificate 7: Lean Six Sigma Yellow Belt -->
+                <!-- Certificate 8: Lean Six Sigma Yellow Belt -->
                 <article class="certificate-card reveal">
-                    <div class="certificate-icon" data-image="Pictures/Certificate_Yellow_Belt.jpg" data-name="Lean Six Sigma Yellow Belt" data-issuer="Prof. Dr. Marcelo Machado Fernandes (MF Operational Excellence)" data-date="January 12, 2026">
-                        <img src="Pictures/Certificate_Yellow_Belt.jpg" alt="Lean Six Sigma Yellow Belt certificate" loading="lazy">
+                    <div class="certificate-icon" data-image="Pictures/Certificate_Yellow_Belt.jpg"
+                        data-name="Lean Six Sigma Yellow Belt"
+                        data-issuer="Prof. Dr. Marcelo Machado Fernandes (MF Operational Excellence)"
+                        data-date="January 12, 2026">
+                        <img src="Pictures/Certificate_Yellow_Belt.jpg" alt="Lean Six Sigma Yellow Belt certificate"
+                            loading="lazy">
                     </div>
                     <div class="certificate-content">
                         <h3 class="certificate-name">Lean Six Sigma Yellow Belt</h3>
                         <p class="certificate-issuer">Prof. Dr. Marcelo Machado Fernandes</p>
                         <span class="certificate-date">January 2026</span>
                     </div>
-                    <a href="#" class="certificate-link certificate-icon" role="button" tabindex="0" aria-label="View certificate" title="View certificate" data-image="Pictures/Certificate_Yellow_Belt.jpg" data-name="Lean Six Sigma Yellow Belt" data-issuer="Prof. Dr. Marcelo Machado Fernandes (MF Operational Excellence)" data-date="January 12, 2026">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false">
-                            <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/>
-                            <polyline points="15 3 21 3 21 9"/>
-                            <line x1="10" y1="14" x2="21" y2="3"/>
+                    <a href="#" class="certificate-link certificate-icon" role="button" tabindex="0"
+                        aria-label="View certificate" title="View certificate"
+                        data-image="Pictures/Certificate_Yellow_Belt.jpg" data-name="Lean Six Sigma Yellow Belt"
+                        data-issuer="Prof. Dr. Marcelo Machado Fernandes (MF Operational Excellence)"
+                        data-date="January 12, 2026">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"
+                            focusable="false">
+                            <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6" />
+                            <polyline points="15 3 21 3 21 9" />
+                            <line x1="10" y1="14" x2="21" y2="3" />
                         </svg>
                     </a>
                 </article>
@@ -1038,8 +1247,8 @@
                     <div class="info-card">
                         <div class="info-icon">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-                                <polyline points="22,6 12,13 2,6"/>
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                <polyline points="22,6 12,13 2,6" />
                             </svg>
                         </div>
                         <div class="info-content">
@@ -1051,8 +1260,8 @@
                     <div class="info-card">
                         <div class="info-icon">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
-                                <circle cx="12" cy="10" r="3"/>
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                                <circle cx="12" cy="10" r="3" />
                             </svg>
                         </div>
                         <div class="info-content">
@@ -1064,8 +1273,8 @@
                     <div class="info-card">
                         <div class="info-icon">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <circle cx="12" cy="12" r="10"/>
-                                <polyline points="12 6 12 12 16 14"/>
+                                <circle cx="12" cy="12" r="10" />
+                                <polyline points="12 6 12 12 16 14" />
                             </svg>
                         </div>
                         <div class="info-content">
@@ -1078,19 +1287,24 @@
                     <div class="contact-socials">
                         <h4>Connect With Me</h4>
                         <div class="social-links">
-                            <a href="https://github.com/Siege365" target="_blank" rel="noopener noreferrer" class="social-link-github" aria-label="GitHub">
-                                <svg viewBox="0 0 24 24" fill="currentColor">   
-                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            <a href="https://github.com/Siege365" target="_blank" rel="noopener noreferrer"
+                                class="social-link-github" aria-label="GitHub">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
                                 </svg>
                             </a>
-                            <a href="https://www.linkedin.com/in/nathaniel-keene-merka-b6b63336a/" target="_blank" rel="noopener noreferrer" class="social-link-linkedin" aria-label="LinkedIn">
+                            <a href="https://www.linkedin.com/in/nathaniel-keene-merka-b6b63336a/" target="_blank"
+                                rel="noopener noreferrer" class="social-link-linkedin" aria-label="LinkedIn">
                                 <svg viewBox="0 0 24 24" fill="currentColor">
-                                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                                    <path
+                                        d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
                                 </svg>
                             </a>
                             <a href="#contact" class="social-link-email" aria-label="Email">
                                 <svg viewBox="0 0 24 24" fill="currentColor">
-                                    <path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/>
+                                    <path
+                                        d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z" />
                                 </svg>
                             </a>
                         </div>
@@ -1122,13 +1336,13 @@
                             <span class="button-text">Send Message</span>
                             <span class="button-icon">
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <line x1="22" y1="2" x2="11" y2="13"/>
-                                    <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+                                    <line x1="22" y1="2" x2="11" y2="13" />
+                                    <polygon points="22 2 15 22 11 13 2 9 22 2" />
                                 </svg>
                             </span>
                             <span class="button-loader">
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <circle cx="12" cy="12" r="10" stroke-dasharray="31.4" stroke-dashoffset="0"/>
+                                    <circle cx="12" cy="12" r="10" stroke-dasharray="31.4" stroke-dashoffset="0" />
                                 </svg>
                             </span>
                         </button>
@@ -1152,7 +1366,7 @@
                     </a>
                     <p class="footer-tagline">Crafting digital experiences with passion and precision.</p>
                 </div>
-                
+
                 <div class="footer-links">
                     <div class="footer-nav">
                         <h4>Navigation</h4>
@@ -1164,30 +1378,35 @@
                             <li><a href="#contact">Contact</a></li>
                         </ul>
                     </div>
-                    
+
                     <div class="footer-social">
                         <h4>Connect</h4>
                         <div class="footer-social-links">
-                            <a href="https://github.com/Siege365" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                            <a href="https://github.com/Siege365" target="_blank" rel="noopener noreferrer"
+                                aria-label="GitHub">
                                 <svg viewBox="0 0 24 24" fill="currentColor">
-                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                    <path
+                                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
                                 </svg>
                             </a>
-                            <a href="https://www.linkedin.com/in/nathaniel-keene-merka-b6b63336a/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                            <a href="https://www.linkedin.com/in/nathaniel-keene-merka-b6b63336a/" target="_blank"
+                                rel="noopener noreferrer" aria-label="LinkedIn">
                                 <svg viewBox="0 0 24 24" fill="currentColor">
-                                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                                    <path
+                                        d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
                                 </svg>
                             </a>
                             <a href="mailto:nkmerka.work@gmail.com" aria-label="Email">
                                 <svg viewBox="0 0 24 24" fill="currentColor">
-                                    <path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/>
+                                    <path
+                                        d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z" />
                                 </svg>
                             </a>
                         </div>
                     </div>
                 </div>
             </div>
-            
+
             <div class="footer-bottom">
                 <p>&copy; 2025 Nathaniel Keene M. Merka. All rights reserved</p>
             </div>
@@ -1197,13 +1416,13 @@
     <!-- Back to Top Button -->
     <button class="back-to-top" id="back-to-top" aria-label="Back to top">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M18 15l-6-6-6 6"/>
-        </svg>  
+            <path d="M18 15l-6-6-6 6" />
+        </svg>
     </button>
 
     <!-- EmailJS SDK -->
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-    
+
     <!-- Scripts - Load in order: section scripts first, then main -->
     <script src="js/hero.js"></script>
     <script src="js/about.js"></script>
@@ -1214,4 +1433,5 @@
     <script src="js/navbar.js"></script>
     <script src="js/main.js"></script>
 </body>
+
 </html>
