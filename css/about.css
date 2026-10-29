@@ -32,6 +32,8 @@
   font-size: 15px;
   color: var(--ink-secondary);
   line-height: 1.65;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 .narrative-p.lead {
@@ -173,6 +175,8 @@
   font-size: 13px;
   color: var(--ink-secondary);
   line-height: 1.5;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 /* Aligned Bottom Dossier Callout */

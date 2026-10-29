@@ -154,6 +154,8 @@
   font-size: 14.5px;
   color: var(--ink-secondary);
   line-height: 1.6;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 .exp-text strong {

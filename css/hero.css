@@ -53,6 +53,8 @@
   line-height: 1.65;
   max-width: 580px;
   margin-bottom: 34px;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 .hero-bio-lead strong {
