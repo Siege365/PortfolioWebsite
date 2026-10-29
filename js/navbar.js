@@ -146,29 +146,25 @@ function initSmoothScroll() {
     });
 }
 
-// ==================== THEME TOGGLE (Light/Dark Mode) ====================
+// ==================== THEME TOGGLE (Warm Limestone / Dark Monograph) ====================
 function initThemeToggle() {
     const toggle = document.getElementById('theme-toggle');
     if (!toggle) return;
     
-    // Check for saved preference, default to dark
+    const modeText = toggle.querySelector('.theme-mode-text');
     const savedTheme = localStorage.getItem('theme');
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
     
-    // Default is dark mode (no class), light mode adds 'light-mode' class
-    if (savedTheme === 'light') {
-        document.body.classList.add('light-mode');
-    } else if (savedTheme === null && !prefersDark) {
-        // Only switch to light if system prefers light AND no saved preference
-        document.body.classList.add('light-mode');
+    if (savedTheme === 'dark') {
+        document.body.classList.add('dark-mode');
+        if (modeText) modeText.textContent = 'LIGHT MODE';
     }
     
     toggle.addEventListener('click', () => {
-        document.body.classList.toggle('light-mode');
-        const isLight = document.body.classList.contains('light-mode');
-        localStorage.setItem('theme', isLight ? 'light' : 'dark');
+        document.body.classList.toggle('dark-mode');
+        const isDark = document.body.classList.contains('dark-mode');
+        localStorage.setItem('theme', isDark ? 'dark' : 'warm-limestone');
+        if (modeText) modeText.textContent = isDark ? 'LIGHT MODE' : 'DARK MODE';
         
-        // Add a subtle transition effect
         document.body.style.transition = 'background-color 0.3s ease, color 0.3s ease';
     });
 }

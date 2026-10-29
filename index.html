@@ -5,33 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Nathaniel Keene M. Merka - Aspiring Software Developer crafting elegant solutions with clean code and modern design. Specializing in Python, JavaScript, PHP, and modern web frameworks.">
+        content="Nathaniel Keene M. Merka — Fourth-year Computer Science candidate at the University of Mindanao specializing in cybersecurity and backend web development. Experienced in building, optimizing, and securing enterprise applications with Laravel, Flutter, Python, and relational database systems.">
     <meta name="keywords"
-        content="software developer, web developer, full-stack, portfolio, Python, JavaScript, Django, PHP, Java">
+        content="Nathaniel Keene Merka, Cybersecurity, Backend Developer, Software Developer, University of Mindanao, Laravel, Flutter, Python, Django, MySQL, KumoSoft, Davao City">
     <meta name="author" content="Nathaniel Keene M. Merka">
-    <meta name="theme-color" content="#0a0a0f">
+    <meta name="theme-color" content="#FAF7F2">
 
     <!-- Open Graph / Social Media -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Nathaniel Keene M. Merka | Software Developer Portfolio">
+    <meta property="og:title" content="Nathaniel Keene M. Merka — Cybersecurity &amp; Backend Developer">
     <meta property="og:description"
-        content="Aspiring Software Developer crafting elegant solutions with clean code and modern design.">
-    <meta property="og:url" content="https://nathanielmerka.dev">
+        content="Fourth-year Computer Science student specializing in cybersecurity and backend web development. Experienced in enterprise architectures (Laravel, Flutter, Python, MySQL).">
+    <meta property="og:url" content="https://nkmerka-portfolio.vercel.app">
     <meta property="og:site_name" content="Nathaniel Keene M. Merka Portfolio">
 
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Nathaniel Keene M. Merka | Software Developer">
-    <meta name="twitter:description"
-        content="Aspiring Software Developer crafting elegant solutions with clean code and modern design.">
+    <title>Nathaniel Keene M. Merka — Cybersecurity &amp; Backend Developer</title>
 
-    <title>Nathaniel Keene M. Merka | Software Developer</title>
-
-    <!-- Fonts -->
+    <!-- Google Fonts: Cormorant Garamond, Inter, JetBrains Mono, Playfair Display, Plus Jakarta Sans -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap"
         rel="stylesheet">
 
     <!-- Styles -->
@@ -43,32 +37,45 @@
     <!-- Skip to Main Content (Accessibility) -->
     <a href="#hero" class="skip-link">Skip to main content</a>
 
-    <!-- Page Loader -->
-    <div id="loader" class="loader">
-        <div class="loader-content">
-            <div class="loader-spinner"></div>
-            <span class="loader-text">Loading</span>
-        </div>
-    </div>
-
-    <!-- Fixed Navigation Bar -->
+    <!-- Fixed Editorial Navigation Bar -->
     <nav class="navbar" id="navbar">
         <div class="navbar-container">
             <a href="#hero" class="navbar-logo">
                 <span class="logo-text">NKM</span>
-                <span class="logo-dot"></span>
+                <span class="logo-dot">.</span>
             </a>
 
             <ul class="navbar-menu" id="navbar-menu">
                 <li><a href="#hero" class="nav-link active">Home</a></li>
                 <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
-                <li><a href="#certificates" class="nav-link">Certificates</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects &amp; Research</a></li>
+                <li><a href="#skills" class="nav-link">Technical Matrix</a></li>
+                <li><a href="#certificates" class="nav-link">Credentials</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
 
             <div class="navbar-actions">
+                <!-- Theme Toggle Button -->
+                <button class="editorial-theme-btn" id="theme-toggle" aria-label="Toggle dark/light mode">
+                    <span class="theme-mode-text">DARK MODE</span>
+                    <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="5" />
+                        <line x1="12" y1="1" x2="12" y2="3" />
+                        <line x1="12" y1="21" x2="12" y2="23" />
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+                        <line x1="1" y1="12" x2="3" y2="12" />
+                        <line x1="21" y1="12" x2="23" y2="12" />
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+                    </svg>
+                    <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+                    </svg>
+                </button>
+
+                <!-- Mobile Menu Toggle -->
                 <button class="navbar-toggle" id="navbar-toggle" aria-label="Toggle navigation menu"
                     aria-expanded="false">
                     <span class="hamburger-line"></span>
@@ -79,1339 +86,1060 @@
         </div>
     </nav>
 
-    <!-- Particle Canvas Background -->
-    <canvas id="particles-canvas"></canvas>
+    <!-- Main Container Frame -->
+    <main class="editorial-canvas-wrapper">
 
-    <!-- Floating Theme Toggle -->
-    <button class="floating-theme-toggle" id="theme-toggle" aria-label="Toggle dark/light mode">
-        <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <circle cx="12" cy="12" r="5" />
-            <line x1="12" y1="1" x2="12" y2="3" />
-            <line x1="12" y1="21" x2="12" y2="23" />
-            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
-            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
-            <line x1="1" y1="12" x2="3" y2="12" />
-            <line x1="21" y1="12" x2="23" y2="12" />
-            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
-            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
-        </svg>
-        <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
-        </svg>
-    </button>
+        <!-- HERO SECTION  -->
+        <section id="hero" class="hero">
+            <div class="hero-container">
+                <div class="hero-split-grid">
 
-    <!-- Custom Cursor -->
-    <div class="cursor-dot"></div>
-    <div class="cursor-outline"></div>
-
-    <!-- ==================== HERO SECTION ==================== -->
-    <section id="hero" class="hero">
-        <!-- Decorative Background -->
-        <div class="hero-decor">
-            <div class="decor-shape shape-1"></div>
-            <div class="decor-shape shape-2"></div>
-            <div class="decor-shape shape-3"></div>
-        </div>
-        <!-- Floating Social Links - Top Right -->
-        <div class="social-links-floating">
-            <a href="https://github.com/Siege365" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile"
-                class="social-link">
-                <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
-                    <path
-                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
-                </svg>
-                <span class="social-tooltip">GitHub</span>
-            </a>
-            <a href="https://www.linkedin.com/in/nathaniel-keene-merka-b6b63336a/" target="_blank"
-                rel="noopener noreferrer" aria-label="LinkedIn Profile" class="social-link">
-                <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
-                    <path
-                        d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-                </svg>
-                <span class="social-tooltip">LinkedIn</span>
-            </a>
-            <a href="#contact" aria-label="Send Email" class="social-link">
-                <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
-                    <path
-                        d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z" />
-                </svg>
-                <span class="social-tooltip">Email</span>
-            </a>
-        </div>
-
-        <!-- Hero Content Container -->
-        <div class="hero-container">
-            <!-- Hero Content -->
-            <div class="hero-content">
-                <!-- Avatar -->
-                <div class="hero-avatar-wrapper">
-                    <div class="hero-avatar">
-                        <img src="Pictures/avatarsmall.JPG" alt="Nathaniel Keene M. Merka" loading="eager">
-                    </div>
-                    <div class="avatar-ring"></div>
-                    <div class="avatar-glow"></div>
-                </div>
-
-                <!-- Name with Character Animation -->
-                <h1 class="hero-name" data-text="Nathaniel Keene M. Merka"><span class="name-char">N</span><span
-                        class="name-char">a</span><span class="name-char">t</span><span class="name-char">h</span><span
-                        class="name-char">a</span><span class="name-char">n</span><span class="name-char">i</span><span
-                        class="name-char">e</span><span class="name-char">l</span><span
-                        class="name-char">&nbsp;</span><span class="name-char">K</span><span
-                        class="name-char">e</span><span class="name-char">e</span><span class="name-char">n</span><span
-                        class="name-char">e</span><span class="name-char">&nbsp;</span><span
-                        class="name-char">M</span><span class="name-char">.</span><span
-                        class="name-char">&nbsp;</span><span class="name-char">M</span><span
-                        class="name-char">e</span><span class="name-char">r</span><span class="name-char">k</span><span
-                        class="name-char">a</span></h1>
-
-                <!-- Title Badge -->
-                <div class="hero-title-badge">
-                    <span class="badge-dot"></span>
-                    <span class="badge-text">Aspiring Software Developer</span>
-                </div>
-
-                <!-- Tagline -->
-                <p class="hero-tagline">
-                    <span class="tagline-word">Turning</span>
-                    <span class="tagline-word">caffeine</span>
-                    <span class="tagline-word">into</span>
-                    <span class="tagline-word">code,</span>
-                    <span class="tagline-word">and</span>
-                    <span class="tagline-word">ideas</span>
-                    <span class="tagline-word">into</span>
-                    <span class="tagline-word highlight">reality.</span>
-                </p>
-
-                <!-- Description -->
-                <p class="hero-description">
-                    Aspiring Software Developer crafting classic solutions with clean code and cooked design💀.
-                    Currently building my future, one commit at a time.
-                </p>
-
-                <!-- CTA Button -->
-                <a href="#projects" class="cta-button">
-                    <span class="cta-text">View My Works</span>
-                    <span class="cta-icon">🚀</span>
-                    <div class="cta-shine"></div>
-                </a>
-
-                <!-- Bottom Social Links -->
-                <div class="social-links-bottom">
-                    <a href="https://github.com/Siege365" target="_blank" rel="noopener noreferrer" aria-label="GitHub"
-                        class="social-icon-btn">
-                        <svg viewBox="0 0 24 24" fill="currentColor">
-                            <path
-                                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
-                        </svg>
-                    </a>
-                    <a href="https://www.linkedin.com/in/nathaniel-keene-merka-b6b63336a/" target="_blank"
-                        rel="noopener noreferrer" aria-label="LinkedIn" class="social-icon-btn">
-                        <svg viewBox="0 0 24 24" fill="currentColor">
-                            <path
-                                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-                        </svg>
-                    </a>
-                    <a href="#contact" aria-label="Email" class="social-icon-btn">
-                        <svg viewBox="0 0 24 24" fill="currentColor">
-                            <path
-                                d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z" />
-                        </svg>
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <!-- Scroll Indicator -->
-        <div class="scroll-indicator">
-            <span class="scroll-text">Scroll Down</span>
-            <div class="scroll-arrow">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M12 5v14M5 12l7 7 7-7" />
-                </svg>
-            </div>
-        </div>
-
-        <!-- Decorative Elements -->
-        <div class="hero-decor">
-            <div class="decor-circle decor-1"></div>
-            <div class="decor-circle decor-2"></div>
-            <div class="decor-circle decor-3"></div>
-        </div>
-    </section>
-
-    <!-- ==================== ABOUT SECTION ==================== -->
-    <section id="about" class="about">
-        <!-- Decorative Background -->
-        <div class="about-decor">
-            <div class="decor-shape shape-1"></div>
-            <div class="decor-shape shape-2"></div>
-        </div>
-
-        <div class="about-container">
-            <!-- Section Header -->
-            <header class="about-header reveal">
-                <h2 class="about-title">About Me</h2>
-                <p class="about-subtitle">Get to know the developer behind the code</p>
-            </header>
-
-            <!-- About Content -->
-            <div class="about-content">
-                <!-- Profile Photo -->
-                <div class="about-photo-wrapper reveal">
-                    <div class="about-photo-border"></div>
-                    <div class="about-photo">
-                        <img src="Pictures/avatarsmall.JPG" alt="Nathaniel Keene M. Merka">
-                    </div>
-                    <div class="about-photo-glow"></div>
-                </div>
-
-                <!-- About Text -->
-                <div class="about-text">
-                    <p class="about-greeting reveal">
-                        Hi there! I'm <span class="highlight">Nathaniel Keene M. Merka</span> 👋
-                    </p>
-
-                    <p class="about-description reveal">
-                        I'm a <span class="emphasis">3rd year Computer Science student</span>
-                        with a love for building cool, user-focused digital experiences.
-                        My journey in software development started with curiosity of how applications and websites work
-                        and then has evolved into a deep commitment to crafting clean, efficient, and impactful
-                        solutions.
-                    </p>
-
-                    <p class="about-description reveal">
-                        When I start building a project, I often rely on templates or frameworks to speed things up,
-                        especially since <span class="emphasis">frontend development</span> isn’t my strongest skill.
-                        Having that starting point helps me
-                        get into my groove, and once I do, ideas begin to flow and the vision of the app becomes clearer
-                        as I build.
-                    </p>
-
-                    <p class="about-description reveal">
-                        I’m naturally drawn to <span class="emphasis">backend development</span> because I enjoy logical
-                        thinking, problem-solving,
-                        and working with how things function behind the scenes. I also openly admit that I make use of
-                        AI as part of my learning and
-                        development process. It helps me work through bugs, understand complex problems, and explore
-                        solutions more efficiently.
-                        Even so, I strongly believe in continuous learning and pushing myself beyond my comfort zone,
-                        aiming to grow as a developer
-                        one step at a time with every project.
-                    </p>
-                </div>
-            </div>
-
-            <!-- Statistics Cards -->
-            <div class="about-stats">
-                <div class="stat-card">
-                    <span class="stat-icon">🎓</span>
-                    <span class="stat-number">3rd</span>
-                    <span class="stat-label">Year Student</span>
-                </div>
-                <div class="stat-card">
-                    <span class="stat-icon">💻</span>
-                    <span class="stat-number">2+</span>
-                    <span class="stat-label">Years Experience</span>
-                </div>
-                <div class="stat-card">
-                    <span class="stat-icon">📦</span>
-                    <span class="stat-number">5+</span>
-                    <span class="stat-label">Projects Completed</span>
-                </div>
-                <div class="stat-card">
-                    <span class="stat-icon">🛠️</span>
-                    <span class="stat-number">5+</span>
-                    <span class="stat-label">Technologies</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ==================== PROJECTS SECTION ==================== -->
-    <section id="projects" class="projects">
-        <!-- Decorative Background -->
-        <div class="projects-decor">
-            <div class="decor-shape shape-1"></div>
-            <div class="decor-shape shape-2"></div>
-            <div class="decor-shape shape-3"></div>
-        </div>
-
-        <div class="projects-container">
-            <!-- Section Header -->
-            <header class="projects-header reveal">
-                <h2 class="projects-title">Featured Projects</h2>
-                <p class="projects-subtitle">A showcase of my work from full-stack apps to creative experiments</p>
-                <div class="projects-caution">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z" />
-                        <line x1="12" y1="9" x2="12" y2="13" />
-                        <line x1="12" y1="17" x2="12.01" y2="17" />
-                    </svg>
-                    <span>Some deployed projects may experience bugs or downtime due to free-tier hosting limitations. :
-                        << /span>
-                </div>
-            </header>
-
-            <!-- Projects Grid -->
-            <div class="projects-grid">
-                <!-- Project 1: Vitapets Animal Clinic -->
-                <article class="project-card">
-                    <div class="project-image">
-                        <div class="project-icon">
-                            <img src="Pictures/logobgremove.png" loading="lazy" width="250" height="250">
+                    <!-- Left: Editorial Headline & Manifesto -->
+                    <div class="hero-text-block">
+                        <div class="section-eyebrow">
+                            <span class="eyebrow-text">FOURTH-YEAR CS CANDIDATE // UNIVERSITY OF MINDANAO</span>
+                            <span class="eyebrow-line"></span>
                         </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Vitapets Animal Clinic</h3>
-                        <p class="project-description">A full-stack veterinary clinic management system designed to
-                            handle real-world clinic workflows such as client records, appointments, and data-driven
-                            operations.</p>
-                        <a href="#" class="see-more-link">See More →</a>
-                        <div class="project-tags">
-                            <div class="tech-pill">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
-                                    alt="HTML">
-                                <span>HTML</span>
-                            </div>
-                            <div class="tech-pill">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
-                                    alt="CSS">
-                                <span>CSS</span>
-                            </div>
-                            <div class="tech-pill">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-                                    alt="JavaScript">
-                                <span>JavaScript</span>
-                            </div>
-                            <div class="tech-pill">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"
-                                    alt="PHP">
-                                <span>PHP</span>
-                            </div>
-                            <div class="tech-pill">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
-                                    alt="MySQL">
-                                <span>MySQL</span>
-                            </div>
-                        </div>
-                        <div class="project-actions">
-                            <a href="https://github.com/Siege365/VitapetsAnimalClinic" class="project-button primary">
-                                <span>View Project</span>
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M5 12h14M12 5l7 7-7 7" />
-                                </svg>
-                            </a>
-                            <a href="https://vitapetsanimalclinic.great-site.net" class="project-button secondary">
-                                <span>Live Demo</span>
-                            </a>
-                        </div>
-                    </div>
-                </article>
 
-                <!-- Project 2: El Pedidos Mexicanos -->
-                <article class="project-card">
-                    <div class="project-image">
-                        <div class="project-icon">
-                            <img src="Pictures/pedidos.png" loading="lazy" width="250" height="250">
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">El Pedidos Mexicanos</h3>
-                        <p class="project-description">A desktop-based food ordering system developed using JavaFX and
-                            MySQL, focused on clean UI design and efficient order management for a restaurant-style
-                            workflow.</p>
-                        <a href="#" class="see-more-link">See More →</a>
-                        <div class="project-tags">
-                            <div class="tech-pill">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
-                                    alt="Java">
-                                <span>Java</span>
-                            </div>
-                            <div class="tech-pill">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
-                                    alt="CSS">
-                                <span>CSS</span>
-                            </div>
-                            <div class="tech-pill">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
-                                    alt="MySQL">
-                                <span>MySQL</span>
-                            </div>
-                        </div>
-                        <div class="project-actions">
-                            <a href="https://github.com/Siege365/FoodTruckCompile" class="project-button primary">
-                                <span>View Project</span>
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M5 12h14M12 5l7 7-7 7" />
-                                </svg>
-                            </a>
-                            <span class="project-button secondary disabled" title="Not deployed yet">
-                                <span>Unavailable</span>
-                            </span>
-                        </div>
-                    </div>
-                </article>
+                        <h1 class="hero-headline">
+                            Specializing in <em>cybersecurity</em>, resilient backend architecture &amp; enterprise
+                            systems.
+                        </h1>
 
-                <!-- Project 3: ShopPerl -->
-                <article class="project-card">
-                    <div class="project-image">
-                        <div class="project-icon">
-                            <img src="Pictures/shopping-bag.svg" loading="lazy" width="200" height="200">
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">ShopPerl</h3>
-                        <p class="project-description">A modern e-commerce platform built with Perl and Mojolicious,
-                            proving that a battle-tested language can still power clean, scalable web applications.</p>
-                        <a href="#" class="see-more-link">See More →</a>
-                        <div class="project-tags">
-                            <div class="tech-pill">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/perl/perl-original.svg"
-                                    alt="Perl">
-                                <span>Perl</span>
-                            </div>
-                            <div class="tech-pill">
-                                <img src="https://avatars.githubusercontent.com/u/2388868?s=200&v=4" alt="Mojolicious">
-                                <span>Mojolicious</span>
-                            </div>
-                            <div class="tech-pill">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
-                                    alt="HTML">
-                                <span>HTML</span>
-                            </div>
-                            <div class="tech-pill">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
-                                    alt="CSS">
-                                <span>CSS</span>
-                            </div>
-                            <div class="tech-pill">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-                                    alt="JavaScript">
-                                <span>JavaScript</span>
-                            </div>
-                            <div class="tech-pill">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
-                                    alt="MySQL">
-                                <span>MySQL</span>
-                            </div>
-                        </div>
-                        <div class="project-actions">
-                            <a href="https://github.com/Siege365/E-Commerce-Order-Processing-System-Perl"
-                                class="project-button primary">
-                                <span>View Project</span>
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M5 12h14M12 5l7 7-7 7" />
-                                </svg>
-                            </a>
-                            <span class="project-button secondary disabled" title="Not deployed yet">
-                                <span>Unavailable</span>
-                            </span>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Project 4: ShopPy -->
-                <article class="project-card">
-                    <div class="project-image">
-                        <!-- Python Logo SVG -->
-                        <svg class="project-logo" viewBox="0 0 256 255" width="300" height="300"
-                            preserveAspectRatio="xMidYMid meet" fill="none">
-                            <defs>
-                                <linearGradient id="pythonBlue" x1="12.959%" x2="79.639%" y1="12.039%" y2="78.201%">
-                                    <stop offset="15%" stop-color="#4C51BF" />
-                                    <stop offset="80%" stop-color="#EEF2FF" />
-                                    <stop offset="90%" stop-color="#FFFFFF" stop-opacity="0.95" />
-                                </linearGradient>
-                                <linearGradient id="pythonYellow" x1="19.128%" x2="90.742%" y1="20.579%" y2="88.429%">
-                                    <stop offset="15%" stop-color="#6B46C1" />
-                                    <stop offset="80%" stop-color="#E6DBFF" />
-                                    <stop offset="90%" stop-color="#FFFFFF" stop-opacity="0.9" />
-                                </linearGradient>
-                            </defs>
-                            <path fill="url(#pythonBlue)"
-                                d="M126.916.072c-64.832 0-60.784 28.115-60.784 28.115l.072 29.128h61.868v8.745H41.631S.145 61.355.145 126.77c0 65.417 36.21 63.097 36.21 63.097h21.61v-30.356s-1.165-36.21 35.632-36.21h61.362s34.475.557 34.475-33.319V33.97S194.67.072 126.916.072zM92.802 19.66a11.12 11.12 0 0111.13 11.13 11.12 11.12 0 01-11.13 11.13 11.12 11.12 0 01-11.13-11.13 11.12 11.12 0 0111.13-11.13z" />
-                            <path fill="url(#pythonYellow)"
-                                d="M128.757 254.126c64.832 0 60.784-28.115 60.784-28.115l-.072-29.127H127.6v-8.745h86.441s41.486 4.705 41.486-60.712c0-65.416-36.21-63.096-36.21-63.096h-21.61v30.355s1.165 36.21-35.632 36.21h-61.362s-34.475-.557-34.475 33.32v56.013s-5.235 33.897 62.518 33.897zm34.114-19.586a11.12 11.12 0 01-11.13-11.13 11.12 11.12 0 0111.13-11.131 11.12 11.12 0 0111.13 11.13 11.12 11.12 0 01-11.13 11.13z" />
-                        </svg>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">ShopPy</h3>
-                        <p class="project-description">A production-ready e-commerce platform built with Python and
-                            Django, leveraging Django's ORM, authentication, and admin system for a maintainable online
-                            store.</p>
-                        <a href="#" class="see-more-link">See More →</a>
-                        <div class="project-tags">
-                            <div class="tech-pill">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
-                                    alt="Python">
-                                <span>Python</span>
-                            </div>
-                            <div class="tech-pill">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg"
-                                    alt="Django">
-                                <span>Django</span>
-                            </div>
-                            <div class="tech-pill">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
-                                    alt="HTML">
-                                <span>HTML</span>
-                            </div>
-                            <div class="tech-pill">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
-                                    alt="CSS">
-                                <span>CSS</span>
-                            </div>
-                            <div class="tech-pill">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-                                    alt="JavaScript">
-                                <span>JavaScript</span>
-                            </div>
-                            <div class="tech-pill">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
-                                    alt="MySQL">
-                                <span>MySQL</span>
-                            </div>
-                        </div>
-                        <div class="project-actions">
-                            <a href="https://github.com/Siege365/E-Commerce-Order-Processing-System-Python"
-                                class="project-button primary">
-                                <span>View Project</span>
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M5 12h14M12 5l7 7-7 7" />
-                                </svg>
-                            </a>
-                            <span class="project-button secondary disabled" title="Not deployed yet">
-                                <span>Unavailable</span>
-                            </span>
-                        </div>
-                    </div>
-                </article>
-                <!-- Project 5: Breast Cancer Diagnosis Predictor -->
-                <article class="project-card">
-                    <div class="project-image">
-                        <div class="project-icon">
-                            <img src="https://1000logos.net/wp-content/uploads/2022/04/Breast-Cancer-Logo.png"
-                                loading="lazy" width="300" height="300">
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Breast Cancer Diagnosis Predictor</h3>
-                        <p class="project-description">A machine learning web application that predicts breast cancer
-                            diagnosis based on cell nucleus measurements. Utilizes a Neural Network classifier trained
-                            on labeled data to achieve high diagnostic accuracy.</p>
-                        <a href="" class="see-more-link">See More →</a>
-                        <div class="project-tags">
-                            <div class="tech-pill">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
-                                    alt="Python">
-                                <span>Python</span>
-                            </div>
-                            <div class="tech-pill">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/streamlit/streamlit-original.svg"
-                                    alt="Streamlit">
-                                <span>Streamlit</span>
-                            </div>
-                        </div>
-                        <div class="project-actions">
-                            <a href="https://github.com/Siege365/MachineLearning" class="project-button primary">
-                                <span>View Project</span>
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M5 12h14M12 5l7 7-7 7" />
-                                </svg>
-                            </a>
-                            <a href="https://breast-cancer-classifyy.streamlit.app" class="project-button secondary">
-                                <span>Live Demo</span>
-                            </a>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Project 6: Abstrack Fitness Gym Management System -->
-                <article class="project-card">
-                    <div class="project-image">
-                        <div class="project-icon">
-                            <img src="Pictures/abstractlogotransparent.png" loading="lazy" width="120" height="120">
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Abstrack Fitness Gym Management System</h3>
-                        <p class="project-description">A large-scale client web application consisting of five
-                            integrated subsystems: Member Management,
-                            Scheduling Management, Payment and Billing, Reporting and Analytics, and Inventory
-                            Management.
-                            Built using the Laravel framework with Laragon as the local development environment.
+                        <p class="hero-bio-lead">
+                            I am <strong>Nathaniel Keene M. Merka</strong>, a fourth-year Computer Science candidate at
+                            the <strong>University of Mindanao</strong> specializing in cybersecurity and backend web
+                            development. Experienced in building, optimizing, and securing large-scale enterprise
+                            applications using modern frameworks like Laravel and Flutter. Adaptable problem-solver with
+                            a strong foundation in database architecture, RESTful APIs, and AI-assisted troubleshooting.
                         </p>
-                        <a href="#" class="see-more-link">See More →</a>
-                        <div class="project-tags">
-                            <div class="tech-pill">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg"
-                                    alt="Laravel">
-                                <span>Laravel</span>
+
+                        <!-- Action Controls -->
+                        <div class="hero-action-row">
+                            <a href="#experience" class="btn-editorial-primary">
+                                <span>Enterprise Experience</span>
+                                <span class="btn-arrow">&rarr;</span>
+                            </a>
+                            <a href="#projects" class="btn-editorial-secondary">
+                                <span>Projects &amp; Research</span>
+                            </a>
+                        </div>
+
+                        <!-- Direct Verification Links -->
+                        <div class="hero-quick-meta">
+                            <div class="meta-item">
+                                <span class="meta-label">SPECIALIZATION:</span>
+                                <span class="meta-val">Cybersecurity &bull; Backend Architecture</span>
                             </div>
-                            <div class="tech-pill">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"
-                                    alt="PHP">
-                                <span>PHP</span>
+                            <div class="meta-sep">&bull;</div>
+                            <div class="meta-item">
+                                <span class="meta-label">INDUSTRY OJT:</span>
+                                <span class="meta-val">Junior Web Developer (KumoSoft, Inc.)</span>
                             </div>
-                            <div class="tech-pill">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
-                                    alt="MySQL">
-                                <span>MySQL</span>
+                            <div class="meta-sep">&bull;</div>
+                            <div class="meta-item">
+                                <span class="meta-label">LOCATION:</span>
+                                <span class="meta-val">Davao City, Philippines</span>
                             </div>
-                            <div class="tech-pill">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-                                    alt="JavaScript">
-                                <span>JavaScript</span>
+                        </div>
+                    </div>
+
+                    <!-- Right: Fine Art Framed Portrait Matting -->
+                    <div class="hero-portrait-block">
+                        <div class="editorial-matting-frame">
+                            <div class="matting-photo-wrap">
+                                <span class="film-tag">35MM &bull; 2026</span>
+                                <img src="Pictures/avatarsmall.JPG" alt="Nathaniel Keene M. Merka" class="matting-photo"
+                                    loading="eager">
                             </div>
-                            <div class="tech-pill">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
-                                    alt="Bootstrap">
+                            <div class="matting-caption-bar">
+                                <div class="caption-title">Nathaniel Keene M. Merka</div>
+                                <div class="caption-sub">4th Year B.S. Computer Science &bull; Cybersecurity Specialist
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Channels / Socials -->
+                        <div class="hero-social-strip">
+                            <a href="https://github.com/Siege365" target="_blank" rel="noopener noreferrer"
+                                class="social-strip-link" aria-label="GitHub">
+                                <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18">
+                                    <path
+                                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                                </svg>
+                                <span>GitHub</span>
+                            </a>
+                            <a href="https://www.linkedin.com/in/nathaniel-keene-merka-b6b63336a/" target="_blank"
+                                rel="noopener noreferrer" class="social-strip-link" aria-label="LinkedIn">
+                                <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18">
+                                    <path
+                                        d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                                </svg>
+                                <span>LinkedIn</span>
+                            </a>
+                            <a href="#contact" class="social-strip-link" aria-label="Email">
+                                <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18">
+                                    <path
+                                        d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z" />
+                                </svg>
+                                <span>Email</span>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!--  ABOUT SECTION  -->
+        <section id="about" class="about section-editorial">
+            <div class="section-container">
+                <header class="editorial-section-header">
+                    <div class="section-eyebrow">
+                        <span class="eyebrow-text">CHAPTER 01 // FOUNDATIONS &amp; EDUCATION</span>
+                        <span class="eyebrow-line"></span>
+                    </div>
+                    <h2 class="editorial-section-title">Academic Background &amp; <em>Engineering Philosophy</em></h2>
+                    <p class="editorial-section-sub">A disciplined focus on cybersecurity, database integrity, and
+                        production-tested application architecture.</p>
+                </header>
+
+                <div class="about-grid">
+                    <!-- Left: Authentic Story & Stats -->
+                    <div class="about-narrative-card">
+                        <div class="narrative-body">
+                            <p class="narrative-p lead">
+                                Currently in my <strong>fourth year</strong> of Computer Science at the
+                                <strong>University of Mindanao</strong>, my engineering focus centers on
+                                <em>cybersecurity and backend web development</em>.
+                            </p>
+                            <p class="narrative-p">
+                                My software journey bridges rigorous computer science theory with hands-on enterprise
+                                execution. Through my industry OJT at <strong>KumoSoft, Inc.</strong>, I experienced the
+                                high demands of maintaining and refactoring live institutional systems—modernizing
+                                legacy Laravel/PHP architectures, optimizing heavy database round-trips by up to 75%,
+                                and resolving critical security vulnerabilities.
+                            </p>
+                            <p class="narrative-p">
+                                As an adaptable problem-solver, I leverage AI coding assistants and modern developer
+                                tooling to dissect complex edge cases, trace race conditions, and elevate code quality.
+                                I hold 5 verified technical credentials across cybersecurity, networking, database
+                                architecture, and operational excellence, committed to crafting resilient software that
+                                endures in real-world environments.
+                            </p>
+                        </div>
+
+                        <!-- Four Key Milestones -->
+                        <div class="editorial-stats-row">
+                            <div class="stat-cell">
+                                <span class="stat-roman">YEAR IV</span>
+                                <span class="stat-title">BS Computer Science</span>
+                                <span class="stat-desc">University of Mindanao &bull; Cybersecurity
+                                    Specialization</span>
+                            </div>
+                            <div class="stat-cell">
+                                <span class="stat-roman">ENTERPRISE OJT</span>
+                                <span class="stat-title">KumoSoft, Inc.</span>
+                                <span class="stat-desc">37 Live Modules Refactored &bull; SIS Architecture</span>
+                            </div>
+                            <div class="stat-cell">
+                                <span class="stat-roman">05 CREDENTIALS</span>
+                                <span class="stat-title">Industry Certifications</span>
+                                <span class="stat-desc">Certiport, Lean Six Sigma Yellow Belt, Google</span>
+                            </div>
+                            <div class="stat-cell">
+                                <span class="stat-roman">COMPETENCIES</span>
+                                <span class="stat-title">Backend &amp; Security</span>
+                                <span class="stat-desc">RESTful APIs, SQL Optimization, Vulnerability Hardening</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Core Values & Guiding Pillars -->
+                    <div class="about-pillars-card">
+                        <div class="pillars-header">
+                            <span class="pillars-tag">CORE PHILOSOPHY</span>
+                            <h3 class="pillars-title">Guiding Principles</h3>
+                        </div>
+
+                        <div class="pillars-list">
+                            <div class="pillar-item">
+                                <span class="pillar-roman">I</span>
+                                <div class="pillar-content">
+                                    <h4 class="pillar-name">Security &amp; Hardening</h4>
+                                    <p class="pillar-desc">Proactively identifying and remediating authentication
+                                        vulnerabilities, route exposure, and data leakage across production
+                                        environments.</p>
+                                </div>
+                            </div>
+
+                            <div class="pillar-item">
+                                <span class="pillar-roman">II</span>
+                                <div class="pillar-content">
+                                    <h4 class="pillar-name">Architectural Rigor</h4>
+                                    <p class="pillar-desc">Eliminating N+1 database bottlenecks, enforcing relational
+                                        normalization, and parallelizing asynchronous queries for peak throughput.</p>
+                                </div>
+                            </div>
+
+                            <div class="pillar-item">
+                                <span class="pillar-roman">III</span>
+                                <div class="pillar-content">
+                                    <h4 class="pillar-name">Enterprise Scalability</h4>
+                                    <p class="pillar-desc">Engineering decoupled systems with Laravel and Flutter that
+                                        cleanly support complex business workflows and high-volume operations.</p>
+                                </div>
+                            </div>
+
+                            <div class="pillar-item">
+                                <span class="pillar-roman">IV</span>
+                                <div class="pillar-content">
+                                    <h4 class="pillar-name">AI-Assisted Troubleshooting</h4>
+                                    <p class="pillar-desc">Employing AI-driven developer workflows transparently to
+                                        accelerate debugging, stress-test logic, and maintain high code quality.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pillars-dossier-callout">
+                            <span class="dossier-stamp-tag">ARCHITECTURAL IMPERATIVE</span>
+                            <p class="dossier-quote-text">"Security, data integrity, and performance are not
+                                afterthoughts, but foundational architectural constraints from day one."</p>
+                            <span class="dossier-byline">Engineering Philosophy &bull; Nathaniel Keene M. Merka</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--  EXPERIENCE SECTION  -->
+        <section id="experience" class="experience section-editorial">
+            <div class="section-container">
+                <header class="editorial-section-header">
+                    <div class="section-eyebrow">
+                        <span class="eyebrow-text">CHAPTER 02 // PRODUCTION RIGOR</span>
+                        <span class="eyebrow-line"></span>
+                    </div>
+                    <h2 class="editorial-section-title">Enterprise Engineering &amp; <em>Industry OJT</em></h2>
+                    <p class="editorial-section-sub">Production refactoring, database query optimization, and security
+                        hardening on a live institutional enterprise system.</p>
+                </header>
+
+                <div class="experience-dossier-card">
+                    <div class="exp-header-bar">
+                        <div class="exp-company-block">
+                            <span class="exp-eyebrow">ENTERPRISE SOFTWARE INTERNSHIP</span>
+                            <h3 class="exp-role-title">Junior Web Developer (OJT)</h3>
+                            <span class="exp-company-name">KumoSoft, Inc. &bull; Davao City, Philippines</span>
+                        </div>
+                        <div class="exp-meta-badge-block">
+                            <span class="exp-period-tag">Jun 2026 – Aug 2026</span>
+                            <span class="exp-env-tag">Laravel 5 &bull; PHP 7 &bull; jQuery &bull; MySQL Enterprise
+                                SIS</span>
+                        </div>
+                    </div>
+
+                    <!-- 4 Impact Metric Cells -->
+                    <div class="exp-impact-grid">
+                        <div class="exp-impact-cell">
+                            <span class="impact-metric">37</span>
+                            <span class="impact-label">Production Modules</span>
+                            <span class="impact-sub">Redesigned across 4 live institutional domains</span>
+                        </div>
+                        <div class="exp-impact-cell">
+                            <span class="impact-metric">75%</span>
+                            <span class="impact-label">Round-Trip Reduction</span>
+                            <span class="impact-sub">Eliminated legacy N+1 queries via single SQL JOINs</span>
+                        </div>
+                        <div class="exp-impact-cell">
+                            <span class="impact-metric">01</span>
+                            <span class="impact-label">Critical Vulnerability</span>
+                            <span class="impact-sub">Hardened unauthenticated admin password reset</span>
+                        </div>
+                        <div class="exp-impact-cell">
+                            <span class="impact-metric">100%</span>
+                            <span class="impact-label">Production Integrity</span>
+                            <span class="impact-sub">Refactored academic, cashiering, and HR pipelines</span>
+                        </div>
+                    </div>
+
+                    <!-- Bullet Contributions -->
+                    <div class="exp-bullets-list">
+                        <div class="exp-bullet-item">
+                            <span class="exp-num">01 //</span>
+                            <p class="exp-text">
+                                <strong>End-to-End Enterprise Redesigns:</strong> Engineered end-to-end redesigns of 37
+                                live production modules on a legacy Laravel 5 / PHP 7 / jQuery enterprise School
+                                Information System (SIS) spanning 4 core domains.
+                            </p>
+                        </div>
+                        <div class="exp-bullet-item">
+                            <span class="exp-num">02 //</span>
+                            <p class="exp-text">
+                                <strong>Backend &amp; Query Optimization:</strong> Optimized backend performance by
+                                parallelizing 4 sequential AJAX filter calls via <code>Promise.all()</code> and
+                                rewriting a legacy N+1 enrollment query into a single SQL JOIN, cutting load times and
+                                database round-trips by up to <strong>75%</strong>.
+                            </p>
+                        </div>
+                        <div class="exp-bullet-item">
+                            <span class="exp-num">03 //</span>
+                            <p class="exp-text">
+                                <strong>Security Remediation &amp; Hardening:</strong> Hardened an exposed Laravel admin
+                                route, successfully closing an unauthenticated password reset vulnerability across the
+                                employee database.
+                            </p>
+                        </div>
+                        <div class="exp-bullet-item">
+                            <span class="exp-num">04 //</span>
+                            <p class="exp-text">
+                                <strong>Business Logic Refactoring:</strong> Refactored business logic across academic,
+                                cashiering, and HR workflows by rebuilding user interfaces, backend queries, and data
+                                pipelines from legacy systems.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--  SELECTED WORKS SECTION  -->
+        <section id="projects" class="projects section-editorial">
+            <div class="section-container">
+                <header class="editorial-section-header">
+                    <div class="section-eyebrow">
+                        <span class="eyebrow-text">CHAPTER 03 // PROJECTS &amp; RESEARCH</span>
+                        <span class="eyebrow-line"></span>
+                    </div>
+                    <h2 class="editorial-section-title">Projects &amp; <em>Applied Research</em></h2>
+                    <p class="editorial-section-sub">A documented spectrum of deep learning media forensics, enterprise
+                        management systems, transit navigation apps, and full-stack architectures.</p>
+                </header>
+
+                <div class="editorial-projects-grid">
+
+                    <!-- Project 1: Flagship Thesis Research (Mar 2026 – Present) -->
+                    <article class="editorial-case-card">
+                        <div class="case-photo-frame">
+                            <span class="film-tag">THESIS RESEARCH &bull; DEEP LEARNING</span>
+                            <img src="Pictures/python-logo-primary.svg"
+                                alt="An Enhanced EfficientNet-B4 with Temporal Shift and Multi-Head Self-Attention for Detecting AI-Generated Media on Social Media"
+                                class="case-img" loading="lazy">
+                        </div>
+                        <div class="case-body">
+                            <div class="case-meta-top">
+                                <span class="case-cat">MEDIA FORENSICS &amp; CYBERSECURITY</span>
+                                <span class="case-year">Mar 2026 – Present</span>
+                            </div>
+                            <h3 class="case-title">An Enhanced EfficientNet-B4 with Temporal Shift and Multi-Head
+                                Self-Attention for Detecting AI-Generated Media on Social Media</h3>
+                            <p class="case-desc project-description">
+                                Developing an explainable spatiotemporal deep learning framework for AI-generated images
+                                and videos detection on social media platforms, enhancing EfficientNet-B4 with Temporal
+                                Shift and Multi-Head Self-Attention mechanisms.
+                            </p>
+                            <a href="#" class="see-more-link">See More &rarr;</a>
+                            <div class="case-tech-line">
+                                <span>Python</span><span class="dot-sep">&bull;</span>
+                                <span>EfficientNet-B4</span><span class="dot-sep">&bull;</span>
+                                <span>Temporal Shift</span><span class="dot-sep">&bull;</span>
+                                <span>Self-Attention</span><span class="dot-sep">&bull;</span>
+                                <span>Deep Learning</span>
+                            </div>
+                            <div class="case-footer-actions">
+                                <span class="btn-case-disabled" title="Active academic research in progress">Active
+                                    Research</span>
+                                <span class="btn-case-disabled">University of Mindanao</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 2: Abs Track Fitness Gym Management (Aug 2025 – Mar 2026) -->
+                    <article class="editorial-case-card">
+                        <div class="case-photo-frame">
+                            <span class="film-tag">ENTERPRISE &bull; LARAVEL</span>
+                            <img src="Pictures/abstractlogotransparent.png" alt="Abs Track Fitness Gym Management"
+                                class="case-img case-img-lg" loading="lazy">
+                        </div>
+                        <div class="case-body">
+                            <div class="case-meta-top">
+                                <span class="case-cat">ENTERPRISE SUBSYSTEMS</span>
+                                <span class="case-year">Aug 2025 – Mar 2026</span>
+                            </div>
+                            <h3 class="case-title">AbsTrack Fitness Gym Management System</h3>
+                            <p class="case-desc project-description">
+                                Built a large-scale client web application consisting of five integrated subsystems
+                                (Member Accounts, Scheduling, Billing, Inventory, and Analytics) using the Laravel
+                                framework with Laragon as the local development environment.
+                            </p>
+                            <a href="#" class="see-more-link">See More &rarr;</a>
+                            <div class="case-tech-line">
+                                <span>Laravel</span><span class="dot-sep">&bull;</span>
+                                <span>PHP</span><span class="dot-sep">&bull;</span>
+                                <span>MySQL</span><span class="dot-sep">&bull;</span>
+                                <span>Laragon</span><span class="dot-sep">&bull;</span>
                                 <span>Bootstrap</span>
                             </div>
+                            <div class="case-footer-actions">
+                                <a href="https://www.figma.com/proto/05Cp6mYLrYNdwT8W4VCu4I/AbsTrack-Fitness-Gym?page-id=813%3A202&node-id=823-14133&p=f&viewport=-4253%2C-5931%2C0.37&t=qBnRblly0CzC0ba9-1&scaling=min-zoom&content-scaling=fixed"
+                                    target="_blank" rel="noopener noreferrer" class="btn-case-primary">
+                                    <span>Interactive Spec</span>
+                                    <span class="btn-arrow">&rarr;</span>
+                                </a>
+                                <span class="btn-case-disabled">Client NDA</span>
+                            </div>
                         </div>
-                        <div class="project-actions">
-                            <a href="https://www.figma.com/proto/05Cp6mYLrYNdwT8W4VCu4I/AbsTrack-Fitness-Gym?page-id=813%3A202&node-id=823-14133&p=f&viewport=-4253%2C-5931%2C0.37&t=qBnRblly0CzC0ba9-1&scaling=min-zoom&content-scaling=fixed"
-                                class="project-button primary">
-                                <span>View Project</span>
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M5 12h14M12 5l7 7-7 7" />
-                                </svg>
-                            </a>
-                            <span class="project-button secondary disabled" title="Not deployed yet">
-                                <span>Unavailable</span>
-                            </span>
-                        </div>
-                    </div>
-                </article>
+                    </article>
 
-                <!-- Project 7: Electric Vehicle Charging Station Queuing Simulation -->
-                <article class="project-card">
-                    <div class="project-image">
-                        <div class="project-icon">
-                            <img src="Pictures/EVQ.png" loading="lazy" width="650" height="650" alt="EVQSim Logo">
+                    <!-- Project 3: LeJeepney Transit App (Jan 2026 – Feb 2026) -->
+                    <article class="editorial-case-card">
+                        <div class="case-photo-frame">
+                            <span class="film-tag">TRANSIT &bull; FLUTTER</span>
+                            <img src="Pictures/LeJeepneyFinal.svg" alt="LeJeepney Transit Navigation"
+                                class="case-img case-img-lg" loading="lazy">
                         </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Electric Vehicle Charging Station Queuing Simulation</h3>
-                        <p class="project-description">A high-performance discrete-event simulation platform (EVQSim)
-                            that models and visualizes Electric Vehicle charging station queue behaviors, combining a
-                            Python SimPy backend with a real-time 2D/3D Digital Twin frontend and a rich Streamlit
-                            analytics dashboard.</p>
-                        <a href="#" class="see-more-link">See More &rarr;</a>
-                        <div class="project-tags">
-                            <div class="tech-pill">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
-                                    alt="Python">
-                                <span>Python</span>
+                        <div class="case-body">
+                            <div class="case-meta-top">
+                                <span class="case-cat">COMMUTER NAVIGATION &amp; ADMIN</span>
+                                <span class="case-year">Jan 2026 – Feb 2026</span>
                             </div>
-                            <div class="tech-pill">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/streamlit/streamlit-original.svg"
-                                    alt="Streamlit">
-                                <span>Streamlit</span>
-                            </div>
-                            <div class="tech-pill">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-                                    alt="JavaScript">
-                                <span>JavaScript</span>
-                            </div>
-                        </div>
-                        <div class="project-actions">
-                            <a href="https://github.com/Siege365/EV-Charging-Station-Queuing-Simulation"
-                                class="project-button primary">
-                                <span>View Project</span>
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M5 12h14M12 5l7 7-7 7" />
-                                </svg>
-                            </a>
-                            <a href="https://evqsim.streamlit.app" target="_blank" rel="noopener noreferrer"
-                                class="project-button secondary">
-                                <span>Live Demo</span>
-                            </a>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Project 8: LeJeepney -->
-                <article class="project-card">
-                    <div class="project-image">
-                        <div class="project-icon">
-                            <img src="Pictures/LeJeepneyFinal.svg" loading="lazy" width="200" height="200"
-                                alt="LeJeepney Logo">
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">LeJeepney</h3>
-                        <p class="project-description">A jeepney navigation system for Davao City, Philippines —
-                            featuring a Flutter mobile app for commuters (route search, fare calculation, landmarks,
-                            multi-language support) and a Laravel web admin panel for managing routes, landmarks,
-                            support tickets, and fare settings via a REST API.</p>
-                        <a href="#" class="see-more-link">See More &rarr;</a>
-                        <div class="project-tags">
-                            <div class="tech-pill">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg"
-                                    alt="Flutter">
-                                <span>Flutter</span>
-                            </div>
-                            <div class="tech-pill">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg"
-                                    alt="Dart">
-                                <span>Dart</span>
-                            </div>
-                            <div class="tech-pill">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg"
-                                    alt="Laravel">
-                                <span>Laravel</span>
-                            </div>
-                            <div class="tech-pill">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"
-                                    alt="PHP">
-                                <span>PHP</span>
-                            </div>
-                            <div class="tech-pill">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
-                                    alt="MySQL">
+                            <h3 class="case-title">LeJeepney Transit App</h3>
+                            <p class="case-desc project-description">
+                                Developed an occasionally connected transit app for Davao City commuters, combining a
+                                Flutter-based mobile routing app (offline routing, fare calculator, landmarks) with a
+                                Laravel RESTful API backend for dynamic fare and map management.
+                            </p>
+                            <a href="#" class="see-more-link">See More &rarr;</a>
+                            <div class="case-tech-line">
+                                <span>Flutter</span><span class="dot-sep">&bull;</span>
+                                <span>Dart</span><span class="dot-sep">&bull;</span>
+                                <span>Laravel</span><span class="dot-sep">&bull;</span>
+                                <span>RESTful APIs</span><span class="dot-sep">&bull;</span>
                                 <span>MySQL</span>
                             </div>
+                            <div class="case-footer-actions">
+                                <a href="https://github.com/Siege365/LeJeepneyMobile" target="_blank"
+                                    rel="noopener noreferrer" class="btn-case-primary">
+                                    <span>Repository</span>
+                                    <span class="btn-arrow">&rarr;</span>
+                                </a>
+                                <span class="btn-case-disabled" title="Mobile App distribution">Mobile App</span>
+                            </div>
                         </div>
-                        <div class="project-actions">
-                            <a href="https://github.com/Siege365/LeJeepneyMobile" class="project-button primary">
-                                <span>View Project</span>
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M5 12h14M12 5l7 7-7 7" />
-                                </svg>
-                            </a>
-                            <span class="project-button secondary disabled" title="Not deployed yet">
-                                <span>Unavailable</span>
-                            </span>
+                    </article>
+
+                    <!-- Project 4: EVQSim Queuing Simulation (Jan 2026) -->
+                    <article class="editorial-case-card">
+                        <div class="case-photo-frame">
+                            <span class="film-tag">SIMULATION &bull; DIGITAL TWIN</span>
+                            <img src="Pictures/EVQ.png" alt="EVQSim Charging Station Queuing Simulation"
+                                class="case-img" loading="lazy">
                         </div>
-                    </div>
-                </article>
+                        <div class="case-body">
+                            <div class="case-meta-top">
+                                <span class="case-cat">DISCRETE-EVENT SIMULATION</span>
+                                <span class="case-year">Jan 2026</span>
+                            </div>
+                            <h3 class="case-title">EVQSim — EV Station Queuing Simulation</h3>
+                            <p class="case-desc project-description">
+                                A high-performance discrete-event simulation platform (EVQSim) that models and
+                                visualizes Electric Vehicle charging station queue behaviors, combining a Python SimPy
+                                backend with a real-time Digital Twin frontend and Streamlit dashboard.
+                            </p>
+                            <a href="#" class="see-more-link">See More &rarr;</a>
+                            <div class="case-tech-line">
+                                <span>Python</span><span class="dot-sep">&bull;</span>
+                                <span>SimPy</span><span class="dot-sep">&bull;</span>
+                                <span>Streamlit</span><span class="dot-sep">&bull;</span>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="case-footer-actions">
+                                <a href="https://github.com/Siege365/EV-Charging-Station-Queuing-Simulation"
+                                    target="_blank" rel="noopener noreferrer" class="btn-case-primary">
+                                    <span>Repository</span>
+                                    <span class="btn-arrow">&rarr;</span>
+                                </a>
+                                <a href="https://evqsim.streamlit.app" target="_blank" rel="noopener noreferrer"
+                                    class="btn-case-secondary">
+                                    <span>Live System</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 5: ShopPy & ShopPerl E-commerce Platforms (Nov 2025 – Dec 2025) -->
+                    <article class="editorial-case-card">
+                        <div class="case-photo-frame">
+                            <span class="film-tag">COMMERCE &bull; DJANGO &bull; PERL</span>
+                            <img src="Pictures/shopping-bag.svg" alt="ShopPy and ShopPerl Platforms" class="case-img"
+                                loading="lazy">
+                        </div>
+                        <div class="case-body">
+                            <div class="case-meta-top">
+                                <span class="case-cat">RELATIONAL COMMERCE ENGINES</span>
+                                <span class="case-year">Nov 2025 – Dec 2025</span>
+                            </div>
+                            <h3 class="case-title">ShopPy &amp; ShopPerl E-commerce Platforms</h3>
+                            <p class="case-desc project-description">
+                                Developed production-ready e-commerce platforms using Python/Django (leveraging ORM and
+                                authentication) and Perl/Mojolicious, focusing on scalable, maintainable backend logic,
+                                transaction safety, and catalog management.
+                            </p>
+                            <a href="#" class="see-more-link">See More &rarr;</a>
+                            <div class="case-tech-line">
+                                <span>Python</span><span class="dot-sep">&bull;</span>
+                                <span>Django</span><span class="dot-sep">&bull;</span>
+                                <span>Perl</span><span class="dot-sep">&bull;</span>
+                                <span>Mojolicious</span><span class="dot-sep">&bull;</span>
+                                <span>MySQL</span>
+                            </div>
+                            <div class="case-footer-actions">
+                                <a href="https://github.com/Siege365/E-Commerce-Order-Processing-System-Python"
+                                    target="_blank" rel="noopener noreferrer" class="btn-case-primary">
+                                    <span>Django Repo</span>
+                                    <span class="btn-arrow">&rarr;</span>
+                                </a>
+                                <a href="https://github.com/Siege365/E-Commerce-Order-Processing-System-Perl"
+                                    target="_blank" rel="noopener noreferrer" class="btn-case-secondary">
+                                    <span>Perl Repo</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 6: Breast Cancer Diagnosis Predictor (Aug 2025 – Sept 2025) -->
+                    <article class="editorial-case-card">
+                        <div class="case-photo-frame">
+                            <span class="film-tag">AI &bull; NEURAL NETWORKS</span>
+                            <img src="Pictures/python-logo-primary.svg" alt="Breast Cancer ML Classifier"
+                                class="case-img" loading="lazy">
+                        </div>
+                        <div class="case-body">
+                            <div class="case-meta-top">
+                                <span class="case-cat">MACHINE LEARNING CLASSIFIER</span>
+                                <span class="case-year">Aug 2025 – Sept 2025</span>
+                            </div>
+                            <h3 class="case-title">Breast Cancer Diagnosis Predictor</h3>
+                            <p class="case-desc project-description">
+                                Built a machine learning web application utilizing a Neural Network classifier trained
+                                on labeled data to predict breast cancer diagnosis based on cell nucleus measurements,
+                                deployed via an interactive Streamlit UI.
+                            </p>
+                            <a href="#" class="see-more-link">See More &rarr;</a>
+                            <div class="case-tech-line">
+                                <span>Python</span><span class="dot-sep">&bull;</span>
+                                <span>Neural Networks</span><span class="dot-sep">&bull;</span>
+                                <span>Scikit-Learn</span><span class="dot-sep">&bull;</span>
+                                <span>Streamlit</span>
+                            </div>
+                            <div class="case-footer-actions">
+                                <a href="https://github.com/Siege365/MachineLearning" target="_blank"
+                                    rel="noopener noreferrer" class="btn-case-primary">
+                                    <span>Repository</span>
+                                    <span class="btn-arrow">&rarr;</span>
+                                </a>
+                                <a href="https://breast-cancer-classifyy.streamlit.app" target="_blank"
+                                    rel="noopener noreferrer" class="btn-case-secondary">
+                                    <span>Live System</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 7: Vitapets Animal Clinic Management System (Mar 2025 – May 2025) -->
+                    <article class="editorial-case-card">
+                        <div class="case-photo-frame">
+                            <span class="film-tag">CLINIC SYSTEM &bull; PHP</span>
+                            <img src="Pictures/logobgremove.png" alt="Vitapets Animal Clinic Management System"
+                                class="case-img case-img-lg" loading="lazy">
+                        </div>
+                        <div class="case-body">
+                            <div class="case-meta-top">
+                                <span class="case-cat">FULL-STACK MANAGEMENT</span>
+                                <span class="case-year">Mar 2025 – May 2025</span>
+                            </div>
+                            <h3 class="case-title">Vitapets Animal Clinic Management System</h3>
+                            <p class="case-desc project-description">
+                                Built a full-stack veterinary clinic management system handling real-world workflows
+                                such as client records, medical appointment scheduling, veterinarian assignments, and
+                                data-driven administrative operations.
+                            </p>
+                            <a href="#" class="see-more-link">See More &rarr;</a>
+                            <div class="case-tech-line">
+                                <span>PHP</span><span class="dot-sep">&bull;</span>
+                                <span>MySQL</span><span class="dot-sep">&bull;</span>
+                                <span>JavaScript</span><span class="dot-sep">&bull;</span>
+                                <span>HTML/CSS</span>
+                            </div>
+                            <div class="case-footer-actions">
+                                <a href="https://github.com/Siege365/VitapetsAnimalClinic" target="_blank"
+                                    rel="noopener noreferrer" class="btn-case-primary">
+                                    <span>Repository</span>
+                                    <span class="btn-arrow">&rarr;</span>
+                                </a>
+                                <a href="https://vitapetsanimalclinic.great-site.net" target="_blank"
+                                    rel="noopener noreferrer" class="btn-case-secondary">
+                                    <span>Live System</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 8: El Pedidos Mexicanos Food Ordering System (Oct 2024 – Dec 2024) -->
+                    <article class="editorial-case-card">
+                        <div class="case-photo-frame">
+                            <span class="film-tag">DESKTOP POS &bull; JAVAFX</span>
+                            <img src="Pictures/pedidos.png" alt="El Pedidos Mexicanos" class="case-img case-img-lg"
+                                loading="lazy">
+                        </div>
+                        <div class="case-body">
+                            <div class="case-meta-top">
+                                <span class="case-cat">DESKTOP POS ARCHITECTURE</span>
+                                <span class="case-year">Oct 2024 – Dec 2024</span>
+                            </div>
+                            <h3 class="case-title">El Pedidos Mexicanos Food Ordering System</h3>
+                            <p class="case-desc project-description">
+                                Developed a desktop-based food ordering system using JavaFX and MySQL focused on
+                                efficient order management for a restaurant-style workflow, clean MVC modularity, and
+                                rapid checkout operations.
+                            </p>
+                            <a href="#" class="see-more-link">See More &rarr;</a>
+                            <div class="case-tech-line">
+                                <span>Java</span><span class="dot-sep">&bull;</span>
+                                <span>JavaFX</span><span class="dot-sep">&bull;</span>
+                                <span>CSS</span><span class="dot-sep">&bull;</span>
+                                <span>MySQL</span>
+                            </div>
+                            <div class="case-footer-actions">
+                                <a href="https://github.com/Siege365/FoodTruckCompile" target="_blank"
+                                    rel="noopener noreferrer" class="btn-case-primary">
+                                    <span>Repository</span>
+                                    <span class="btn-arrow">&rarr;</span>
+                                </a>
+                                <span class="btn-case-disabled">Desktop App</span>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- ==================== SKILLS SECTION ==================== -->
-    <section id="skills" class="skills">
-        <!-- Decorative Background -->
-        <div class="skills-decor">
-            <div class="decor-shape shape-1"></div>
-            <div class="decor-shape shape-2"></div>
-        </div>
+        <!--  SKILLS SECTION  -->
+        <section id="skills" class="skills section-editorial">
+            <div class="section-container">
+                <header class="editorial-section-header">
+                    <div class="section-eyebrow">
+                        <span class="eyebrow-text">CHAPTER 04 // TECHNICAL ARSENAL</span>
+                        <span class="eyebrow-line"></span>
+                    </div>
+                    <h2 class="editorial-section-title">Technical Skills &amp; <em>Core Competencies</em></h2>
+                    <p class="editorial-section-sub">A disciplined overview of programming languages, libraries,
+                        enterprise tools, and architectural competencies directly aligned with my resume.</p>
+                </header>
 
-        <div class="skills-container">
-            <!-- Section Header -->
-            <header class="skills-header reveal">
-                <h2 class="skills-title">Technical Skills</h2>
-                <p class="skills-subtitle">My technical arsenal for building modern web applications</p>
-            </header>
+                <div class="editorial-matrix-wrapper">
+                    <!-- Row 1: Languages -->
+                    <div class="matrix-row">
+                        <div class="matrix-domain">
+                            <span class="domain-tag">01 // LANGUAGES</span>
+                            <h3 class="domain-title">Programming Languages</h3>
+                        </div>
+                        <div class="matrix-content">
+                            <p class="matrix-p">Primary languages utilized for backend web logic, scripting, relational
+                                queries, and algorithms:</p>
+                            <div class="matrix-badges">
+                                <span class="tech-item">Python</span>
+                                <span class="dot-sep">&bull;</span>
+                                <span class="tech-item">Java</span>
+                                <span class="dot-sep">&bull;</span>
+                                <span class="tech-item">HTML</span>
+                                <span class="dot-sep">&bull;</span>
+                                <span class="tech-item">CSS</span>
+                                <span class="dot-sep">&bull;</span>
+                                <span class="tech-item">JavaScript</span>
+                                <span class="dot-sep">&bull;</span>
+                                <span class="tech-item">SQL</span>
+                                <span class="dot-sep">&bull;</span>
+                                <span class="tech-item">PHP</span>
+                                <span class="dot-sep">&bull;</span>
+                                <span class="tech-item">Perl</span>
+                                <span class="dot-sep">&bull;</span>
+                                <span class="tech-item">Dart</span>
+                            </div>
+                        </div>
+                    </div>
 
-            <!-- Skills Categories -->
-            <div class="skills-categories">
-                <!-- Programming Languages -->
-                <article class="skill-category reveal">
-                    <div class="category-header">
-                        <span class="category-icon">💻</span>
-                        <h3 class="category-title">Programming Languages</h3>
-                    </div>
-                    <div class="skills-grid">
-                        <div class="skill-item python">
-                            <img class="skill-logo"
-                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
-                                alt="Python">
-                            <span class="skill-name">Python</span>
+                    <!-- Row 2: Libraries & Frameworks -->
+                    <div class="matrix-row">
+                        <div class="matrix-domain">
+                            <span class="domain-tag">02 // FRAMEWORKS</span>
+                            <h3 class="domain-title">Libraries &amp; Frameworks</h3>
                         </div>
-                        <div class="skill-item java">
-                            <img class="skill-logo"
-                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
-                                alt="Java">
-                            <span class="skill-name">Java</span>
-                        </div>
-                        <div class="skill-item html">
-                            <img class="skill-logo"
-                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
-                                alt="HTML5">
-                            <span class="skill-name">HTML5</span>
-                        </div>
-                        <div class="skill-item css">
-                            <img class="skill-logo"
-                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
-                                alt="CSS3">
-                            <span class="skill-name">CSS3</span>
-                        </div>
-                        <div class="skill-item javascript">
-                            <img class="skill-logo"
-                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-                                alt="JavaScript">
-                            <span class="skill-name">JavaScript</span>
-                        </div>
-                        <div class="skill-item sql">
-                            <img class="skill-logo"
-                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azuresqldatabase/azuresqldatabase-original.svg"
-                                alt="SQL">
-                            <span class="skill-name">SQL</span>
-                        </div>
-                        <div class="skill-item php">
-                            <img class="skill-logo"
-                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP">
-                            <span class="skill-name">PHP</span>
-                        </div>
-                        <div class="skill-item perl">
-                            <img class="skill-logo"
-                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/perl/perl-original.svg"
-                                alt="Perl">
-                            <span class="skill-name">Perl</span>
-                        </div>
-                        <div class="skill-item dart">
-                            <img class="skill-logo"
-                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg"
-                                alt="Dart">
-                            <span class="skill-name">Dart</span>
+                        <div class="matrix-content">
+                            <p class="matrix-p">Modern application frameworks applied across enterprise portals, mobile
+                                apps, and machine learning:</p>
+                            <div class="matrix-badges">
+                                <span class="tech-item">Django</span>
+                                <span class="dot-sep">&bull;</span>
+                                <span class="tech-item">Laravel</span>
+                                <span class="dot-sep">&bull;</span>
+                                <span class="tech-item">Flutter</span>
+                                <span class="dot-sep">&bull;</span>
+                                <span class="tech-item">Streamlit</span>
+                                <span class="dot-sep">&bull;</span>
+                                <span class="tech-item">JavaFX</span>
+                                <span class="dot-sep">&bull;</span>
+                                <span class="tech-item">Bootstrap</span>
+                                <span class="dot-sep">&bull;</span>
+                                <span class="tech-item">Mojolicious</span>
+                            </div>
                         </div>
                     </div>
-                </article>
 
-                <!-- Frameworks & Libraries -->
-                <article class="skill-category reveal">
-                    <div class="category-header">
-                        <span class="category-icon">📚</span>
-                        <h3 class="category-title">Frameworks & Libraries</h3>
-                    </div>
-                    <div class="skills-grid">
-                        <div class="skill-item django">
-                            <img class="skill-logo"
-                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg"
-                                alt="Django">
-                            <span class="skill-name">Django</span>
+                    <!-- Row 3: Tools & AI -->
+                    <div class="matrix-row">
+                        <div class="matrix-domain">
+                            <span class="domain-tag">03 // TOOLS &amp; ENV</span>
+                            <h3 class="domain-title">Developer Tooling &amp; AI</h3>
                         </div>
-                        <div class="skill-item laravel">
-                            <img class="skill-logo"
-                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg"
-                                alt="Laravel">
-                            <span class="skill-name">Laravel</span>
-                        </div>
-                        <div class="skill-item flutter">
-                            <img class="skill-logo"
-                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg"
-                                alt="Flutter">
-                            <span class="skill-name">Flutter</span>
-                        </div>
-                        <div class="skill-item streamlit">
-                            <img class="skill-logo"
-                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/streamlit/streamlit-original.svg"
-                                alt="Streamlit">
-                            <span class="skill-name">Streamlit</span>
-                        </div>
-                        <div class="skill-item javafx">
-                            <img class="skill-logo"
-                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
-                                alt="JavaFX">
-                            <span class="skill-name">JavaFX</span>
-                        </div>
-                        <div class="skill-item bootstrap">
-                            <img class="skill-logo"
-                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
-                                alt="Bootstrap">
-                            <span class="skill-name">Bootstrap</span>
-                        </div>
-                        <div class="skill-item mojolicious">
-                            <img class="skill-logo" src="https://avatars.githubusercontent.com/u/2388868?s=200&v=4"
-                                alt="Mojolicious">
-                            <span class="skill-name">Mojolicious</span>
+                        <div class="matrix-content">
+                            <p class="matrix-p">Version control, enterprise local environments, and AI-assisted
+                                troubleshooting workflows:</p>
+                            <div class="matrix-badges">
+                                <span class="tech-item">Git / GitHub</span>
+                                <span class="dot-sep">&bull;</span>
+                                <span class="tech-item">Visual Studio Code</span>
+                                <span class="dot-sep">&bull;</span>
+                                <span class="tech-item">Laragon</span>
+                                <span class="dot-sep">&bull;</span>
+                                <span class="tech-item">AI Coding Assistants (Copilot / Claude)</span>
+                            </div>
                         </div>
                     </div>
-                </article>
 
-                <!-- Databases -->
-                <article class="skill-category reveal">
-                    <div class="category-header">
-                        <span class="category-icon">🗄️</span>
-                        <h3 class="category-title">Databases</h3>
-                    </div>
-                    <div class="skills-grid">
-                        <div class="skill-item mysql">
-                            <img class="skill-logo"
-                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
-                                alt="MySQL">
-                            <span class="skill-name">MySQL</span>
+                    <!-- Row 4: Core Competencies -->
+                    <div class="matrix-row">
+                        <div class="matrix-domain">
+                            <span class="domain-tag">04 // COMPETENCIES</span>
+                            <h3 class="domain-title">Core Competencies</h3>
                         </div>
-                        <div class="skill-item sqlite">
-                            <img class="skill-logo"
-                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg"
-                                alt="SQLite">
-                            <span class="skill-name">SQLite</span>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Tools & AI -->
-                <article class="skill-category reveal">
-                    <div class="category-header">
-                        <span class="category-icon">🛠️</span>
-                        <h3 class="category-title">Tools & AI</h3>
-                    </div>
-                    <div class="skills-grid">
-                        <div class="skill-item git">
-                            <img class="skill-logo"
-                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
-                            <span class="skill-name">Git</span>
-                        </div>
-                        <div class="skill-item github">
-                            <img class="skill-logo"
-                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
-                                alt="GitHub">
-                            <span class="skill-name">GitHub</span>
-                        </div>
-                        <div class="skill-item vscode">
-                            <img class="skill-logo"
-                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
-                                alt="VS Code">
-                            <span class="skill-name">VS Code</span>
-                        </div>
-                        <div class="skill-item laragon">
-                            <img class="skill-logo" src="https://cdn.worldvectorlogo.com/logos/laragon.svg"
-                                alt="Laragon">
-                            <span class="skill-name">Laragon</span>
-                        </div>
-                        <div class="skill-item copilot">
-                            <img class="skill-logo"
-                                src="https://images.seeklogo.com/logo-png/42/2/github-copilot-logo-png_seeklogo-428029.png"
-                                alt="GitHub Copilot">
-                            <span class="skill-name">GitHub Copilot</span>
-                        </div>
-                        <div class="skill-item claude">
-                            <img class="skill-logo"
-                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Claude_AI_symbol.svg/3840px-Claude_AI_symbol.svg.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail"
-                                alt="Claude">
-                            <span class="skill-name">Claude</span>
+                        <div class="matrix-content">
+                            <p class="matrix-p">Architectural and algorithmic competencies foundational to building
+                                secure, scalable software:</p>
+                            <div class="matrix-badges">
+                                <span class="tech-item">RESTful APIs</span>
+                                <span class="dot-sep">&bull;</span>
+                                <span class="tech-item">Data Structures and Algorithms</span>
+                                <span class="dot-sep">&bull;</span>
+                                <span class="tech-item">Backend Development</span>
+                                <span class="dot-sep">&bull;</span>
+                                <span class="tech-item">Database Architecture</span>
+                                <span class="dot-sep">&bull;</span>
+                                <span class="tech-item">Security Hardening</span>
+                            </div>
                         </div>
                     </div>
-                </article>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- ==================== CERTIFICATES SECTION ==================== -->
-    <section id="certificates" class="certificates">
-        <!-- Decorative Background -->
-        <div class="certificates-decor">
-            <div class="decor-shape shape-1"></div>
-            <div class="decor-shape shape-2"></div>
-        </div>
+        <!--  CERTIFICATES SECTION  -->
+        <section id="certificates" class="certificates section-editorial">
+            <div class="section-container">
+                <header class="editorial-section-header">
+                    <div class="section-eyebrow">
+                        <span class="eyebrow-text">CHAPTER 05 // CREDENTIALS &amp; ACCREDITATIONS</span>
+                        <span class="eyebrow-line"></span>
+                    </div>
+                    <h2 class="editorial-section-title">Certifications &amp; <em>Verified Credentials</em></h2>
+                    <p class="editorial-section-sub">Formal accreditations earned across cybersecurity, network
+                        security, operational excellence, and database systems.</p>
+                </header>
 
-        <div class="certificates-container">
-            <!-- Section Header -->
-            <header class="certificates-header reveal">
-                <h2 class="certificates-title">Certificates & Achievements</h2>
-                <p class="certificates-subtitle">Professional certifications and completed courses</p>
-            </header>
+                <div class="editorial-certs-grid">
 
-            <!-- Certificates Grid -->
-            <div class="certificates-grid">
-                <!-- Certificate 1: Database Fundamentals -->
-                <article class="certificate-card reveal">
-                    <div class="certificate-icon" data-image="Pictures/certDB.PNG" data-name="Database Fundamentals"
-                        data-issuer="Certiport" data-date="May 2025">
-                        <img src="Pictures/certDB.PNG" alt="Database Fundamentals certificate" loading="lazy">
-                    </div>
-                    <div class="certificate-content">
-                        <h3 class="certificate-name">Database Fundamentals</h3>
-                        <p class="certificate-issuer">Certiport &mdash; IT Specialist</p>
-                        <span class="certificate-date">May 2025</span>
-                    </div>
-                    <a href="#" class="certificate-link certificate-icon" role="button" tabindex="0"
-                        aria-label="View certificate" title="View certificate" data-image="Pictures/certDB.PNG"
-                        data-name="Database Fundamentals" data-issuer="Certiport" data-date="May 2025">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"
-                            focusable="false">
-                            <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6" />
-                            <polyline points="15 3 21 3 21 9" />
-                            <line x1="10" y1="14" x2="21" y2="3" />
-                        </svg>
-                    </a>
-                </article>
+                    <!-- Cert 1: IT Specialist - Cybersecurity -->
+                    <article class="editorial-cert-plate certificate-card">
+                        <div class="cert-plate-wrap certificate-icon" data-image="Pictures/cybersecurity.png"
+                            data-name="IT Specialist - Cybersecurity" data-issuer="Certiport" data-date="May 2026">
+                            <span class="film-tag">CERTIPORT</span>
+                            <img src="Pictures/cybersecurity.png" alt="Cybersecurity Certificate" class="cert-plate-img"
+                                loading="lazy">
+                        </div>
+                        <div class="cert-plate-meta">
+                            <span class="cert-code">CERTIPORT IT SPECIALIST</span>
+                            <h3 class="cert-plate-title">IT Specialist - Cybersecurity</h3>
+                            <p class="cert-plate-issuer">Certiport &bull; Information Technology Specialist</p>
+                            <div class="cert-plate-foot">
+                                <span class="cert-date">Issued May 2026</span>
+                                <a href="#" class="cert-inspect-link certificate-icon"
+                                    data-image="Pictures/cybersecurity.png" data-name="IT Specialist - Cybersecurity"
+                                    data-issuer="Certiport" data-date="May 2026">Inspect Document &rarr;</a>
+                            </div>
+                        </div>
+                    </article>
 
-                <!-- Certificate 2: Network Security -->
-                <article class="certificate-card reveal">
-                    <div class="certificate-icon" data-image="Pictures/NetworkSecurity.png" data-name="Network Security"
-                        data-issuer="Certiport &mdash; IT Specialist" data-date="March 2026">
-                        <img src="Pictures/NetworkSecurity.png" alt="Network Security certificate" loading="lazy">
-                    </div>
-                    <div class="certificate-content">
-                        <h3 class="certificate-name">Network Security</h3>
-                        <p class="certificate-issuer">Certiport &mdash; IT Specialist</p>
-                        <span class="certificate-date">March 2026</span>
-                    </div>
-                    <a href="#" class="certificate-link certificate-icon" role="button" tabindex="0"
-                        aria-label="View certificate" title="View certificate" data-image="Pictures/NetworkSecurity.png"
-                        data-name="Network Security" data-issuer="Certiport — IT Specialist" data-date="March 2026">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"
-                            focusable="false">
-                            <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6" />
-                            <polyline points="15 3 21 3 21 9" />
-                            <line x1="10" y1="14" x2="21" y2="3" />
-                        </svg>
-                    </a>
-                </article>
-                <!-- Certificate 3: Cybersecurity -->
-                <article class="certificate-card reveal">
-                    <div class="certificate-icon" data-image="Pictures/cybersecurity.png" data-name="Cybersecurity"
-                        data-issuer="Certiport &mdash; IT Specialist" data-date="May 2026">
-                        <img src="Pictures/cybersecurity.png" alt="Cybersecurity certificate" loading="lazy">
-                    </div>
-                    <div class="certificate-content">
-                        <h3 class="certificate-name">Cybersecurity</h3>
-                        <p class="certificate-issuer">Certiport &mdash; IT Specialist</p>
-                        <span class="certificate-date">May 2026</span>
-                    </div>
-                    <a href="#" class="certificate-link certificate-icon" role="button" tabindex="0"
-                        aria-label="View certificate" title="View certificate" data-image="Pictures/cybersecurity.png"
-                        data-name="Cybersecurity" data-issuer="Certiport — IT Specialist" data-date="May 2026">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"
-                            focusable="false">
-                            <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6" />
-                            <polyline points="15 3 21 3 21 9" />
-                            <line x1="10" y1="14" x2="21" y2="3" />
-                        </svg>
-                    </a>
-                </article>
+                    <!-- Cert 2: IT Specialist - Network Security -->
+                    <article class="editorial-cert-plate certificate-card">
+                        <div class="cert-plate-wrap certificate-icon" data-image="Pictures/NetworkSecurity.png"
+                            data-name="IT Specialist - Network Security" data-issuer="Certiport" data-date="March 2026">
+                            <span class="film-tag">CERTIPORT</span>
+                            <img src="Pictures/NetworkSecurity.png" alt="Network Security Certificate"
+                                class="cert-plate-img" loading="lazy">
+                        </div>
+                        <div class="cert-plate-meta">
+                            <span class="cert-code">CERTIPORT IT SPECIALIST</span>
+                            <h3 class="cert-plate-title">IT Specialist - Network Security</h3>
+                            <p class="cert-plate-issuer">Certiport &bull; Information Technology Specialist</p>
+                            <div class="cert-plate-foot">
+                                <span class="cert-date">Issued March 2026</span>
+                                <a href="#" class="cert-inspect-link certificate-icon"
+                                    data-image="Pictures/NetworkSecurity.png"
+                                    data-name="IT Specialist - Network Security" data-issuer="Certiport"
+                                    data-date="March 2026">Inspect Document &rarr;</a>
+                            </div>
+                        </div>
+                    </article>
 
-                <!-- Certificate 4: Foundations of Cybersecurity -->
-                <article class="certificate-card reveal">
-                    <div class="certificate-icon" data-image="Pictures/Google1.png"
-                        data-name="Foundations of Cybersecurity" data-issuer="Google &mdash; Coursera"
-                        data-date="March 2026">
-                        <img src="Pictures/Google1.png" alt="Foundations of Cybersecurity certificate" loading="lazy">
-                    </div>
-                    <div class="certificate-content">
-                        <h3 class="certificate-name">Foundations of Cybersecurity</h3>
-                        <p class="certificate-issuer">Google &mdash; Coursera</p>
-                        <span class="certificate-date">March 2026</span>
-                    </div>
-                    <a href="#" class="certificate-link certificate-icon" role="button" tabindex="0"
-                        aria-label="View certificate" title="View certificate" data-image="Pictures/Google1.png"
-                        data-name="Foundations of Cybersecurity" data-issuer="Google — Coursera" data-date="March 2026">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"
-                            focusable="false">
-                            <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6" />
-                            <polyline points="15 3 21 3 21 9" />
-                            <line x1="10" y1="14" x2="21" y2="3" />
-                        </svg>
-                    </a>
-                </article>
+                    <!-- Cert 3: Google Cybersecurity Professional Certificate -->
+                    <article class="editorial-cert-plate certificate-card">
+                        <div class="cert-plate-wrap certificate-icon" data-image="Pictures/Google1.png"
+                            data-name="Google Cybersecurity Professional Certificate" data-issuer="Coursera"
+                            data-date="In Progress">
+                            <span class="film-tag">GOOGLE &bull; COURSERA</span>
+                            <img src="Pictures/Google1.png" alt="Google Cybersecurity Professional Certificate"
+                                class="cert-plate-img" loading="lazy">
+                        </div>
+                        <div class="cert-plate-meta">
+                            <span class="cert-code">PROFESSIONAL CERTIFICATE</span>
+                            <h3 class="cert-plate-title">Google Cybersecurity Professional Certificate</h3>
+                            <p class="cert-plate-issuer">Google &bull; Coursera Professional Program</p>
+                            <div class="cert-plate-foot">
+                                <span class="cert-date">Status: In Progress</span>
+                                <a href="#" class="cert-inspect-link certificate-icon" data-image="Pictures/Google1.png"
+                                    data-name="Google Cybersecurity Professional Certificate" data-issuer="Coursera"
+                                    data-date="In Progress">Inspect Document &rarr;</a>
+                            </div>
+                        </div>
+                    </article>
 
-                <!-- Certificate 5: Play It Safe: Manage Security Risks -->
-                <article class="certificate-card reveal">
-                    <div class="certificate-icon" data-image="Pictures/Google2.png"
-                        data-name="Play It Safe: Manage Security Risks" data-issuer="Google &mdash; Coursera"
-                        data-date="March 2026">
-                        <img src="Pictures/Google2.png" alt="Play It Safe: Manage Security Risks certificate"
-                            loading="lazy">
-                    </div>
-                    <div class="certificate-content">
-                        <h3 class="certificate-name">Play It Safe: Manage Security Risks</h3>
-                        <p class="certificate-issuer">Google &mdash; Coursera</p>
-                        <span class="certificate-date">March 2026</span>
-                    </div>
-                    <a href="#" class="certificate-link certificate-icon" role="button" tabindex="0"
-                        aria-label="View certificate" title="View certificate" data-image="Pictures/Google2.png"
-                        data-name="Play It Safe: Manage Security Risks" data-issuer="Google — Coursera"
-                        data-date="March 2026">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"
-                            focusable="false">
-                            <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6" />
-                            <polyline points="15 3 21 3 21 9" />
-                            <line x1="10" y1="14" x2="21" y2="3" />
-                        </svg>
-                    </a>
-                </article>
+                    <!-- Cert 4: Lean Six Sigma Yellow Belt -->
+                    <article class="editorial-cert-plate certificate-card">
+                        <div class="cert-plate-wrap certificate-icon" data-image="Pictures/Certificate_Yellow_Belt.jpg"
+                            data-name="Lean Six Sigma Yellow Belt" data-issuer="MF Operational Excellence"
+                            data-date="January 2026">
+                            <span class="film-tag">MF OPERATIONAL EXCELLENCE</span>
+                            <img src="Pictures/Certificate_Yellow_Belt.jpg" alt="Lean Six Sigma Yellow Belt"
+                                class="cert-plate-img" loading="lazy">
+                        </div>
+                        <div class="cert-plate-meta">
+                            <span class="cert-code">OPERATIONAL EXCELLENCE</span>
+                            <h3 class="cert-plate-title">Lean Six Sigma Yellow Belt</h3>
+                            <p class="cert-plate-issuer">MF Operational Excellence</p>
+                            <div class="cert-plate-foot">
+                                <span class="cert-date">Issued January 2026</span>
+                                <a href="#" class="cert-inspect-link certificate-icon"
+                                    data-image="Pictures/Certificate_Yellow_Belt.jpg"
+                                    data-name="Lean Six Sigma Yellow Belt" data-issuer="MF Operational Excellence"
+                                    data-date="January 2026">Inspect Document &rarr;</a>
+                            </div>
+                        </div>
+                    </article>
 
-                <!-- Certificate 6: Connect and Protect -->
-                <article class="certificate-card reveal">
-                    <div class="certificate-icon" data-image="Pictures/Google3.png"
-                        data-name="Connect and Protect: Networks and Network Security"
-                        data-issuer="Google &mdash; Coursera" data-date="April 2026">
-                        <img src="Pictures/Google3.png"
-                            alt="Connect and Protect: Networks and Network Security certificate" loading="lazy">
-                    </div>
-                    <div class="certificate-content">
-                        <h3 class="certificate-name">Connect and Protect: Networks and Network Security</h3>
-                        <p class="certificate-issuer">Google &mdash; Coursera</p>
-                        <span class="certificate-date">April 2026</span>
-                    </div>
-                    <a href="#" class="certificate-link certificate-icon" role="button" tabindex="0"
-                        aria-label="View certificate" title="View certificate" data-image="Pictures/Google3.png"
-                        data-name="Connect and Protect: Networks and Network Security" data-issuer="Google — Coursera"
-                        data-date="April 2026">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"
-                            focusable="false">
-                            <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6" />
-                            <polyline points="15 3 21 3 21 9" />
-                            <line x1="10" y1="14" x2="21" y2="3" />
-                        </svg>
-                    </a>
-                </article>
+                    <!-- Cert 5: IT Specialist - Databases -->
+                    <article class="editorial-cert-plate certificate-card">
+                        <div class="cert-plate-wrap certificate-icon" data-image="Pictures/certDB.PNG"
+                            data-name="IT Specialist - Databases" data-issuer="Certiport" data-date="May 2025">
+                            <span class="film-tag">CERTIPORT</span>
+                            <img src="Pictures/certDB.PNG" alt="Databases Certificate" class="cert-plate-img"
+                                loading="lazy">
+                        </div>
+                        <div class="cert-plate-meta">
+                            <span class="cert-code">CERTIPORT IT SPECIALIST</span>
+                            <h3 class="cert-plate-title">IT Specialist - Databases</h3>
+                            <p class="cert-plate-issuer">Certiport &bull; Information Technology Specialist</p>
+                            <div class="cert-plate-foot">
+                                <span class="cert-date">Issued May 2025</span>
+                                <a href="#" class="cert-inspect-link certificate-icon" data-image="Pictures/certDB.PNG"
+                                    data-name="IT Specialist - Databases" data-issuer="Certiport"
+                                    data-date="May 2025">Inspect Document &rarr;</a>
+                            </div>
+                        </div>
+                    </article>
 
-                <!-- Certificate 7: Lean Six Sigma White Belt -->
-                <article class="certificate-card reveal">
-                    <div class="certificate-icon" data-image="Pictures/Certificate_White_Belt.jpg"
-                        data-name="Lean Six Sigma White Belt"
-                        data-issuer="Prof. Dr. Marcelo Machado Fernandes (MF Operational Excellence)"
-                        data-date="January 12, 2026">
-                        <img src="Pictures/Certificate_White_Belt.jpg" alt="Lean Six Sigma White Belt certificate"
-                            loading="lazy">
-                    </div>
-                    <div class="certificate-content">
-                        <h3 class="certificate-name">Lean Six Sigma White Belt</h3>
-                        <p class="certificate-issuer">Prof. Dr. Marcelo Machado Fernandes</p>
-                        <span class="certificate-date">January 2026</span>
-                    </div>
-                    <a href="#" class="certificate-link certificate-icon" role="button" tabindex="0"
-                        aria-label="View certificate" title="View certificate"
-                        data-image="Pictures/Certificate_White_Belt.jpg" data-name="Lean Six Sigma White Belt"
-                        data-issuer="Prof. Dr. Marcelo Machado Fernandes (MF Operational Excellence)"
-                        data-date="January 12, 2026">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"
-                            focusable="false">
-                            <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6" />
-                            <polyline points="15 3 21 3 21 9" />
-                            <line x1="10" y1="14" x2="21" y2="3" />
-                        </svg>
-                    </a>
-                </article>
-
-                <!-- Certificate 8: Lean Six Sigma Yellow Belt -->
-                <article class="certificate-card reveal">
-                    <div class="certificate-icon" data-image="Pictures/Certificate_Yellow_Belt.jpg"
-                        data-name="Lean Six Sigma Yellow Belt"
-                        data-issuer="Prof. Dr. Marcelo Machado Fernandes (MF Operational Excellence)"
-                        data-date="January 12, 2026">
-                        <img src="Pictures/Certificate_Yellow_Belt.jpg" alt="Lean Six Sigma Yellow Belt certificate"
-                            loading="lazy">
-                    </div>
-                    <div class="certificate-content">
-                        <h3 class="certificate-name">Lean Six Sigma Yellow Belt</h3>
-                        <p class="certificate-issuer">Prof. Dr. Marcelo Machado Fernandes</p>
-                        <span class="certificate-date">January 2026</span>
-                    </div>
-                    <a href="#" class="certificate-link certificate-icon" role="button" tabindex="0"
-                        aria-label="View certificate" title="View certificate"
-                        data-image="Pictures/Certificate_Yellow_Belt.jpg" data-name="Lean Six Sigma Yellow Belt"
-                        data-issuer="Prof. Dr. Marcelo Machado Fernandes (MF Operational Excellence)"
-                        data-date="January 12, 2026">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"
-                            focusable="false">
-                            <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6" />
-                            <polyline points="15 3 21 3 21 9" />
-                            <line x1="10" y1="14" x2="21" y2="3" />
-                        </svg>
-                    </a>
-                </article>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Certificate Modal -->
-    <div id="certificate-modal" class="certificate-modal">
-        <div class="certificate-modal-content">
-            <button class="certificate-modal-close" aria-label="Close modal">&times;</button>
-            <img id="certificate-image" src="" alt="Certificate">
-            <div id="certificate-info" class="certificate-info">
-                <h3 id="certificate-modal-name"></h3>
-                <p id="certificate-modal-issuer"></p>
-                <span id="certificate-modal-date"></span>
+        <!--  CONTACT SECTION  -->
+        <section id="contact" class="contact section-editorial">
+            <div class="section-container">
+                <header class="editorial-section-header">
+                    <div class="section-eyebrow">
+                        <span class="eyebrow-text">CHAPTER 06 // DISPATCH</span>
+                        <span class="eyebrow-line"></span>
+                    </div>
+                    <h2 class="editorial-section-title">Initiate <em>a Conversation</em></h2>
+                    <p class="editorial-section-sub">Have a full-time software engineering role, cybersecurity inquiry,
+                        or technical collaboration? Send a direct dispatch below.</p>
+                </header>
+
+                <div class="editorial-contact-split">
+                    <!-- Left: Direct Coordinates -->
+                    <div class="contact-info-panel">
+                        <div class="panel-header">
+                            <span class="panel-tag">OFFICIAL CHANNELS</span>
+                            <h3 class="panel-title">Direct Coordinates</h3>
+                        </div>
+
+                        <div class="coord-items">
+                            <div class="coord-unit">
+                                <span class="coord-label">PRIMARY EMAIL</span>
+                                <a href="mailto:nkmerka.work@gmail.com" class="coord-val">nkmerka.work@gmail.com</a>
+                            </div>
+
+                            <div class="coord-unit">
+                                <span class="coord-label">TELEPHONE</span>
+                                <a href="tel:+6394946028" class="coord-val">+63 949 460 28</a>
+                            </div>
+
+                            <div class="coord-unit">
+                                <span class="coord-label">PORTFOLIO DEPLOYMENT</span>
+                                <a href="https://nkmerka-portfolio.vercel.app" target="_blank" rel="noopener noreferrer"
+                                    class="coord-val">nkmerka-portfolio.vercel.app</a>
+                            </div>
+
+                            <div class="coord-unit">
+                                <span class="coord-label">ACADEMIC INSTITUTION</span>
+                                <span class="coord-val text-muted">University of Mindanao &bull; Davao City,
+                                    Philippines</span>
+                            </div>
+
+                            <div class="coord-unit">
+                                <span class="coord-label">CODE REPOSITORY</span>
+                                <a href="https://github.com/Siege365" target="_blank" rel="noopener noreferrer"
+                                    class="coord-val">github.com/Siege365</a>
+                            </div>
+
+                            <div class="coord-unit">
+                                <span class="coord-label">PROFESSIONAL NETWORK</span>
+                                <a href="https://www.linkedin.com/in/nathaniel-keene-merka-b6b63336a/" target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="coord-val">linkedin.com/in/nathaniel-keene-merka</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-guarantee-note">
+                            <span class="guarantee-label">AVAILABILITY</span>
+                            <p class="guarantee-text">Open for software engineering opportunities, backend development
+                                roles, and cybersecurity engagements.</p>
+                        </div>
+                    </div>
+
+                    <!-- Right: Minimalist Form -->
+                    <div class="contact-form-panel">
+                        <form id="contact-form" class="editorial-form">
+                            <div class="form-row-2">
+                                <div class="form-field">
+                                    <label for="user_name" class="editorial-label">Your Name</label>
+                                    <input type="text" id="user_name" name="user_name" class="editorial-input"
+                                        placeholder="e.g. Eleanor Vance" required>
+                                </div>
+                                <div class="form-field">
+                                    <label for="user_email" class="editorial-label">Email Address</label>
+                                    <input type="email" id="user_email" name="user_email" class="editorial-input"
+                                        placeholder="eleanor@domain.com" required>
+                                </div>
+                            </div>
+
+                            <div class="form-field">
+                                <label for="subject" class="editorial-label">Subject / Purpose</label>
+                                <input type="text" id="subject" name="subject" class="editorial-input"
+                                    placeholder="Inquiry regarding backend or cybersecurity role" required>
+                            </div>
+
+                            <div class="form-field form-field-message">
+                                <label for="message" class="editorial-label">Message Details</label>
+                                <textarea id="message" name="message" class="editorial-textarea" rows="5"
+                                    placeholder="Share role details, projects, or questions..." required></textarea>
+                            </div>
+
+                            <button type="submit" id="contact-submit-btn" class="btn-editorial-submit">
+                                <span>Transmit Message</span>
+                                <span class="btn-arrow">&rarr;</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Toast Notifications for Form -->
+                <div id="toast-container" class="toast-container"></div>
+            </div>
+        </section>
+
+        <!--  EDITORIAL SIGNATURE FOOTER  -->
+        <footer class="editorial-footer">
+            <div class="footer-top-row">
+                <div class="footer-author-block">
+                    <div class="author-name">Nathaniel Keene M. Merka</div>
+                    <div class="author-profession">FOURTH-YEAR CANDIDATE, B.S. IN COMPUTER SCIENCE &bull; CYBERSECURITY
+                        SPECIALIST</div>
+                </div>
+
+                <div class="footer-quote-block">
+                    <blockquote class="footer-quote">&ldquo;Quiet ambition, relentless craft, enduring impact.&rdquo;
+                    </blockquote>
+                </div>
+            </div>
+
+            <div class="footer-bottom-row">
+                <div class="footer-colophon">
+                    <span class="colophon-institution">UNIVERSITY OF MINDANAO // 2026</span>
+                    <span class="colophon-copy">&copy; 2026 Nathaniel Keene M. Merka &bull; All Rights Reserved</span>
+                </div>
+
+                <div class="footer-status-pill">
+                    <span class="status-indicator-dot"></span>
+                    <span class="status-indicator-text">AVAILABLE FOR FULL-TIME ROLES</span>
+                </div>
+
+                <div class="footer-quick-links">
+                    <a href="https://github.com/Siege365" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    <span class="sep">&bull;</span>
+                    <a href="https://www.linkedin.com/in/nathaniel-keene-merka-b6b63336a/" target="_blank"
+                        rel="noopener noreferrer">LinkedIn</a>
+                    <span class="sep">&bull;</span>
+                    <a href="#hero">Back to Top &uarr;</a>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+
+    <!-- Certificate Inspection Modal -->
+    <div class="certificate-modal" id="certificate-modal" role="dialog" aria-modal="true"
+        aria-labelledby="certificate-modal-name">
+        <div class="certificate-modal-overlay"></div>
+        <div class="certificate-modal-container">
+            <button class="certificate-modal-close" aria-label="Close modal">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+            <div class="certificate-modal-body">
+                <div class="modal-image-wrap">
+                    <img src="" alt="" id="certificate-image" class="certificate-modal-image">
+                </div>
+                <div class="certificate-modal-details">
+                    <h3 id="certificate-modal-name" class="modal-cert-name"></h3>
+                    <p id="certificate-modal-issuer" class="modal-cert-issuer"></p>
+                    <span id="certificate-modal-date" class="modal-cert-date"></span>
+                </div>
             </div>
         </div>
     </div>
-
-    <!-- ==================== CONTACT SECTION ==================== -->
-    <section id="contact" class="contact">
-        <!-- Decorative Background -->
-        <div class="contact-decor">
-            <div class="decor-shape shape-1"></div>
-            <div class="decor-shape shape-2"></div>
-            <div class="decor-shape shape-3"></div>
-        </div>
-
-        <div class="contact-container">
-            <!-- Section Header -->
-            <header class="contact-header reveal">
-                <h2 class="contact-title">Let's Build Something Together</h2>
-                <p class="contact-subtitle">Have a project in mind? Let's talk.</p>
-            </header>
-
-            <!-- Contact Content -->
-            <div class="contact-content">
-                <!-- Contact Info (Left Side) -->
-                <div class="contact-info reveal">
-                    <div class="info-card">
-                        <div class="info-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
-                                <polyline points="22,6 12,13 2,6" />
-                            </svg>
-                        </div>
-                        <div class="info-content">
-                            <h4>Email</h4>
-                            <a href="mailto:nkmerka.work@gmail.com">nkmerka.work@gmail.com</a>
-                        </div>
-                    </div>
-
-                    <div class="info-card">
-                        <div class="info-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
-                                <circle cx="12" cy="10" r="3" />
-                            </svg>
-                        </div>
-                        <div class="info-content">
-                            <h4>Location</h4>
-                            <p>Davao, Philippines</p>
-                        </div>
-                    </div>
-
-                    <div class="info-card">
-                        <div class="info-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <circle cx="12" cy="12" r="10" />
-                                <polyline points="12 6 12 12 16 14" />
-                            </svg>
-                        </div>
-                        <div class="info-content">
-                            <h4>Availability</h4>
-                            <p>Open for opportunities</p>
-                        </div>
-                    </div>
-
-                    <!-- Social Links -->
-                    <div class="contact-socials">
-                        <h4>Connect With Me</h4>
-                        <div class="social-links">
-                            <a href="https://github.com/Siege365" target="_blank" rel="noopener noreferrer"
-                                class="social-link-github" aria-label="GitHub">
-                                <svg viewBox="0 0 24 24" fill="currentColor">
-                                    <path
-                                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
-                                </svg>
-                            </a>
-                            <a href="https://www.linkedin.com/in/nathaniel-keene-merka-b6b63336a/" target="_blank"
-                                rel="noopener noreferrer" class="social-link-linkedin" aria-label="LinkedIn">
-                                <svg viewBox="0 0 24 24" fill="currentColor">
-                                    <path
-                                        d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-                                </svg>
-                            </a>
-                            <a href="#contact" class="social-link-email" aria-label="Email">
-                                <svg viewBox="0 0 24 24" fill="currentColor">
-                                    <path
-                                        d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z" />
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Contact Form (Right Side) -->
-                <div class="contact-form-wrapper reveal">
-                    <form id="contact-form" class="contact-form" novalidate>
-                        <div class="input-group">
-                            <input type="text" id="name" name="name" required placeholder=" ">
-                            <label for="name">Your Name</label>
-                            <span class="input-highlight"></span>
-                        </div>
-
-                        <div class="input-group">
-                            <input type="email" id="email" name="email" required placeholder=" ">
-                            <label for="email">Your Email</label>
-                            <span class="input-highlight"></span>
-                        </div>
-
-                        <div class="input-group">
-                            <textarea id="message" name="message" rows="5" required placeholder=" "></textarea>
-                            <label for="message">Your Message</label>
-                            <span class="input-highlight"></span>
-                        </div>
-
-                        <button type="submit" class="submit-button">
-                            <span class="button-text">Send Message</span>
-                            <span class="button-icon">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <line x1="22" y1="2" x2="11" y2="13" />
-                                    <polygon points="22 2 15 22 11 13 2 9 22 2" />
-                                </svg>
-                            </span>
-                            <span class="button-loader">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <circle cx="12" cy="12" r="10" stroke-dasharray="31.4" stroke-dashoffset="0" />
-                                </svg>
-                            </span>
-                        </button>
-                    </form>
-                </div>
-            </div>
-        </div>
-
-        <!-- Toast Notification Container -->
-        <div id="toast-container"></div>
-    </section>
-
-    <!-- ==================== FOOTER ==================== -->
-    <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <a href="#hero" class="footer-logo">
-                        <span class="logo-text">NKM</span>
-                        <span class="logo-dot"></span>
-                    </a>
-                    <p class="footer-tagline">Crafting digital experiences with passion and precision.</p>
-                </div>
-
-                <div class="footer-links">
-                    <div class="footer-nav">
-                        <h4>Navigation</h4>
-                        <ul>
-                            <li><a href="#hero">Home</a></li>
-                            <li><a href="#about">About</a></li>
-                            <li><a href="#projects">Projects</a></li>
-                            <li><a href="#skills">Skills</a></li>
-                            <li><a href="#contact">Contact</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="footer-social">
-                        <h4>Connect</h4>
-                        <div class="footer-social-links">
-                            <a href="https://github.com/Siege365" target="_blank" rel="noopener noreferrer"
-                                aria-label="GitHub">
-                                <svg viewBox="0 0 24 24" fill="currentColor">
-                                    <path
-                                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
-                                </svg>
-                            </a>
-                            <a href="https://www.linkedin.com/in/nathaniel-keene-merka-b6b63336a/" target="_blank"
-                                rel="noopener noreferrer" aria-label="LinkedIn">
-                                <svg viewBox="0 0 24 24" fill="currentColor">
-                                    <path
-                                        d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-                                </svg>
-                            </a>
-                            <a href="mailto:nkmerka.work@gmail.com" aria-label="Email">
-                                <svg viewBox="0 0 24 24" fill="currentColor">
-                                    <path
-                                        d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z" />
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="footer-bottom">
-                <p>&copy; 2025 Nathaniel Keene M. Merka. All rights reserved</p>
-            </div>
-        </div>
-    </footer>
 
     <!-- Back to Top Button -->
     <button class="back-to-top" id="back-to-top" aria-label="Back to top">
@@ -1423,7 +1151,7 @@
     <!-- EmailJS SDK -->
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
-    <!-- Scripts - Load in order: section scripts first, then main -->
+    <!-- Section Scripts -->
     <script src="js/hero.js"></script>
     <script src="js/about.js"></script>
     <script src="js/projects.js"></script>

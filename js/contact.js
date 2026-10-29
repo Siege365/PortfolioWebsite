@@ -109,22 +109,24 @@ function setRateLimit() {
 
 // ==================== FORM VALIDATION ====================
 function validateField(input) {
-    const inputGroup = input.closest('.input-group');
+    const inputGroup = input.closest('.form-field') || input.closest('.input-group');
     const value = input.value.trim();
     
-    inputGroup.classList.remove('error', 'success');
+    if (inputGroup) {
+        inputGroup.classList.remove('error', 'success');
+    }
     
     if (!value) {
-        inputGroup.classList.add('error');
+        if (inputGroup) inputGroup.classList.add('error');
         return false;
     }
     
     if (input.type === 'email' && !isValidEmail(value)) {
-        inputGroup.classList.add('error');
+        if (inputGroup) inputGroup.classList.add('error');
         return false;
     }
     
-    inputGroup.classList.add('success');
+    if (inputGroup) inputGroup.classList.add('success');
     return true;
 }
 
@@ -133,7 +135,7 @@ function initContactForm() {
     const form = document.getElementById('contact-form');
     if (!form) return;
     
-    const submitBtn = form.querySelector('.submit-button');
+    const submitBtn = form.querySelector('.btn-editorial-submit') || form.querySelector('.submit-button') || form.querySelector('button[type="submit"]');
     const inputs = form.querySelectorAll('input, textarea');
     
     // Real-time validation on blur
@@ -146,8 +148,8 @@ function initContactForm() {
         
         // Remove error state on input
         input.addEventListener('input', () => {
-            const inputGroup = input.closest('.input-group');
-            if (inputGroup.classList.contains('error')) {
+            const inputGroup = input.closest('.form-field') || input.closest('.input-group');
+            if (inputGroup && inputGroup.classList.contains('error')) {
                 inputGroup.classList.remove('error');
             }
         });
@@ -160,36 +162,36 @@ function initContactForm() {
         // Check rate limit first
         const rateLimitCheck = checkRateLimit();
         if (!rateLimitCheck.allowed) {
-            showToast(`⏱️ ${rateLimitCheck.message}`, 'error');
+            showToast(rateLimitCheck.message, 'error');
             return;
         }
         
-        const nameInput = form.querySelector('#name');
-        const emailInput = form.querySelector('#email');
+        const nameInput = form.querySelector('#user_name') || form.querySelector('#name');
+        const emailInput = form.querySelector('#user_email') || form.querySelector('#email');
         const messageInput = form.querySelector('#message');
         
-        const name = nameInput.value.trim();
-        const email = emailInput.value.trim();
-        const message = messageInput.value.trim();
+        const name = nameInput ? nameInput.value.trim() : '';
+        const email = emailInput ? emailInput.value.trim() : '';
+        const message = messageInput ? messageInput.value.trim() : '';
         
         // Validate all fields
         let isValid = true;
         
-        if (!name) {
+        if (!name && nameInput) {
             validateField(nameInput);
             isValid = false;
         }
         
-        if (!email) {
+        if (!email && emailInput) {
             validateField(emailInput);
             isValid = false;
-        } else if (!isValidEmail(email)) {
+        } else if (emailInput && !isValidEmail(email)) {
             validateField(emailInput);
             showToast('Please enter a valid email address', 'error');
             isValid = false;
         }
         
-        if (!message) {
+        if (!message && messageInput) {
             validateField(messageInput);
             isValid = false;
         }
@@ -200,8 +202,10 @@ function initContactForm() {
         }
         
         // Show loading state
-        submitBtn.classList.add('loading');
-        submitBtn.disabled = true;
+        if (submitBtn) {
+            submitBtn.classList.add('loading');
+            submitBtn.disabled = true;
+        }
         
         try {
             // Send email using EmailJS
@@ -214,25 +218,26 @@ function initContactForm() {
             if (result.method === 'mailto') {
                 showToast('Opening your email client...', 'success');
             } else {
-                showToast('Message sent! Check your email for a confirmation from me.', 'success');
+                showToast('Message transmitted successfully. Thank you!', 'success');
             }
             
             // Reset form
             form.reset();
             inputs.forEach(input => {
-                input.closest('.input-group').classList.remove('success', 'error');
+                const grp = input.closest('.form-field') || input.closest('.input-group');
+                if (grp) grp.classList.remove('success', 'error');
             });
             
-            // Re-focus on page to restore cursor
             document.body.focus();
             
         } catch (error) {
-            showToast('Failed to send message. Please email me directly at nkmerka.work@gmail.com', 'error');
+            showToast('Failed to transmit message. Please email directly to nkmerka.work@gmail.com', 'error');
             console.error('Form submission error:', error);
         } finally {
-            // Remove loading state
-            submitBtn.classList.remove('loading');
-            submitBtn.disabled = false;
+            if (submitBtn) {
+                submitBtn.classList.remove('loading');
+                submitBtn.disabled = false;
+            }
         }
     });
 }

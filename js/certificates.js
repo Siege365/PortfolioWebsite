@@ -1,109 +1,57 @@
-/* ==========================================
-   CERTIFICATES SECTION SCRIPTS
-   ========================================== */
+/* ==========================================================================
+   CERTIFICATES SECTION SCRIPTS — Modal Inspector
+   ========================================================================== */
 
-// ==================== SCROLL REVEAL ====================
-function initCertificatesReveal() {
-    const revealElements = document.querySelectorAll('.certificates .reveal');
-    
-    if (revealElements.length === 0) return;
-    
-    const observerOptions = {
-        threshold: 0.2,
-        rootMargin: '0px 0px -50px 0px'
-    };
-    
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('revealed');
-                observer.unobserve(entry.target);
-            }
-        });
-    }, observerOptions);
-    
-    revealElements.forEach(element => {
-        observer.observe(element);
-    });
-}
-
-// ==================== CERTIFICATE CARD HOVER EFFECTS ====================
-function initCertificateHoverEffects() {
-    const cards = document.querySelectorAll('.certificate-card');
-    
-    cards.forEach(card => {
-        card.addEventListener('mouseenter', () => {
-            // Add subtle pulse to icon
-            const icon = card.querySelector('.certificate-icon');
-            if (icon) {
-                icon.style.transform = 'scale(1.1)';
-            }
-        });
-        
-        card.addEventListener('mouseleave', () => {
-            const icon = card.querySelector('.certificate-icon');
-            if (icon) {
-                icon.style.transform = 'scale(1)';
-            }
-        });
-    });
-}
-
-// ==================== CERTIFICATE MODAL HANDLER ====================
 function initCertificateModal() {
-    const modal = document.getElementById('certificate-modal');
-    const certificateIcons = document.querySelectorAll('.certificate-icon');
-    const closeButton = document.querySelector('.certificate-modal-close');
-    
-    if (!modal) return;
-    
-    // Open modal when clicking certificate icon
-    certificateIcons.forEach(icon => {
-        icon.addEventListener('click', (e) => {
-            e.preventDefault();
-            const image = icon.dataset.image;
-            const name = icon.dataset.name;
-            const issuer = icon.dataset.issuer;
-            const date = icon.dataset.date;
-            
-            // Populate modal content
-            document.getElementById('certificate-image').src = image;
-            document.getElementById('certificate-modal-name').textContent = name;
-            document.getElementById('certificate-modal-issuer').textContent = issuer;
-            document.getElementById('certificate-modal-date').textContent = date;
-            
-            // Show modal
-            modal.classList.add('active');
-            document.body.style.overflow = 'hidden';
-        });
+  const modal = document.getElementById('certificate-modal');
+  const certificateTriggers = document.querySelectorAll('.certificate-icon');
+  const closeButton = document.querySelector('.certificate-modal-close');
+  const overlay = document.querySelector('.certificate-modal-overlay');
+
+  if (!modal) return;
+
+  function closeModal() {
+    modal.classList.remove('active');
+    document.body.style.overflow = '';
+  }
+
+  certificateTriggers.forEach(trigger => {
+    trigger.addEventListener('click', (e) => {
+      e.preventDefault();
+      const image = trigger.dataset.image;
+      const name = trigger.dataset.name;
+      const issuer = trigger.dataset.issuer;
+      const date = trigger.dataset.date;
+
+      const certImg = document.getElementById('certificate-image');
+      const certName = document.getElementById('certificate-modal-name');
+      const certIssuer = document.getElementById('certificate-modal-issuer');
+      const certDate = document.getElementById('certificate-modal-date');
+
+      if (certImg) certImg.src = image;
+      if (certName) certName.textContent = name;
+      if (certIssuer) certIssuer.textContent = issuer;
+      if (certDate) certDate.textContent = date;
+
+      modal.classList.add('active');
+      document.body.style.overflow = 'hidden';
     });
-    
-    // Close modal when clicking close button
-    closeButton?.addEventListener('click', () => {
-        modal.classList.remove('active');
-        document.body.style.overflow = 'auto';
-    });
-    
-    // Close modal when clicking outside (backdrop)
-    modal.addEventListener('click', (e) => {
-        if (e.target === modal) {
-            modal.classList.remove('active');
-            document.body.style.overflow = 'auto';
-        }
-    });
-    
-    // Close modal on Escape key
-    document.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape' && modal.classList.contains('active')) {
-            modal.classList.remove('active');
-            document.body.style.overflow = 'auto';
-        }
-    });
+  });
+
+  closeButton?.addEventListener('click', closeModal);
+  overlay?.addEventListener('click', closeModal);
+
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal) closeModal();
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && modal.classList.contains('active')) {
+      closeModal();
+    }
+  });
 }
 
-// ==================== INITIALIZE CERTIFICATES SECTION ====================
 function initCertificates() {
-    initCertificatesReveal();
-    initCertificateHoverEffects();
-    initCertificateModal();
+  initCertificateModal();
 }
